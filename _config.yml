@@ -1,1 +1,13 @@
-theme: jekyll-theme-minimal
+title: SMART Protocols
+author: SMARTProtocols
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Using Semantics and Natural Language Processing in Experimental Protocols
+github_username:  SMARTProtocols
+
+# Build settings
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
