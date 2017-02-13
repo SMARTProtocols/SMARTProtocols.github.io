@@ -4,6 +4,8 @@ title: Queries
 permalink: /queries/
 ---
 ## Retrieve all the protocols with samples that belongs to the *Rodent* order
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3FspecimenName+%3FdbpediaDesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri+.%0D%0A++%3Fspecimen+sp%3AhasName+%3FspecimenNameUri+.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++%3Fspecimen+owl%3AsameAs+%3FexternalUri+.%0D%0A%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E%0D%0A++%7B%0D%0A++++%3FexternalUri+dbo%3Aorder+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FRodent%3E+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3FdbpediaDesc+.%0D%0A++++FILTER%28lang%28%3FdbpediaDesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -35,6 +37,9 @@ WHERE {
 ```
 
 ## Retrieve all the protocols with reagents of type Enzyme
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3Fname+%3Fdesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FexternalUri+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3Fname+.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0D%0A++++%3FexternalUri+a+dbo%3AEnzyme+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3Fdesc+.%0D%0A++++FILTER%28lang%28%3Fdesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -64,6 +69,8 @@ WHERE {
 ```
 
 ## Retrieve all the protocols with reagents of type Alcohol
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+yago%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3Fname+%3Fdesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FexternalUri+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3Fname+.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0D%0A++++%3FexternalUri+a+yago%3AWikicatAlcohols+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3Fdesc.%0D%0A++++FILTER%28lang%28%3Fdesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -92,7 +99,9 @@ WHERE {
 }
 ```
 
-## Retrieve all the reagents along with the different web sites to buy them and all the different manufacturers registered for every reagent
+## Retrieve all the reagents along with the different web sites to buy them and all the different manufacturers registered for every reagent.
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0APREFIX+CHEBI%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_%3E%0D%0A%0D%0ASELECT+%3Fname%0D%0A%09+++%28group_concat%28%3FmanufacturerName%3B+separator%3D%22+%2C+%22%29+as+%3Fmanufacturers%29%0D%0A%09+++%28group_concat%28%3Fhomepage%3B+separator%3D%22+%2C+%22%29+as+%3FwhereTobuy%29%0D%0AWHERE+%7B%0D%0A++%3Freagent+a+CHEBI%3A33893+.%0D%0A++%3Freagent+sp%3AhasName+%3FnameUri+.%0D%0A++%3FnameUri+rdf%3Avalue+%3Fname+.%0D%0A++%3Freagent+obi%3A0000304+%3Fmanufacturer+.%0D%0A++%3Fmanufacturer+sp%3AhasName+%3FmanufacturerNameUri+.%0D%0A++%3FmanufacturerNameUri+rdf%3Avalue+%3FmanufacturerName+.%0D%0A++%3Freagent+foaf%3Ahomepage+%3Fhomepage+.%0D%0A%7D+GROUP+BY+%3Fname&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -117,6 +126,8 @@ WHERE {
 ```
 
 ## Retrieve all the protocols with *Fetal bovine serum (FBS)* as a reagent
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0A%0D%0ASELECT+%3Ftitle%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%22Fetal+bovine+serum+%28FBS%29%22+.%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
