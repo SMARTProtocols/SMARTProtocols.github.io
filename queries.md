@@ -150,10 +150,10 @@ WHERE {
 ```
 
 ## Retrieve the application of the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”
- 
+
+```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-```
 SELECT ?protocolApplication
 {
     ?protocol sp:hasTitle ?titleUri .
@@ -164,7 +164,8 @@ SELECT ?protocolApplication
 ```
 
 ## Retrieve the procedure labels involved in the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”
- ```
+
+```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -180,6 +181,7 @@ SELECT ?procedureLabel
 ```
 
 ## Retrieve the purpose of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -194,6 +196,7 @@ SELECT ?protocolPurpose
 ```
 
 ## Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”
+
 ``` 
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -217,11 +220,12 @@ WHERE {
 ```
 
 ## Retrieve the protocols that use the reagents “Dulbecco's modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”
+
+```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
 PREFIX prism: <http://prismstandard.org/namespaces/basic/2.0/prism:>
-```
 SELECT DISTINCT ?identifier ?title ?publicationName
 WHERE {
   ?protocol sp:hasTitle ?title_uri .
@@ -244,6 +248,7 @@ WHERE {
 ```
 
 ## Retrieve all the reagents of the dataset along with its homepage
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -266,6 +271,7 @@ WHERE {
 ```
 
 ## Retrieve all the protocols that contains Mouse as a Sample
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -292,6 +298,7 @@ WHERE {
 ```
 
 ## Retrieve all the instruments and reagents used in the portocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -317,6 +324,7 @@ WHERE {
 ```
 
 ## Retrieve all the protocols that use the software "ImageJ" along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).
+
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
