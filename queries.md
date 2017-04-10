@@ -4,6 +4,7 @@ title: Queries
 permalink: /queries/
 ---
 ## Retrieve all the protocols with samples that belongs to the *Rodent* order
+### Makes use of external resources
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3FspecimenName+%3FdbpediaDesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri+.%0D%0A++%3Fspecimen+sp%3AhasName+%3FspecimenNameUri+.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++%3Fspecimen+owl%3AsameAs+%3FexternalUri+.%0D%0A%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E%0D%0A++%7B%0D%0A++++%3FexternalUri+dbo%3Aorder+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FRodent%3E+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3FdbpediaDesc+.%0D%0A++++FILTER%28lang%28%3FdbpediaDesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 ```
@@ -37,6 +38,7 @@ WHERE {
 ```
 
 ## Retrieve all the protocols with reagents of type Enzyme
+### Makes use of external resources
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3Fname+%3Fdesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FexternalUri+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3Fname+.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0D%0A++++%3FexternalUri+a+dbo%3AEnzyme+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3Fdesc+.%0D%0A++++FILTER%28lang%28%3Fdesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 
@@ -69,6 +71,7 @@ WHERE {
 ```
 
 ## Retrieve all the protocols with reagents of type Alcohol
+### Makes use of external resources
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+yago%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3Fname+%3Fdesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FexternalUri+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3Fname+.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0D%0A++++%3FexternalUri+a+yago%3AWikicatAlcohols+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3Fdesc.%0D%0A++++FILTER%28lang%28%3Fdesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 ```
@@ -175,3 +178,169 @@ SELECT ?procedureLabel
     ?procedure rdfs:label ?procedureLabel .
 }
 ```
+
+##Retrieve the purpose of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?protocolPurpose
+{
+    ?protocol sp:hasTitle ?titleUri .
+    ?titleUri rdf:value "Isolation of Lung Infiltrating Cell in Mice" .
+    ?protocol sp:hasPurpose ?purposeUri .
+    ?purposeUri rdf:value ?protocolPurpose .
+}
+```
+
+##Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”
+``` 
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+
+SELECT (group_concat(?reagentName;separator=" | ") as ?protocolReagents) (group_concat(?equipmentName;separator=" | ") as ?protocolInstruments)
+WHERE {
+    ?protocol sp:hasTitle ?title_uri .
+    ?title_uri rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+    ?protocol ro:has_part ?materials .
+    ?materials a sp:MaterialsSection .
+    ?materials ro:has_part ?reagents .
+    ?reagents a sp:ReagentList .
+    ?reagents ro:has_part ?reagentNameUri .
+    ?reagentNameUri rdf:value ?reagentName .
+    ?materials ro:has_part ?equipment .
+    ?equipment a sp:EquipmentAndSuppliesList .
+    ?equipment ro:has_part ?equipmentNameUri .
+    ?equipmentNameUri rdf:value ?equipmentName .
+} GROUP BY ?protocol
+```
+
+##Retrieve the protocols that use the reagents “Dulbecco's modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+PREFIX prism: <http://prismstandard.org/namespaces/basic/2.0/prism:>
+```
+SELECT DISTINCT ?identifier ?title ?publicationName
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocol sp:hasIdentifier ?protocolIdentifier .
+  ?protocolIdentifier rdf:value ?identifier .
+  ?protocol sp:publishedIn ?publicationNameUri .
+  ?publicationNameUri rdf:value ?publicationName .
+  ?protocol ro:has_part ?materials .
+  ?materials a sp:MaterialsSection .
+  ?materials ro:has_part ?reagents .
+  ?reagents a sp:ReagentList .
+  ?reagents ro:has_part ?reagentNameUri1 .
+  ?reagentNameUri1 rdf:value "Fetal bovine serum (FBS)" .
+  ?reagents ro:has_part ?reagentNameUri2 .
+  ?reagentNameUri2 rdf:value "Dulbecco's modified eagle medium (DMEM)" .
+  ?reagents ro:has_part ?reagentNameUri3 .
+  ?reagentNameUri3 rdf:value "Phosphate buffered saline (PBS)" .
+}
+```
+
+##Retrieve all the reagents of the dataset along with its homepage
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obi: <http://purl.obolibrary.org/obo/OBI_>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
+
+SELECT ?name (group_concat(?manufacturerName; separator=" , ") as ?manufacturers) (group_concat(?homepage; separator=" , ") as ?whereTobuy)
+WHERE {
+  ?reagent a CHEBI:33893 .
+  ?reagent sp:hasName ?nameUri .
+  ?nameUri rdf:value ?name .
+  ?reagent obi:0000304 ?manufacturer .
+  ?manufacturer sp:hasName ?manufacturerNameUri .
+  ?manufacturerNameUri rdf:value ?manufacturerName .
+  ?reagent foaf:homepage ?homepage .
+} GROUP BY ?name
+```
+
+##Retrieve all the protocols that contains Mouse as a Sample
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX p-plan: <http://purl.org/net/p-plan#>
+PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?title ?name
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocol ro:hasPart ?materials .
+  ?materials a sp:MaterialsSection .
+  ?materials ro:hasPart ?specimens .
+  ?specimens a sp:SpecimenList .
+  ?specimens ro:hasPart ?specimen .
+  ?specimen owl:sameAs <http://dbpedia.org/resource/Mouse> .
+  ?specimen sp:hasName ?nameUri .
+  ?nameUri rdf:value ?name .
+}
+```
+
+##Retrieve all the instruments and reagents used in the portocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX p-plan: <http://purl.org/net/p-plan#>
+PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?reagentName
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value "Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol" .
+  ?protocol ro:hasPart ?materials .
+  ?materials a sp:MaterialsSection .
+  ?materials ro:hasPart ?reagents .
+  ?reagents a sp:ReagentList .
+  ?reagents ro:hasPart ?reagent .
+  ?reagent sp:hasName ?nameUri .
+  ?nameUri rdf:value ?reagentName .
+}
+```
+
+##Retrieve all the protocols that use the software "ImageJ" along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX p-plan: <http://purl.org/net/p-plan#>
+PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?title  ?download
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocol ro:hasPart ?materials .
+  ?materials a sp:MaterialsSection .
+  ?materials ro:hasPart ?softwareList .
+  ?softwareList a sp:SoftwareList .
+  ?softwareList ro:hasPart ?software .
+  ?software sp:hasName ?nameUri .
+  ?nameUri rdf:value "ImageJ software" .
+  ?software foaf:homepage ?download .
+}
+```
+
+
+
