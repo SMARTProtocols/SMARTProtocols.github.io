@@ -9,7 +9,6 @@ header_pages:
  - contributors.html
  - ontology.html
  - queries.html
- - annex.html
 
 # Build settings
 markdown: kramdown
