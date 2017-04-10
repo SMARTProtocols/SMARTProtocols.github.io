@@ -145,3 +145,33 @@ WHERE {
   ?reagentNameUri rdf:value "Fetal bovine serum (FBS)" .
 }
 ```
+
+## Retrieve the application of the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”
+ 
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+```
+SELECT ?protocolApplication
+{
+    ?protocol sp:hasTitle ?titleUri .
+    ?titleUri rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+    ?protocol sp:hasApplication ?applicationUri .
+    ?applicationUri rdf:value ?protocolApplication .
+} 
+```
+
+##Retrieve the procedure labels involved in the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”
+ ```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?procedureLabel
+{
+    ?experimentalProtocol sp:hasTitle ?titleUri .
+    ?titleUri rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+    ?experimentalProtocolExecution sp:documentedIn ?experimentalProtocol .
+    ?experimentalProtocolExecution sp:hasProcedure ?procedure .
+    ?procedure rdfs:label ?procedureLabel .
+}
+```
