@@ -3,8 +3,8 @@ layout: page
 title: Protocols as RDF
 permalink: /protocolsrdf/
 ---
-|                                                  Protocol                                                 | Smart Protocols RDF | SIRO RDF |
-|:---------------------------------------------------------------------------------------------------------:|:-------------------:|:--------:|
+| Protocol                                                                                                  | Smart Protocols RDF | SIRO RDF |
+|-----------------------------------------------------------------------------------------------------------|---------------------|----------|
 | [Bio101] Subcutaneous Injection of Tumor Cells                                                            |                     |          |
 | [Bio101] Cell Cycle Analysis and GFP Expression of Zebrafish Embryos by FACS (Originally by Narie Storer) |                     |          |
 | Adenosine A2A Receptor Ligand Binding Experiments by Using Real-time Single-cell FRET                     |                     |          |
