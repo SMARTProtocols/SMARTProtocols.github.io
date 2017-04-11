@@ -3,6 +3,11 @@ layout: page
 title: Queries
 permalink: /queries/
 ---
+1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)
+2. [Retrieve all the protocols with reagents of type Enzyme](#retrieve-all-the-protocols-with-reagents-of-type-enzyme)
+3. [Retrieve all the protocols with reagents of type Alcohol](#retrieve-all-the-protocols-with-reagents-of-type-alcohol)
+
+
 ## Retrieve all the protocols with samples that belongs to the *Rodent* order
 ### Makes use of external resources
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3FspecimenName+%3FdbpediaDesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri+.%0D%0A++%3Fspecimen+sp%3AhasName+%3FspecimenNameUri+.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++%3Fspecimen+owl%3AsameAs+%3FexternalUri+.%0D%0A%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E%0D%0A++%7B%0D%0A++++%3FexternalUri+dbo%3Aorder+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FRodent%3E+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3FdbpediaDesc+.%0D%0A++++FILTER%28lang%28%3FdbpediaDesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
