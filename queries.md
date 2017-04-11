@@ -3,9 +3,21 @@ layout: page
 title: Queries
 permalink: /queries/
 ---
-1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)
-2. [Retrieve all the protocols with reagents of type Enzyme](#retrieve-all-the-protocols-with-reagents-of-type-enzyme)
-3. [Retrieve all the protocols with reagents of type Alcohol](#retrieve-all-the-protocols-with-reagents-of-type-alcohol)
+1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#1-retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)
+2. [Retrieve all the protocols with reagents of type Enzyme](#2-retrieve-all-the-protocols-with-reagents-of-type-enzyme)
+3. [Retrieve all the protocols with reagents of type Alcohol](#3-retrieve-all-the-protocols-with-reagents-of-type-alcohol)
+4. [Retrieve all the reagents along with the different web sites to buy them and all the different manufacturers registered for every reagent](#4-retrieve-all-the-reagents-along-with-the-different-web-sites-to-buy-them-and-all-the-different-manufacturers-registered-for-every-reagent)
+5. [Retrieve all the protocols with Fetal bovine serum (FBS) as a reagent](#5-retrieve-all-the-protocols-with-fetal-bovine-serum-fbs-as-a-reagent)
+6. [Retrieve the application of the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](#6-retrieve-the-application-of-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
+7. [Retrieve the procedure labels involved in the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](7-retrieve-the-procedure-labels-involved-in-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
+8. [Retrieve the purpose of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#8-retrieve-the-purpose-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
+9. [Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#9-retrieve-the-reagent-list-and-equipment-and-supplies-list-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
+10. [Retrieve the protocols that use the reagents “Dulbecco’s modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”](#10-retrieve-the-protocols-that-use-the-reagents-dulbeccos-modified-eagle-medium-dmem-fetal-bovine-serum-fbs-and-phosphate-buffered-saline-pbs)
+11. [Retrieve all the reagents of the dataset along with its homepage](#11-retrieve-all-the-reagents-of-the-dataset-along-with-its-homepage)
+12. [Retrieve all the protocols that contains Mouse as a Sample](#12-retrieve-all-the-protocols-that-contains-mouse-as-a-sample)
+13. [Retrieve all the instruments and reagents used in the protocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”](#13-retrieve-all-the-instruments-and-reagents-used-in-the-protocol-mouse-retinal-whole-mounts-and-quantification-of-vasculature-protocol)
+14. [Retrieve all the protocols that use the software “ImageJ” along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).](#14-retrieve-all-the-protocols-that-use-the-software-imagej-along-wiht-its-homepage-httprsbinfonihgovijdownloadhtml)
+
 
 
 ## 1. Retrieve all the protocols with samples that belongs to the *Rodent* order
@@ -302,7 +314,7 @@ WHERE {
 }
 ```
 
-## 13. Retrieve all the instruments and reagents used in the portocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”
+## 13. Retrieve all the instruments and reagents used in the protocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”
 
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
