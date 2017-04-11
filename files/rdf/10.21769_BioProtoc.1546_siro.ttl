@@ -1,0 +1,683 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/10.21769/BioProtoc.1546/publication> ;
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/cover-date> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/publication-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Bio-protocol" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/cover-date>
+    a prism:coverDate ;
+    rdf:value "8/5/2015" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546>
+    sp:hasTitle <http://smartprotocols.org/10.21769/BioProtoc.1546/title> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546> sp:hasIdentifier <http://smartprotocols.org/10.21769/BioProtoc.1546/identifier> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "10.21769/BioProtoc.1546" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546> sp:hasPurpose <http://smartprotocols.org/10.21769/BioProtoc.1546/purpose> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "This protocol describes the steps involved in the whole mount processing of mouse eyes for visualization of the retinal vasculature." .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/1>
+    a CHEBI:33893 ;
+    owl:oneOf (<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2> <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>).
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "Formalin solution" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "HT5011284L" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/ht501128> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24895887> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/712,http://dbpedia.org/resource/Formalin> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/2>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "Paraformaldehyde (PFA)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "15710" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>
+    foaf:homepage <https://www.fishersci.com/shop/products/16-paraformaldehyde-aq-solutn/50980487> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/712> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>
+    owl:sameAs <http://dbpedia.org/resource/Paraformaldehyde> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/3>
+    obi:0000304 <http://smartprotocols.org/manufacturers/2> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "Triton X-100" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "93443" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sial/x100> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4>
+    owl:sameAs <http://dbpedia.org/resource/Triton_X-100> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/4>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "Sodium azide" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "S2002" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sial/s2002> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24899504> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/4427778> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    owl:sameAs <http://dbpedia.org/resource/Sodium_Azide> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/5>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "Goat serum" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "G9023" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/g9023> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/6>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "Phosphate buffer saline (PBS)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "P3813" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/p3813> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7>
+    owl:sameAs <http://dbpedia.org/resource/Phosphate-buffered_saline> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/7>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "Antibody: Bandeiraea simplicifolia BS-1 (LEC)-TRIC" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "L-5264" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/l5264> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/8>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9-name>
+    a sp:ReagentName ;
+    rdf:value "Mounting medium: ProLong Gold antifade reagents" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "P36934" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/P36930> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/9>
+    obi:0000304 <http://smartprotocols.org/manufacturers/3> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/10-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/10>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/10-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/10-name>
+    a sp:ReagentName ;
+    rdf:value "FITC-dextran" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/10>
+    owl:sameAs <http://bioportal.bioontology.org/ontologies/MESH?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMESH%2FC015219> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/11-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/11>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/11-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/11-name>
+    a sp:ReagentName ;
+    rdf:value "CO2" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents/11>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_16526> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/2-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Razor Blade" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/3-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/3-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Shaker-2 min maximum velocity" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/4-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/4-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Epifluorescence microscope fitted with camera" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHMO_0001096> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Student Dumont #5 Forceps" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "9115020" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5>
+    foaf:homepage <http://www.finescience.com/Special-Pages/Products.aspx?ProductId=85&CategoryId=29> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/5>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/4> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Curve Dumont #7 Fine Forceps" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "1127420" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6>
+    foaf:homepage <http://www.finescience.com/Special-Pages/Products.aspx?ProductId=347&CategoryId=29> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/6>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/4> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Micro dissecting scissors" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "1501810" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/7>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/4> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Microscope cover glasses" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "9161028" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/8>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/5> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Microscope glass slides" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "9161145" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/9>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/5> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "CCD camera" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "DC500" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10>
+    foaf:homepage <http://www.leica-microsystems.com/fileadmin/downloads/Leica%20DC500/Brochures/DC500_Spanish.pdf> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/10>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/6> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Nikon Eclipse TE-2000-E fluorescence microscope" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "TE-2000-E" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11>
+    foaf:homepage <https://www.nikoninstruments.com/Products/Inverted-Microscopes/Eclipse-TE2000> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/11>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/7> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/12-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/12>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/12-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/12-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Zeiss Inverted Tissue Culture Fluorescence Microscope" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/12>
+    foaf:homepage <https://www.zeiss.com/microscopy/us/local/zeiss_inverted_microscope_special_pricing.html> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/12>
+    obi:0000304 <http://smartprotocols.org/10.21769/BioProtoc.1546/manufacturers/8> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/13-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/13>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/13-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/13-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "18G needle" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/13>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000436> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/14-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/14>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/14-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/14-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "plastic Pasteur pipette" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/14>
+    owl:sameAs <http://wikidata.dbpedia.org/page/Q574531> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/15-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/15>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/15-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/15-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "5x objective" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/15>
+    owl:sameAs <http://dicom.nema.org/resources/ontology/DCM/112715> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/16-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/16>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/16-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/16-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "10x objective" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/equipments/16>
+    owl:sameAs <http://dicom.nema.org/resources/ontology/DCM/112716> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/recipes> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1>
+    a obi:0100026 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "Mouse" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1>
+    owl:sameAs <http://dbpedia.org/resource/Mouse> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2>
+    a crisp:4000-0119 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2-name>
+    a sp:SpecimenName ;
+    rdf:value "Mouse eyes" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C22711> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2>
+    a crisp:4000-0119 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
+    a crisp:4000-0119 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3-name>
+    a sp:SpecimenName ;
+    rdf:value "Mouse retinas" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C22722> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
+    a crisp:4000-0119 .
+
+<http://smartprotocols.org/manufacturers/1>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/1-name> .
+
+<http://smartprotocols.org/manufacturers/1-name>
+    a sp:ManufacturerName ;
+    rdf:value "Sigma-Aldrich" .
+
+<http://smartprotocols.org/manufacturers/1>
+    foaf:homepage <https://www.sigmaaldrich.com/> .
+
+<http://smartprotocols.org/manufacturers/2>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/2-name> .
+
+<http://smartprotocols.org/manufacturers/2-name>
+    a sp:ManufacturerName ;
+    rdf:value "Electron Microscopy Sciences" .
+
+<http://smartprotocols.org/manufacturers/2>
+    foaf:homepage <https://www.emsdiasum.com/microscopy/> .
+
+<http://smartprotocols.org/manufacturers/3>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/3-name> .
+
+<http://smartprotocols.org/manufacturers/3-name>
+    a sp:ManufacturerName ;
+    rdf:value "Life Technologies" .
+
+<http://smartprotocols.org/manufacturers/3>
+    foaf:homepage <https://www.thermofisher.com/uk/en/home/brands/life-technologies.html> .
+
+<http://smartprotocols.org/manufacturers/4>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/4-name> .
+
+<http://smartprotocols.org/manufacturers/4-name>
+    a sp:ManufacturerName ;
+    rdf:value "Fine Science Tools" .
+
+<http://smartprotocols.org/manufacturers/4>
+    foaf:homepage <http://www.finescience.com/> .
+
+<http://smartprotocols.org/manufacturers/5>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/5-name> .
+
+<http://smartprotocols.org/manufacturers/5-name>
+    a sp:ManufacturerName ;
+    rdf:value "Thermo Fisher Scientific" .
+
+<http://smartprotocols.org/manufacturers/5>
+    foaf:homepage <https://www.thermofisher.com/uk/en/home.html> .
+
+<http://smartprotocols.org/manufacturers/6>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/6-name> .
+
+<http://smartprotocols.org/manufacturers/6-name>
+    a sp:ManufacturerName ;
+    rdf:value "Leica Microsystems" .
+
+<http://smartprotocols.org/manufacturers/6>
+    foaf:homepage <http://www.leica-microsystems.com/home/> .
+
+<http://smartprotocols.org/manufacturers/7>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/7-name> .
+
+<http://smartprotocols.org/manufacturers/7-name>
+    a sp:ManufacturerName ;
+    rdf:value "Nikon Instruments" .
+
+<http://smartprotocols.org/manufacturers/7>
+    foaf:homepage <https://www.nikoninstruments.com> .
+
+<http://smartprotocols.org/manufacturers/8>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/8-name> .
+
+<http://smartprotocols.org/manufacturers/8-name>
+    a sp:ManufacturerName ;
+    rdf:value "Zeiss" .
+
+<http://smartprotocols.org/manufacturers/8>
+    foaf:homepage <https://www.zeiss.com> .

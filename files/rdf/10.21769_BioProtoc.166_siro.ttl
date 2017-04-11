@@ -1,0 +1,426 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/10.21769/BioProtoc.166/publication> ;
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/cover-date> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/publication-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Bio-protocol" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/cover-date>
+    a prism:coverDate ;
+    rdf:value "12/20/2011" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166>
+    sp:hasTitle <http://smartprotocols.org/10.21769/BioProtoc.166/title> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "[Bio101] Subcutaneous Injection of Tumor Cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166> sp:hasIdentifier <http://smartprotocols.org/10.21769/BioProtoc.166/identifier> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "10.21769/BioProtoc.166" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166> sp:hasPurpose <http://smartprotocols.org/10.21769/BioProtoc.166/purpose> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "Subcutaneous Injection of Tumor Cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "Trypsin" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "25300-054" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/25300054> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+    owl:sameAs <http://dbpedia.org/resource/Trypsin> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+    obi:0000304 <http://smartprotocols.org/manufacturers/3> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "Dulbecco's modified eagle medium (DMEM)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "11965-092" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3>
+    foaf:homepage <https://www.thermofisher.com/uk/en/home/life-science/cell-culture/mammalian-cell-culture/classical-media/dmem.html> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000918> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/3>
+    obi:0000304 <http://smartprotocols.org/manufacturers/3> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "Fetal bovine serum (FBS)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "16000-044" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/16000044> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4>
+    owl:sameAs <http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000048> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/4>
+    obi:0000304 <http://smartprotocols.org/manufacturers/3> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "Phosphate buffered saline (PBS)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/56311855#section=Top> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/24978514#section=Top> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#PhosphateBufferedSaline> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "Trypan blue" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "15250-061" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/15250061> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6>
+    owl:sameAs <http://dbpedia.org/resource/Trypan_blue> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6>
+    obi:0000304 <http://smartprotocols.org/manufacturers/3> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "Isoflurane" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/isoflurane#section=Top> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "Matrigel" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8-catalog-number> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "356234" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8>
+    foaf:homepage <http://bd.com/resource.aspx?IDX=17841> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8>
+    owl:sameAs <http://live.dbpedia.org/page/Matrigel> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8>
+    obi:0000304 <http://smartprotocols.org/manufacturers/16> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments> .
+<http://smartprotocols.org/10.21769/BioProtoc.166> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Centrifuges" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400106> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Insulin syringe" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/336919003> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Hemocytometer" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000361> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4>
+    owl:sameAs <http://dbpedia.org/page/Hemocytometer> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/5-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/5-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Cell culture hood" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000239> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/5>
+    owl:sameAs <http://dbpedia.org/page/Fume_hood> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Incubator" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000136> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/7-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/7-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Microscope" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400169> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/8-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/8-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Small gauge" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Eppendorf tube" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#MicrocentrifugeTube> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "pipette" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10>
+    owl:sameAs <http://dbpedia.org/page/Pipette> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes> .
+<http://smartprotocols.org/10.21769/BioProtoc.166> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+    a crisp:4000-0119 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "Tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+    owl:sameAs <http://purl.bioontology.org/ontology/npo#NPO_1584> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+    a crisp:4000-0119 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+    a obi:0100026 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name>
+    a sp:SpecimenName ;
+    rdf:value "CB17 scid/scid mice" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+    owl:sameAs <https://www.ncbi.nlm.nih.gov/pubmed/8022201> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+    owl:sameAs <http://dbpedia.org/resource/Mouse> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+    a obi:0000047 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name>
+    a sp:SpecimenName ;
+    rdf:value "Cultured tumor cells in Matrigel" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+    a obi:0000047 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
+    a obi:0000047 ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name> .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name>
+    a sp:SpecimenName ;
+    rdf:value "mice injected with tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
+    a obi:0000047 .
+
+<http://smartprotocols.org/manufacturers/16>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/16-name> .
+
+<http://smartprotocols.org/manufacturers/16-name>
+    a sp:ManufacturerName ;
+    rdf:value "BD Biosciences" .
+
+<http://smartprotocols.org/manufacturers/16>
+    foaf:homepage <http://www.bdbiosciences.com/> .
+
+<http://smartprotocols.org/manufacturers/3>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/3-name> .
+
+<http://smartprotocols.org/manufacturers/3-name>
+    a sp:ManufacturerName ;
+    rdf:value "Life Technologies" .
+
+<http://smartprotocols.org/manufacturers/3>
+    foaf:homepage <https://www.thermofisher.com/uk/en/home/brands/life-technologies.html> .

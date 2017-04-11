@@ -1,0 +1,1563 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/10.1038/nprot.2009.229/publication> ;
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/cover-date> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/publication-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Defining transcribed regions using RNA-seq" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/cover-date>
+    a prism:coverDate ;
+    rdf:value "01/21/2010" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229>
+    sp:hasTitle <http://smartprotocols.org/10.1038/nprot.2009.229/title> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "Defining transcribed regions using RNA-seq" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229> sp:hasIdentifier <http://smartprotocols.org/10.1038/nprot.2009.229/identifier> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "10.1038/nprot.2009.229" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229> sp:hasPurpose <http://smartprotocols.org/10.1038/nprot.2009.229/purpose> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "We present here a validated protocol for nonstrand-specific transcriptome sequencing via rna-seq, describing the library preparation process and outlining the bioinformatic analysis procedure. While sample preparation and sequencing take a fairly short period of time (1–2 weeks), the downstream analysis is by far the most challenging and time-consuming aspect and can take weeks to months, depending on the experimental objectives." .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229> sp:hasExperimentalInput <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "Diethyl pyrocarbonate (DEPC)" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "D5758" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/d5758?lang=en&region=US> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_59051> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+    sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2/caution> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2/caution>
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
+    rdf:value "Extremely poisonous by inhalation or skin contact and causes irritation to the eye and the skin. Use glove and safety glasses and work under a fume hood." .
+
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/3-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/3-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "Distilled water (ddH2O)" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/3>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C82681> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "Ethylene diamine tetraacetic acid (EDTA) disodium dihydrate" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "E4884-100G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sial/e4884?lang=en&region=US> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_64758> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/4>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "Sodium hydroxide" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "221465" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigald/221465?lang=en&region=US> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_32145> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    owl:sameAs <http://wikidata.dbpedia.org/resource/Q102769> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5/caution> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5/caution>
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
+    rdf:value "Extremely corrosive and poisonous. Causes burns along the digestive and the respiratory tracts. Use glove and safety glasses and work under a fume hood" .
+
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/5>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "1 M Tris-HCl, pH 7.6" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "T-2788" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/t2788?lang=en&region=US> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_9754> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6>
+    owl:sameAs <http://dbpedia.org/resource/Tris> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/6>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "SDS, 10% (wt/vol) solution" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "AM9822" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/AM9822> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_8984> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7>
+    sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7/caution> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7/caution>
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
+    rdf:value "May cause severe irritation to the eye, the skin, the respiratory and the digestive tracts. Use gloves and safety glasses." .
+
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/7>
+    obi:0000304 <http://smartprotocols.org/manufacturers/21> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/8-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/8-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "Yeast strain of interest" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9-name>
+    a sp:ReagentName ;
+    rdf:value "Bacto–yeast extract" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "212750-500G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9>
+    foaf:homepage <http://catalog.bd.com/nexus-ecat/getProductDetail?productId=212750&parentCategory=1211&parentCategoryName=Microbiology%20Testing&categoryId=1269&categoryName=Dehydrated%20Culture%20Media&searchUrl=> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9>
+    obi:0000304 <http://smartprotocols.org/manufacturers/16> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10-name>
+    a sp:ReagentName ;
+    rdf:value "3 M Sodium acetate (NaAc) buffer solution, pH 5.2" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "S7899" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/s7899?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24899767> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/23662384> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/10>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11-name>
+    a sp:ReagentName ;
+    rdf:value "Glucose" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "G8270-1KG" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/g8270?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24895335> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/79025> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/67079006> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    owl:sameAs <http://purl.bioontology.org/ontology/MESH/D005947> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_17234> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    owl:sameAs <http://dbpedia.org/resource/Glucose> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/11>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12-name>
+    a sp:ReagentName ;
+    rdf:value "Difco agar" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "214530-500G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12>
+    foaf:homepage <http://www.bd.com/ds/productCenter/214530.asp> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/12>
+    obi:0000304 <http://smartprotocols.org/manufacturers/16> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13-name>
+    a sp:ReagentName ;
+    rdf:value "Histidine" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "H3751-5G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/h3751?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24895591> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/71083> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_27947> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/13>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14-name>
+    a sp:ReagentName ;
+    rdf:value "Leucine" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "855448-10G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/l7875?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24896484> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/857> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/412424004> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    owl:sameAs <http://purl.bioontology.org/ontology/MESH/D007930> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_25017> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15-name>
+    a sp:ReagentName ;
+    rdf:value "Adenine" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "A2786-25G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/a2786?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24890691> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/190> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_16708> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/70203000> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/15>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16-name>
+    a sp:ReagentName ;
+    rdf:value "Uracil" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "U1128-100G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/u1128?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24900623> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/1174> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_17568> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/420822000> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/16>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-name>
+    a sp:ReagentName ;
+    rdf:value "Lysine" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "L8021-5G" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/l5501?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/41883400> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_25094> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/24896404> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/5962> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17/caution> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17/caution>
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
+    rdf:value "May cause irritation to the eye and the skin. May cause depression of the central nervous system, cardiac disturbances, reproductive and fetal effects, cancer based on animal studies and irritation to the respiratory and the digestive tracts. Use gloves and safety glasses and work under a fume hood." .
+
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18-name>
+    a sp:ReagentName ;
+    rdf:value "Phenol–chloroform, acidic" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "P-1944" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/p1944?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19-name>
+    a sp:ReagentName ;
+    rdf:value "Qiagen RNeasy Spin mini kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "74104" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19>
+    foaf:homepage <https://www.qiagen.com/gb/shop/sample-technologies/rna/rneasy-mini-kit/#orderinginformation> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19>
+    obi:0000304 <http://smartprotocols.org/manufacturers/17> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name>
+    a sp:ReagentName ;
+    rdf:value "Qiagen Oligotex mRNA purification kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "72022" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+    foaf:homepage <https://www.qiagen.com/us/shop/sample-technologies/rna/oligotex-direct-mrna-mini-kit/#orderinginformation> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+    obi:0000304 <http://smartprotocols.org/manufacturers/17> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21-name>
+    a sp:ReagentName ;
+    rdf:value "QIAquick PCR clean-up kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "28104" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21>
+    foaf:homepage <https://www.qiagen.com/us/shop/sample-technologies/dna/qiaquick-pcr-purification-kit/#orderinginformation> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21>
+    obi:0000304 <http://smartprotocols.org/manufacturers/17> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22-name>
+    a sp:ReagentName ;
+    rdf:value "SuperScript II double-stranded cDNA synthesis kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "11917-010" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22>
+    obi:0000304 <http://smartprotocols.org/manufacturers/10> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23-name>
+    a sp:ReagentName ;
+    rdf:value "Chloroform:isoamyl alcohol (24:1)" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "C-0549" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/c0549?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23>
+    sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23/caution> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23/caution>
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
+    rdf:value "May cause irritation to the eye and the skin. May cause depression of the central nervous system, cardiac disturbances, reproductive and fetal effects, cancer based on animal studies and irritation to the respiratory and the digestive tracts. Use gloves and safety glasses and work under a fume hood." .
+
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24-name>
+    a sp:ReagentName ;
+    rdf:value "EtOH, absolute" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "7023-500ML" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/substance/ethanol46076417511> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24>
+    sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24/caution> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24/caution>
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
+    rdf:value "Highly  ammable and may cause irritation to the respiratory tract, the eye and the skin. Keep the container tightly closed. Keep away from sources of ignition." .
+
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/24>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25-name>
+    a sp:ReagentName ;
+    rdf:value "TURBO DNase" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "AM2238" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/AM2238> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25>
+    obi:0000304 <http://smartprotocols.org/manufacturers/21> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26-name>
+    a sp:ReagentName ;
+    rdf:value "QIAquick gel extraction kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "28704" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26>
+    foaf:homepage <https://www.qiagen.com/us/shop/sample-technologies/dna/qiaquick-gel-extraction-kit/#orderinginformation> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/26>
+    obi:0000304 <http://smartprotocols.org/manufacturers/17> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27-name>
+    a sp:ReagentName ;
+    rdf:value "Illumina machine reagents" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28-name>
+    a sp:ReagentName ;
+    rdf:value "Klenow (3′→5′ exo − )" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "M0212L" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28>
+    foaf:homepage <https://www.neb.com/products/m0212-klenow-fragment-3-5-exo> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28>
+    obi:0000304 <http://smartprotocols.org/manufacturers/22> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29-name>
+    a sp:ReagentName ;
+    rdf:value "T4 DNA polymerase" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "M0203S" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29>
+    foaf:homepage <https://www.neb.com/products/m0203-t4-dna-polymerase> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/29>
+    obi:0000304 <http://smartprotocols.org/manufacturers/22> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30-name>
+    a sp:ReagentName ;
+    rdf:value "T4 Quick ligation kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "M2200L" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30>
+    foaf:homepage <https://www.neb.com/products/m2200-quick-ligation-kit> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/30>
+    obi:0000304 <http://smartprotocols.org/manufacturers/22> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31-name>
+    a sp:ReagentName ;
+    rdf:value "50× TAE buffer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "161-0743" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31>
+    foaf:homepage <http://www.bio-rad.com/es-mx/sku/1610743edu-50x-tris-acetic-acid-edta-tae> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31>
+    obi:0000304 <http://smartprotocols.org/manufacturers/23> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32-name>
+    a sp:ReagentName ;
+    rdf:value "Anchored oligo(dT)20 primer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "12577011" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/12577011> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/32>
+    obi:0000304 <http://smartprotocols.org/manufacturers/10> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33-name>
+    a sp:ReagentName ;
+    rdf:value "Agarose" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "16500500" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/16500500> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33>
+    obi:0000304 <http://smartprotocols.org/manufacturers/10> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34-name>
+    a sp:ReagentName ;
+    rdf:value "Phusion Taq" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "F-540S" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34>
+    foaf:homepage <http://diagnostics.finnzymes.fi/pcr/phusion_hot_start2_high_fidelity_dna_polymerase.html> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34>
+    obi:0000304 <http://smartprotocols.org/manufacturers/24> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35-name>
+    a sp:ReagentName ;
+    rdf:value "10 mM dNTP mix" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "18427-013" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/18427013> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35>
+    obi:0000304 <http://smartprotocols.org/manufacturers/10> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/36-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/36>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/36-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/36-name>
+    a sp:ReagentName ;
+    rdf:value "RNase-free DNase" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37-name>
+    a sp:ReagentName ;
+    rdf:value "nebulization buffer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37>
+    obi:0000304 <http://smartprotocols.org/manufacturers/25> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/38-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/38>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/38-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/38-name>
+    a sp:ReagentName ;
+    rdf:value "T4 DNA ligase " .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/38>
+    foaf:homepage <https://www.neb.com/applications/dna-modification/dna-ligation/products> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/38>
+    obi:0000304 <http://smartprotocols.org/manufacturers/22> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments> .
+<http://smartprotocols.org/10.1038/nprot.2009.229> sp:hasExperimentalInput <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Illumina Genome Analyser" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/25> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "heating block" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400108> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "tabletop centrifuge" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000810> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Erlenmeyer flask" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5>
+    owl:sameAs <http://wikidata.dbpedia.org/resource/Q207490> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Nanodrop 2000" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6>
+    foaf:homepage <http://www.nanodrop.com/Productnd2000overview.aspx> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/5> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Shaker incubator" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0001076> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "50 ml Falcon tubes" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/9-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/9-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Vortex Mixer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/9>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C29544> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/10-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/10>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/10-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/10-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Thermometer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "razor blade" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/12-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/12>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/12-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/12-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "2 ml Phase-lock tubes (heavy)" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/12>
+    foaf:homepage <https://online-shop.eppendorf.com/OC-en/Laboratory-Consumables-44512/Tubes-44515/Eppendorf-Safe-Lock-Tubes-PF-8863.html> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/12>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/18> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "1.5 ml tubes" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13>
+    foaf:homepage <https://online-shop.eppendorf.com/OC-en/Laboratory-Consumables-44512/Tubes-44515/Eppendorf-Tubes-3810X-PF-9186.html> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/18> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "2.0 ml tubes" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/18> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/15-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/15>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/15-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/15-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Bioanalyzer Instrument" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/15>
+    foaf:homepage <http://www.genomics.agilent.com/en/Bioanalyzer-System/2100-Bioanalyzer-Instruments/?cid=AG-PT-106> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/15>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/26> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Agilent RNA 6000 Nano Kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16>
+    foaf:homepage <http://www.genomics.agilent.com/en/Bioanalyzer-DNA-RNA-Kits/RNA-Analysis-Kits/?cid=AG-PT-105&tabId=AG-PR-1172&searchText=5067-1511> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/26> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/17-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/17>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/17-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/17-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Agilent DNA 1000 Kit" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/17>
+    foaf:homepage <http://www.genomics.agilent.com/en/Bioanalyzer-DNA-RNA-Kits/DNA-Analysis-Kits/?cid=AG-PT-105&tabId=AG-PR-1040&searchText=5067-1504> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/17>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/26> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/18-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/18>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/18-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/18-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Computer workstation (>4 Mb RAM)" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/19-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/19>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/19-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/19-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "PCR machine" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/19>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400107> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/19>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000989> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Agarose gel electrophoresis tank" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "89032-292" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20>
+    foaf:homepage <https://us.vwr.com/store/product/4697580/vwr-midi-10-electrophoresis-system> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/20>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/27> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Adjustable desktop power supply" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "CBEPS-300X" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+    foaf:homepage <https://us.vwr.com/store/product/8277864/electrophoresis-power-supplies-cbs-scientific> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400142> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/28> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Nebulizer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-catalog-number> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "K7025-05" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+    foaf:homepage <https://www.thermofisher.com/search/results?query=K702505&resultPage=1&resultsPerPage=15&autocomplete=> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0001389> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/10> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "micropipette" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0001128> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "UV spectrophotometer" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHMO_0001803> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400115> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24>
+    owl:sameAs <http://dbpedia.org/page/Spectrophotometry> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/25-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/25>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/25-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/25-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "RNeasy spin column" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/25>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000570> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/25>
+    obi:0000304 <http://smartprotocols.org/10.1038/nprot.2009.229/manufacturers/17> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes> .
+<http://smartprotocols.org/10.1038/nprot.2009.229> sp:hasExperimentalInput <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
+    a obi:0100026 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "Schizosaccharomyces pombe" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
+    owl:sameAs <http://purl.bioontology.org/ontology/NCBITAXON/4896> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
+    owl:sameAs <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=4896&lvl=3&p=has_linkout&p=blast_url&p=genome_blast&p=mapview&lin=f&keep=1&srchmode=1&unlock> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+    a obi:0000047 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
+    a sp:SpecimenName ;
+    rdf:value "Cell pellets " .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+    a obi:0000047 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3>
+    a obi:0000047 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name>
+    a sp:SpecimenName ;
+    rdf:value "precultured yeast" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3>
+    a obi:0000047 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name>
+    a sp:SpecimenName ;
+    rdf:value "RNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
+    a obi:0000047 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name>
+    a sp:SpecimenName ;
+    rdf:value "purified RNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
+    a obi:0000047 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name>
+    a sp:SpecimenName ;
+    rdf:value "cDNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+    owl:sameAs <http://www.bioassayontology.org/bao#BAO_0000315> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7>
+    a obi:0000047 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name>
+    a sp:SpecimenName ;
+    rdf:value "diluted cDNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7>
+    a obi:0000047 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
+    a sp:SpecimenName ;
+    rdf:value "yeast cell" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#YeastCell> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name>
+    a sp:SpecimenName ;
+    rdf:value "mRNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33699> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name> .
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
+    a CHEBI:16991 ;
+    sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name>
+    a sp:SpecimenName ;
+    rdf:value "PCR product" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000406> .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
+    a CHEBI:16991 .
+
+<http://smartprotocols.org/manufacturers/17>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/17-name> .
+
+<http://smartprotocols.org/manufacturers/17-name>
+    a sp:ManufacturerName ;
+    rdf:value "Qiagen" .
+
+<http://smartprotocols.org/manufacturers/17>
+    foaf:homepage <https://www.qiagen.com/> .
+
+<http://smartprotocols.org/manufacturers/22>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/22-name> .
+
+<http://smartprotocols.org/manufacturers/22-name>
+    a sp:ManufacturerName ;
+    rdf:value "New England Biolabs (NEB)" .
+
+<http://smartprotocols.org/manufacturers/22>
+    foaf:homepage <https://www.neb.com/> .
+
+<http://smartprotocols.org/manufacturers/23>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/23-name> .
+
+<http://smartprotocols.org/manufacturers/23-name>
+    a sp:ManufacturerName ;
+    rdf:value "Bio-Rad" .
+
+<http://smartprotocols.org/manufacturers/23>
+    foaf:homepage <http://www.bio-rad.com/> .
+
+<http://smartprotocols.org/manufacturers/24>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/24-name> .
+
+<http://smartprotocols.org/manufacturers/24-name>
+    a sp:ManufacturerName ;
+    rdf:value "Finnzymes" .
+
+<http://smartprotocols.org/manufacturers/24>
+    foaf:homepage <https://www.thermofisher.com/uk/en/home/brands/thermo-scientific/molecular-biology/thermo-scientific-molecular-biology-products/finnzymes.html> .
+
+<http://smartprotocols.org/manufacturers/25>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/25-name> .
+
+<http://smartprotocols.org/manufacturers/25-name>
+    a sp:ManufacturerName ;
+    rdf:value "Illumina" .
+
+<http://smartprotocols.org/manufacturers/25>
+    foaf:homepage <https://www.illumina.com/> .
+
+<http://smartprotocols.org/manufacturers/26>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/26-name> .
+
+<http://smartprotocols.org/manufacturers/26-name>
+    a sp:ManufacturerName ;
+    rdf:value "Agilent" .
+
+<http://smartprotocols.org/manufacturers/26>
+    foaf:homepage <http://www.agilent.com/> .
+
+<http://smartprotocols.org/manufacturers/27>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/27-name> .
+
+<http://smartprotocols.org/manufacturers/27-name>
+    a sp:ManufacturerName ;
+    rdf:value "VWR International" .
+
+<http://smartprotocols.org/manufacturers/27>
+    foaf:homepage <https://uk.vwr.com/store/> .
+
+<http://smartprotocols.org/manufacturers/28>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/28-name> .
+
+<http://smartprotocols.org/manufacturers/28-name>
+    a sp:ManufacturerName ;
+    rdf:value "CBS Scientific" .
+
+<http://smartprotocols.org/manufacturers/28>
+    foaf:homepage <http://www.cbsscientific.com/> .

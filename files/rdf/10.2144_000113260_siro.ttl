@@ -1,0 +1,551 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+
+<http://smartprotocols.org/10.2144/000113260>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/10.2144/000113260/publication> ;
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/cover-date> .
+<http://smartprotocols.org/10.2144/000113260/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/publication-name> .
+<http://smartprotocols.org/10.2144/000113260/publication-name>
+    a sp:PublicationName ;
+    rdf:value "BioTechniques" .
+
+<http://smartprotocols.org/10.2144/000113260/cover-date>
+    a prism:coverDate ;
+    rdf:value "1/11/2009" .
+
+<http://smartprotocols.org/10.2144/000113260>
+    sp:hasTitle <http://smartprotocols.org/10.2144/000113260/title> .
+<http://smartprotocols.org/10.2144/000113260/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+
+<http://smartprotocols.org/10.2144/000113260> sp:hasIdentifier <http://smartprotocols.org/10.2144/000113260/identifier> .
+<http://smartprotocols.org/10.2144/000113260/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "10.2144/000113260" .
+
+<http://smartprotocols.org/10.2144/000113260> sp:hasPurpose <http://smartprotocols.org/10.2144/000113260/purpose> .
+<http://smartprotocols.org/10.2144/000113260/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+
+<http://smartprotocols.org/10.2144/000113260> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/reagents> .
+<http://smartprotocols.org/10.2144/000113260/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/reagents> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/2-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/2-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "TRIzol" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.2144/000113260/materials/reagents/2-catalog-number> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "15596026" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/15596026> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2>
+    foaf:homepage <https://en.wikipedia.org/wiki/Trizol> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2>
+    obi:0000304 <http://smartprotocols.org/manufacturers/5> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/3-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/3-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "Neutracon" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/3>
+    foaf:homepage <http://www.decon.co.uk/english/neutracon.asp> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/3>
+    obi:0000304 <http://smartprotocols.org/manufacturers/20> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/4-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/4-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "Chloroform" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sial/288306?lang=en&region=GB> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4>
+    foaf:homepage <https://en.wikipedia.org/wiki/Chloroform> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4>
+    foaf:homepage <> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_35255> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/4>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/5-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/5-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "Ethyl alcohol" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sial/459836?lang=en&region=US> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+    foaf:homepage <https://en.wikipedia.org/wiki/Ethanol> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/419442005> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_16236> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/6-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/6-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "Isopropyl alcohol" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/6>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/aldrich/w292907?lang=en&region=US&gclid=CJ3sg4jQv9ECFUIHhgodLtYMwA> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/6>
+    foaf:homepage <https://en.wikipedia.org/wiki/Isopropyl_alcohol> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/6>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_17824> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/6>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/7-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/7-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "DEPC-free water" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/7>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/8-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/8-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "RNase-free water" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/8>
+    obi:0000304 <http://smartprotocols.org/manufacturers/21> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/reagents/9-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/9>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/reagents/9-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/9-name>
+    a sp:ReagentName ;
+    rdf:value "SDS" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/recipes/1>
+    ro:part_of <http://smartprotocols.org/10.2144/000113260/materials/reagents/9> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/9>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_8984> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/9>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/Sodium_dodecyl_sulfate#section=Top> .
+
+<http://smartprotocols.org/10.2144/000113260/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/equipments> .
+<http://smartprotocols.org/10.2144/000113260> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/equipments> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/2-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/2-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Tissue storage container" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/3-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/3-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Homogenizer blades" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/4-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/4-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Forceps" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/29319002> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+    owl:sameAs <http://purl.bioontology.org/ontology/RCD/X90I6> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+    owl:sameAs <http://cognonto.com/knowledge-graph/reference-concept/?uri=Forceps> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/5-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/5-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Scalpel" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/102308008> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28218> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+    owl:sameAs <http://live.dbpedia.org/page/Scalpel> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/6-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/6-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Scalpel holder" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/7-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/7-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "ultra low temperature freezer" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000980> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/8-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/8-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "balance" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/8>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0001135> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/8>
+    owl:sameAs <http://dbpedia.org/page/Weighing_scale> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/9-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/9-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "homogenizer" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/9>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#Homogenizer> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/10-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/10-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "autoclave" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0001112> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10>
+    owl:sameAs <http://dbpedia.org/page/Autoclave> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "centrifuge" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400106> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+    owl:sameAs <http://dbpedia.org/page/Centrifuge> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/12-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/12>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/12-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/12-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "centrifuge tube / microcentrifuge tube" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/12>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#CentrifugeTube> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/12>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#MicrocentrifugeTube> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/13-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/13>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/13-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/13-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "incubator" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/13>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000136> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/14-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/14>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/14-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/14-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "vortex mixer" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/14>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C29544> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/14>
+    owl:sameAs <http://dbpedia-live.openlinksw.com/page/Vortex_mixer> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/equipments/15-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/15>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/equipments/15-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/15-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "micropipette" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/15>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0001128> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/15>
+    owl:sameAs <http://dbpedia.org/page/Pipette> .
+
+<http://smartprotocols.org/10.2144/000113260/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/recipes> .
+<http://smartprotocols.org/10.2144/000113260> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/specimens> .
+<http://smartprotocols.org/10.2144/000113260/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "tumor tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18009> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
+    a sp:SpecimenName ;
+    rdf:value "homogenized tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#HomogenizedTissue> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
+    a sp:SpecimenName ;
+    rdf:value "RNA" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33697> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name>
+    a sp:SpecimenName ;
+    rdf:value "DNA" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33696> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name> .
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
+    a obi:0000671 ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name>
+    a sp:SpecimenName ;
+    rdf:value "Protein" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_36080> .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
+    a obi:0000671 .
+
+<http://smartprotocols.org/manufacturers/20>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/20-name> .
+
+<http://smartprotocols.org/manufacturers/20-name>
+    a sp:ManufacturerName ;
+    rdf:value "Decon" .
+
+<http://smartprotocols.org/manufacturers/20>
+    foaf:homepage <http://www.decon.co.uk/> .
+
+<http://smartprotocols.org/manufacturers/21>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/21-name> .
+
+<http://smartprotocols.org/manufacturers/21-name>
+    a sp:ManufacturerName ;
+    rdf:value "Ambion" .
+
+<http://smartprotocols.org/manufacturers/21>
+    foaf:homepage <http://www.ambioncorporation.com/> .
+
+<http://smartprotocols.org/manufacturers/5>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/5-name> .
+
+<http://smartprotocols.org/manufacturers/5-name>
+    a sp:ManufacturerName ;
+    rdf:value "Thermo Fisher Scientific" .
+
+<http://smartprotocols.org/manufacturers/5>
+    foaf:homepage <https://www.thermofisher.com/uk/en/home.html> .
+
+<http://smartprotocols.org/manufacturers/1>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/1-name> .
+
+<http://smartprotocols.org/manufacturers/1-name>
+    a sp:ManufacturerName ;
+    rdf:value "Sigma-Aldrich" .
+
+<http://smartprotocols.org/manufacturers/1>
+    foaf:homepage <https://www.sigmaaldrich.com/> .
