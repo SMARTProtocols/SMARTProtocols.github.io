@@ -18,9 +18,23 @@ Makes use of external resources, federated query
 10. [Retrieve the protocols that use the reagents “Dulbecco’s modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”](#10-retrieve-the-protocols-that-use-the-reagents-dulbeccos-modified-eagle-medium-dmem-fetal-bovine-serum-fbs-and-phosphate-buffered-saline-pbs)
 11. [Retrieve all the protocols that contains Mouse as a Sample](#11-retrieve-all-the-protocols-that-contains-mouse-as-a-sample)
 12. [Retrieve all the protocols that use the software “ImageJ” along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).](#12-retrieve-all-the-protocols-that-use-the-software-imagej-along-wiht-its-homepage-httprsbinfonihgovijdownloadhtml)
-13. [Retrieve all the reagents manufactured by Sigma-Aldrich in protocol "Isolation of Lung Infiltrating Cell in Mice"](#retrieve-all-the-reagents-manufactured-by-sigma-aldrich-in-protocol-isolation-of-lung-infiltrating-cell-in-mice)
-14. [Retrieve all the diseases caused by the reagents in the protocol “Extraction of total RNA from fresh/frozen tissue (FT)”](#retrieve-all-the-diseases-caused-by-the-reagents-in-the-protocol-extraction-of-total-rna-from-freshfrozen-tissue-ft)  
-Makes use of external resources, federated query
+13. [Retrieve all the reagents manufactured by Sigma-Aldrich in protocol "Isolation of Lung Infiltrating Cell in Mice"](#13-retrieve-all-the-reagents-manufactured-by-sigma-aldrich-in-protocol-isolation-of-lung-infiltrating-cell-in-mice)
+14. [Retrieve all the diseases caused by the reagents in the protocol “Extraction of total RNA from fresh/frozen tissue (FT)”](#14-retrieve-all-the-diseases-caused-by-the-reagents-in-the-protocol-extraction-of-total-rna-from-freshfrozen-tissue-ft)  
+Makes use of external resources, federated query  
+15. [Retrieve all the protocols with “Schizosaccharomyces pombe” in their samples lists](#15-retrieve-all-the-protocols-with-schizosaccharomyces-pombe-in-their-samples-lists)  
+16. [Retrieve all the protocols with procedures and subprocedures](#16-retrieve-all-the-protocols-with-procedures-and-subprocedures)  
+17. [Retrieve the critical steps included in the protocol titled “[Bio101] Subcutaneous Injection of Tumor Cells”](#17-retrieve-the-critical-steps-included-in-the-protocol-titled-bio101-subcutaneous-injection-of-tumor-cells)
+18. [Retrieve the advantages and limitations of the protocol titled “Defining transcribed regions using RNA-seq”](#18-retrieve-the-advantages-and-limitations-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq)  
+19. [Retrieve the recipe list of the protocol titled “Defining transcribed regions using RNA-seq”](#19-retrieve-the-recipe-list-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq) 
+20. [For the protocol titled “Defining transcribed regions using RNA-seq”, give me the steps that include cautions as alert message and the materials participating in such step](#20-for-the-protocol-titled-defining-transcribed-regions-using-rna-seq-give-me-the-steps-that-include-cautions-as-alert-message-and-the-materials-participating-in-such-step)  
+21. [Retrieve the provenance of the protocol titled “Scratch Wound Healing Assay”
+](#21-retrieve-the-provenance-of-the-protocol-titled-scratch-wound-healing-assay) 
+22. [Retrieve the specimen names that could be tested in the protocols titled “A simplified universal genomic DNA extraction protocol suitable for PCR” and “RNA Isolation from Synechocystis”](#22-retrieve-the-specimen-names-that-could-be-tested-in-the-protocols-titled-a-simplified-universal-genomic-dna-extraction-protocol-suitable-for-pcr-and-rna-isolation-from-synechocystis)  
+
+
+
+
+
 
 
 ## 1. Retrieve all the protocols with samples that belongs to the *Rodent* order  
@@ -373,4 +387,173 @@ WHERE {
   }
   ?specimen owl:sameAs ?externalUri .
 }
+```
+
+## 15. Retrieve all the protocols with “Schizosaccharomyces pombe” in their samples lists
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E+%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+%3Ftitle%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri+.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%22Schizosaccharomyces+pombe%22+.%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?title
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocol sp:hasExperimentalInput ?specimens .
+  ?specimens a sp:SpecimenList .
+  ?specimens ro:has_part ?specimenNameUri .
+  ?specimenNameUri rdf:value "Schizosaccharomyces pombe" .
+}
+```
+
+## 16. Retrieve all the protocols with procedures and subprocedures
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Ftitle%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3FprotocolExecution+sp%3AisDocumentedIn+%3Fprotocol+.%0D%0A++%3FprotocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++%3Fprocedure+sp%3AhasSubprocedure+%3Fsubprocedure+.%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?title
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocolExecution sp:isDocumentedIn ?protocol .
+  ?protocolExecution sp:hasProcedure ?procedure .
+  ?procedure sp:hasSubprocedure ?subprocedure .
+}
+```
+
+## 17. Retrieve the critical steps included in the protocol titled “[Bio101] Subcutaneous Injection of Tumor Cells”
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+%3FsubprocedureDesc+%3FcriticalStepDescription%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22%5BBio101%5D+Subcutaneous+Injection+of+Tumor+Cells%22+.%0D%0A++%3FprotocolExecution+sp%3AisDocumentedIn+%3Fprotocol+.%0D%0A++%3FprotocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++%3Fprocedure+sp%3AhasSubprocedure+%3Fsubprocedure+.%0D%0A++%3Fsubprocedure+sp%3AhasAlertMessage+%3FcriticalStep+.%0D%0A++%3Fsubprocedure+sp%3AhasDescription+%3FsubprocedureDescUri+.%0D%0A++%3FsubprocedureDescUri+rdf%3Avalue+%3FsubprocedureDesc+.%0D%0A++%3FcriticalStep+a+sp%3ACriticalStep+.%0D%0A++%3FcriticalStep+rdf%3Avalue+%3FcriticalStepDescription+.%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?subprocedureDesc ?criticalStepDescription
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value "[Bio101] Subcutaneous Injection of Tumor Cells" .
+  ?protocolExecution sp:isDocumentedIn ?protocol .
+  ?protocolExecution sp:hasProcedure ?procedure .
+  ?procedure sp:hasSubprocedure ?subprocedure .
+  ?subprocedure sp:hasAlertMessage ?criticalStep .
+  ?subprocedure sp:hasDescription ?subprocedureDescUri .
+  ?subprocedureDescUri rdf:value ?subprocedureDesc .
+  ?criticalStep a sp:CriticalStep .
+  ?criticalStep rdf:value ?criticalStepDescription .
+}
+```
+
+## 18. Retrieve the advantages and limitations of the protocol titled “Defining transcribed regions using RNA-seq”
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+%3Fadvantage+%3Flimitation%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22Defining+transcribed+regions+using+RNA-seq%22+.%0D%0A++%3Fprotocol+sp%3AhasAdvantage+%3FadvantageUri+.%0D%0A++%3Fprotocol+sp%3AhasLimitation+%3FlimitationUri+.%0D%0A++%3FadvantageUri+rdf%3Avalue+%3Fadvantage+.%0D%0A++%3FlimitationUri+rdf%3Avalue+%3Flimitation+.%0D%0A++%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?advantage ?limitation
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value "Defining transcribed regions using RNA-seq" .
+  ?protocol sp:hasAdvantage ?advantageUri .
+  ?protocol sp:hasLimitation ?limitationUri .
+  ?advantageUri rdf:value ?advantage .
+  ?limitationUri rdf:value ?limitation .
+  
+}
+```
+
+## 19. Retrieve the recipe list of the protocol titled “Defining transcribed regions using RNA-seq”
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0A%0D%0ASELECT+%3FrecipeName%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22Defining+transcribed+regions+using+RNA-seq%22+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Frecipes+.%0D%0A++%3Frecipes+a+sp%3ARecipeList+.%0D%0A++%3Frecipes+ro%3Ahas_part+%3FrecipeNameUri+.%0D%0A++%3FrecipeNameUri+rdf%3Avalue+%3FrecipeName+.%0D%0A++%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+
+SELECT ?recipeName
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value "Defining transcribed regions using RNA-seq" .
+  ?protocol sp:hasExperimentalInput ?recipes .
+  ?recipes a sp:RecipeList .
+  ?recipes ro:has_part ?recipeNameUri .
+  ?recipeNameUri rdf:value ?recipeName .
+}
+```
+
+## 20. For the protocol titled “Defining transcribed regions using RNA-seq”, give me the steps that include cautions as alert message and the materials participating in such step
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+%3FsubprocedureDesc+%3FcautionDescription%0D%0A+++++++%28group_concat%28%3FreagentName%3B+separator%3D%22+%2C+%22%29+as+%3FreagentsNames%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22Defining+transcribed+regions+using+RNA-seq%22+.%0D%0A++%3FprotocolExecution+sp%3AisDocumentedIn+%3Fprotocol+.%0D%0A++%3FprotocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++%3Fprocedure+sp%3AhasSubprocedure+%3Fsubprocedure+.%0D%0A++%3Fsubprocedure+sp%3AhasAlertMessage+%3Fcaution+.%0D%0A++%3Fsubprocedure+sp%3AhasDescription+%3FsubprocedureDescUri+.%0D%0A++%3FsubprocedureDescUri+rdf%3Avalue+%3FsubprocedureDesc+.%0D%0A++%3Fcaution+a+%3Chttp%3A%2F%2Fwww.owl-ontologies.com%2FOntology1184060740.owl%23Class_122%3E+.%0D%0A++%3Fcaution+rdf%3Avalue+%3FcautionDescription+.%0D%0A++%3FreagentNameUri+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000056%3E+%3Fsubprocedure+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A%7D+GROUP+BY+%3FsubprocedureDesc+%3FcautionDescription&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?subprocedureDesc ?cautionDescription
+       (group_concat(?reagentName; separator=" , ") as ?reagentsNames)
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value "Defining transcribed regions using RNA-seq" .
+  ?protocolExecution sp:isDocumentedIn ?protocol .
+  ?protocolExecution sp:hasProcedure ?procedure .
+  ?procedure sp:hasSubprocedure ?subprocedure .
+  ?subprocedure sp:hasAlertMessage ?caution .
+  ?subprocedure sp:hasDescription ?subprocedureDescUri .
+  ?subprocedureDescUri rdf:value ?subprocedureDesc .
+  ?caution a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> .
+  ?caution rdf:value ?cautionDescription .
+  ?reagentNameUri <http://purl.obolibrary.org/obo/RO_0000056> ?subprocedure .
+  ?reagentNameUri rdf:value ?reagentName .
+} GROUP BY ?subprocedureDesc ?cautionDescription
+```
+
+## 21. Retrieve the provenance of the protocol titled “Scratch Wound Healing Assay”
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+%3Fprovenance%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22Scratch+Wound+Healing+Assay%22++.%0D%0A++%3Fprotocol+sp%3AhasProvenance+%3FprovenanceUri+.%0D%0A++%3FprovenanceUri+rdf%3Avalue+%3Fprovenance+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?provenance
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value "Scratch Wound Healing Assay"  .
+  ?protocol sp:hasProvenance ?provenanceUri .
+  ?provenanceUri rdf:value ?provenance .
+}
+```
+
+## 22. Retrieve the specimen names that could be tested in the protocols titled “A simplified universal genomic DNA extraction protocol suitable for PCR” and “RNA Isolation from Synechocystis”
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0A%0D%0ASELECT+%3Ftitle%0D%0A%28group_concat%28distinct%28%3FspecimenName%29%3B+separator%3D%22+%2C+%22%29+as+%3FspecimenNames%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri+.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++FILTER%28%3Ftitle+%3D+%22A+simplified+universal+genomic+DNA+extraction+protocol+suitable+for+PCR%22+%7C%7C+%3Ftitle+%3D+%22RNA+Isolation+from+Synechocystis%22%29%0D%0A%7D+GROUP+BY+%3Ftitle&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+
+SELECT ?title
+(group_concat(distinct(?specimenName); separator=" , ") as ?specimenNames)
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocol sp:hasExperimentalInput ?specimens .
+  ?specimens a sp:SpecimenList .
+  ?specimens ro:has_part ?specimenNameUri .
+  ?specimenNameUri rdf:value ?specimenName .
+  FILTER(?title = "A simplified universal genomic DNA extraction protocol suitable for PCR" || ?title = "RNA Isolation from Synechocystis")
+} GROUP BY ?title
 ```
