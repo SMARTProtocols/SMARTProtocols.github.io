@@ -22,35 +22,32 @@ permalink: /queries/
 
 ## 1. Retrieve all the protocols with samples that belongs to the *Rodent* order
 ### Makes use of external resources
-<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fhttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3FspecimenName+%3FdbpediaDesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fmaterials+.%0D%0A++%3Fmaterials+a+sp%3AMaterialsSection+.%0D%0A++%3Fmaterials+ro%3Ahas_part+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri+.%0D%0A++%3Fspecimen+sp%3AhasName+%3FspecimenNameUri+.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++%3Fspecimen+owl%3AsameAs+%3FexternalUri+.%0D%0A%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E%0D%0A++%7B%0D%0A++++%3FexternalUri+dbo%3Aorder+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FRodent%3E+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3FdbpediaDesc+.%0D%0A++++FILTER%28lang%28%3FdbpediaDesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3FspecimenName%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++%3Fspecimen+sp%3AhasName+%3FspecimenNameUri.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E%0D%0A++%7B%0D%0A++++%3FexternalUri+dbo%3Aorder+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FRodent%3E+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3FdbpediaDesc+.%0D%0A++++FILTER%28lang%28%3FdbpediaDesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A++%3Fspecimen+owl%3AsameAs+%3FexternalUri+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 
-SELECT ?title ?specimenName ?dbpediaDesc
+SELECT ?title ?specimenName
 WHERE {
   ?protocol sp:hasTitle ?title_uri .
   ?title_uri rdf:value ?title .
-  ?protocol ro:has_part ?materials .
-  ?materials a sp:MaterialsSection .
-  ?materials ro:has_part ?specimens .
+  ?protocol sp:hasExperimentalInput ?specimens .
   ?specimens a sp:SpecimenList .
-  ?specimens ro:has_part ?specimenNameUri .
-  ?specimen sp:hasName ?specimenNameUri .
+  ?specimens ro:has_part ?specimenNameUri.
   ?specimenNameUri rdf:value ?specimenName .
-  ?specimen owl:sameAs ?externalUri .
-
+  ?specimen sp:hasName ?specimenNameUri.
   SERVICE <https://dbpedia.org/sparql>
   {
     ?externalUri dbo:order <http://dbpedia.org/resource/Rodent> .
     ?externalUri rdfs:comment ?dbpediaDesc .
     FILTER(lang(?dbpediaDesc) = 'en')
   }
+  ?specimen owl:sameAs ?externalUri .
 }
 ```
 
