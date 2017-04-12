@@ -1,11 +1,14 @@
 ---
 layout: page
-title: Queries
+title: Competency questions
 permalink: /queries/
 ---
 1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#1-retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)
+Makes use of external resources, federated query
 2. [Retrieve all the protocols with reagents of type Enzyme](#2-retrieve-all-the-protocols-with-reagents-of-type-enzyme)
+Makes use of external resources, federated query
 3. [Retrieve all the protocols with reagents of type Alcohol](#3-retrieve-all-the-protocols-with-reagents-of-type-alcohol)
+Makes use of external resources, federated query
 4. [Retrieve all the reagents along with the different web sites to buy them and all the different manufacturers registered for every reagent](#4-retrieve-all-the-reagents-along-with-the-different-web-sites-to-buy-them-and-all-the-different-manufacturers-registered-for-every-reagent)
 5. [Retrieve all the protocols with Fetal bovine serum (FBS) as a reagent](#5-retrieve-all-the-protocols-with-fetal-bovine-serum-fbs-as-a-reagent)
 6. [Retrieve the application of the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](#6-retrieve-the-application-of-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
