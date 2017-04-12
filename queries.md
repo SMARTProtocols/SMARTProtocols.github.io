@@ -14,8 +14,7 @@ permalink: /queries/
 9. [Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#9-retrieve-the-reagent-list-and-equipment-and-supplies-list-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
 10. [Retrieve the protocols that use the reagents “Dulbecco’s modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”](#10-retrieve-the-protocols-that-use-the-reagents-dulbeccos-modified-eagle-medium-dmem-fetal-bovine-serum-fbs-and-phosphate-buffered-saline-pbs)
 11. [Retrieve all the protocols that contains Mouse as a Sample](#11-retrieve-all-the-protocols-that-contains-mouse-as-a-sample)
-12. [Retrieve all the instruments and reagents used in the protocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”](#12-retrieve-all-the-instruments-and-reagents-used-in-the-protocol-mouse-retinal-whole-mounts-and-quantification-of-vasculature-protocol)
-13. [Retrieve all the protocols that use the software “ImageJ” along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).](#13-retrieve-all-the-protocols-that-use-the-software-imagej-along-wiht-its-homepage-httprsbinfonihgovijdownloadhtml)
+12. [Retrieve all the protocols that use the software “ImageJ” along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).](#12-retrieve-all-the-protocols-that-use-the-software-imagej-along-wiht-its-homepage-httprsbinfonihgovijdownloadhtml)
 
 
 
@@ -206,7 +205,7 @@ SELECT ?protocolPurpose
 }
 ```
 
-## 9. Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”
+## 9. Retrieve all the instruments and reagents used in the protocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0A%0D%0ASELECT+%28group_concat%28distinct%28%3FreagentName%29%3Bseparator%3D%22+%7C+%22%29+as+%3FprotocolReagents%29%0D%0A+++++++%28group_concat%28distinct%28%3FequipmentName%29%3Bseparator%3D%22+%7C+%22%29+as+%3FprotocolInstruments%29%0D%0AWHERE+%7B%0D%0A++++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++++%3Ftitle_uri+rdf%3Avalue+%22Isolation+of+Lung+Infiltrating+Cell+in+Mice%22+.%0D%0A++++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++++%3Freagents+a+sp%3AReagentList+.%0D%0A++++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++++%3Fprotocol+sp%3AhasExperimentalInput+%3Fequipment+.%0D%0A++++%3Fequipment+a+sp%3AEquipmentAndSuppliesList+.%0D%0A++++%3Fequipment+ro%3Ahas_part+%3FequipmentNameUri+.%0D%0A++++%3FequipmentNameUri+rdf%3Avalue+%3FequipmentName+.%0D%0A%7D+GROUP+BY+%3Fprotocol&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 ``` 
@@ -218,7 +217,7 @@ SELECT (group_concat(distinct(?reagentName);separator=" | ") as ?protocolReagent
        (group_concat(distinct(?equipmentName);separator=" | ") as ?protocolInstruments)
 WHERE {
     ?protocol sp:hasTitle ?title_uri .
-    ?title_uri rdf:value "Isolation of Lung Infiltrating Cell in Mice" .
+    ?title_uri rdf:value "Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol" .
     ?protocol sp:hasExperimentalInput ?reagents .
     ?reagents a sp:ReagentList .
     ?reagents ro:has_part ?reagentNameUri .
@@ -285,39 +284,14 @@ WHERE {
 }
 ```
 
-## 12. Retrieve all the instruments and reagents used in the protocol “Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol”
+## 12. Retrieve all the protocols that use the software "ImageJ" along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+p-plan%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2Fp-plan%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle++%3Fdownload%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3FsoftwareList+.%0D%0A++%3FsoftwareList+a+sp%3ASoftwareList+.%0D%0A++%3FsoftwareList+ro%3Ahas_part+%3FsoftwareNameUri+.%0D%0A++%3Fsoftware+sp%3AhasName+%3FsoftwareNameUri+.%0D%0A++%3FsoftwareNameUri+rdf%3Avalue+%22ImageJ+software%22+.%0D%0A++%3Fsoftware+foaf%3Ahomepage+%3Fdownload+.%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX p-plan: <http://purl.org/net/p-plan#>
-PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dbo: <http://dbpedia.org/ontology/>
-
-SELECT ?reagentName
-WHERE {
-  ?protocol sp:hasTitle ?title_uri .
-  ?title_uri rdf:value "Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol" .
-  ?protocol ro:hasPart ?materials .
-  ?materials a sp:MaterialsSection .
-  ?materials ro:hasPart ?reagents .
-  ?reagents a sp:ReagentList .
-  ?reagents ro:hasPart ?reagent .
-  ?reagent sp:hasName ?nameUri .
-  ?nameUri rdf:value ?reagentName .
-}
-```
-
-## 13. Retrieve all the protocols that use the software "ImageJ" along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).
-
-```
-PREFIX sp: <http://purl.org/net/SMARTprotocol#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX p-plan: <http://purl.org/net/p-plan#>
-PREFIX ro: <http://http://www.obofoundry.org/ro/ro.owl#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -327,13 +301,11 @@ SELECT ?title  ?download
 WHERE {
   ?protocol sp:hasTitle ?title_uri .
   ?title_uri rdf:value ?title .
-  ?protocol ro:hasPart ?materials .
-  ?materials a sp:MaterialsSection .
-  ?materials ro:hasPart ?softwareList .
+  ?protocol sp:hasExperimentalInput ?softwareList .
   ?softwareList a sp:SoftwareList .
-  ?softwareList ro:hasPart ?software .
-  ?software sp:hasName ?nameUri .
-  ?nameUri rdf:value "ImageJ software" .
+  ?softwareList ro:has_part ?softwareNameUri .
+  ?software sp:hasName ?softwareNameUri .
+  ?softwareNameUri rdf:value "ImageJ software" .
   ?software foaf:homepage ?download .
 }
 ```
