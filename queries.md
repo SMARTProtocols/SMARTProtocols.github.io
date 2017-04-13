@@ -194,7 +194,7 @@ SELECT ?protocolApplication
 ```
 
 ## 7. Retrieve the procedure labels involved in the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”
-<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+%3FprocedureLabel%0D%0A%7B%0D%0A++++%3FexperimentalProtocol+sp%3AhasTitle+%3FtitleUri+.%0D%0A++++%3FtitleUri+rdf%3Avalue+%22Extraction+of+total+RNA+from+fresh%2Ffrozen+tissue+%28FT%29%22+.%0D%0A++++%3FexperimentalProtocolExecution+sp%3AdocumentedIn+%3FexperimentalProtocol+.%0D%0A++++%3FexperimentalProtocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++++%3Fprocedure+rdfs%3Alabel+%3FprocedureLabel+.%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+%3FprocedureLabel%0D%0A%7B%0D%0A++++%3FexperimentalProtocol+sp%3AhasTitle+%3FtitleUri+.%0D%0A++++%3FtitleUri+rdf%3Avalue+%22Extraction+of+total+RNA+from+fresh%2Ffrozen+tissue+%28FT%29%22+.%0D%0A++++%3FexperimentalProtocolExecution+sp%3AisDocumentedIn+%3FexperimentalProtocol+.%0D%0A++++%3FexperimentalProtocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++++%3Fprocedure+rdfs%3Alabel+%3FprocedureLabel+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
@@ -205,7 +205,7 @@ SELECT ?procedureLabel
 {
     ?experimentalProtocol sp:hasTitle ?titleUri .
     ?titleUri rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
-    ?experimentalProtocolExecution sp:documentedIn ?experimentalProtocol .
+    ?experimentalProtocolExecution sp:isDocumentedIn ?experimentalProtocol .
     ?experimentalProtocolExecution sp:hasProcedure ?procedure .
     ?procedure rdfs:label ?procedureLabel .
 }
@@ -359,7 +359,7 @@ WHERE {
 
 ## 14. Retrieve all the diseases caused by the reagents in the protocol "Extraction of total RNA from fresh/frozen tissue (FT)”  
 Makes use of external resources, federated query  
-<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3FspecimenName%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fspecimens+.%0D%0A++%3Fspecimens+a+sp%3ASpecimenList+.%0D%0A++%3Fspecimens+ro%3Ahas_part+%3FspecimenNameUri.%0D%0A++%3FspecimenNameUri+rdf%3Avalue+%3FspecimenName+.%0D%0A++%3Fspecimen+sp%3AhasName+%3FspecimenNameUri.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E%0D%0A++%7B%0D%0A++++%3FexternalUri+dbo%3Aorder+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FRodent%3E+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3FdbpediaDesc+.%0D%0A++++FILTER%28lang%28%3FdbpediaDesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A++%3Fspecimen+owl%3AsameAs+%3FexternalUri+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0A%0D%0ASELECT+%3FreagentName+%3FreagentSame+%3FdiseaseLabel%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22Extraction+of+total+RNA+from+fresh%2Ffrozen+tissue+%28FT%29%22+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FreagentSame+.%0D%0A++%0D%0A++SERVICE+%3Chttp%3A%2F%2Fsparql.bioontology.org%2Fontologies%2Fsparql%2F%3Fapikey%3Da73da08b-e9ba-4d26-9e4b-e71b70376572%3E+%7B%0D%0A++++%3FreagentSame+%3Chttp%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2Fcausative_agent_of%3E+%3FdiseaseUri.%0D%0A++++%3FdiseaseUri+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel%3E+%3FdiseaseLabel+.%0D%0A++%7D%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 
 ```
@@ -367,25 +367,22 @@ PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dbo: <http://dbpedia.org/ontology/>
 
-SELECT ?title ?specimenName
+SELECT ?reagentName ?reagentSame ?diseaseLabel
 WHERE {
   ?protocol sp:hasTitle ?title_uri .
-  ?title_uri rdf:value ?title .
-  ?protocol sp:hasExperimentalInput ?specimens .
-  ?specimens a sp:SpecimenList .
-  ?specimens ro:has_part ?specimenNameUri.
-  ?specimenNameUri rdf:value ?specimenName .
-  ?specimen sp:hasName ?specimenNameUri.
-  SERVICE <https://dbpedia.org/sparql>
-  {
-    ?externalUri dbo:order <http://dbpedia.org/resource/Rodent> .
-    ?externalUri rdfs:comment ?dbpediaDesc .
-    FILTER(lang(?dbpediaDesc) = 'en')
+  ?title_uri rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+  ?protocol sp:hasExperimentalInput ?reagents .
+  ?reagents a sp:ReagentList .
+  ?reagents ro:has_part ?reagentNameUri .
+  ?reagentNameUri rdf:value ?reagentName .
+  ?reagent sp:hasName ?reagentNameUri .
+  ?reagent owl:sameAs ?reagentSame .
+  
+  SERVICE <http://sparql.bioontology.org/ontologies/sparql/?apikey=a73da08b-e9ba-4d26-9e4b-e71b70376572> {
+    ?reagentSame <http://purl.bioontology.org/ontology/SNOMEDCT/causative_agent_of> ?diseaseUri.
+    ?diseaseUri <http://www.w3.org/2004/02/skos/core#prefLabel> ?diseaseLabel .
   }
-  ?specimen owl:sameAs ?externalUri .
 }
 ```
 
