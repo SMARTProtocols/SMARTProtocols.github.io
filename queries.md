@@ -3,33 +3,33 @@ layout: page
 title: Competency questions
 permalink: /queries/
 ---
-1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)  
+1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#1-retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)  
 Makes use of external resources, federated query
-2. [Retrieve all the protocols with reagents of type Enzyme](#retrieve-all-the-protocols-with-reagents-of-type-enzyme)  
+2. [Retrieve all the protocols with reagents of type Enzyme](#2-retrieve-all-the-protocols-with-reagents-of-type-enzyme)  
 Makes use of external resources, federated query
-3. [Retrieve all the protocols with reagents of type Alcohol](#retrieve-all-the-protocols-with-reagents-of-type-alcohol)  
+3. [Retrieve all the protocols with reagents of type Alcohol](#3-retrieve-all-the-protocols-with-reagents-of-type-alcohol)  
 Makes use of external resources, federated query
-4. [Retrieve all the reagents along with the different web sites to buy them and all the different manufacturers registered for every reagent](#retrieve-all-the-reagents-along-with-the-different-web-sites-to-buy-them-and-all-the-different-manufacturers-registered-for-every-reagent)
-5. [Retrieve all the protocols with Fetal bovine serum (FBS) as a reagent](#retrieve-all-the-protocols-with-fetal-bovine-serum-fbs-as-a-reagent)
-6. [Retrieve the application of the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](#retrieve-the-application-of-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
-7. [Retrieve the procedure labels involved in the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](#retrieve-the-procedure-labels-involved-in-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
-8. [Retrieve the purpose of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#retrieve-the-purpose-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
-9. [Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#retrieve-the-reagent-list-and-equipment-and-supplies-list-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
-10. [Retrieve the protocols that use the reagents “Dulbecco’s modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”](#retrieve-the-protocols-that-use-the-reagents-dulbeccos-modified-eagle-medium-dmem-fetal-bovine-serum-fbs-and-phosphate-buffered-saline-pbs)
-11. [Retrieve all the protocols that contains Mouse as a Sample](#retrieve-all-the-protocols-that-contains-mouse-as-a-sample)
-12. [Retrieve all the protocols that use the software “ImageJ” along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).](#retrieve-all-the-protocols-that-use-the-software-imagej-along-wiht-its-homepage-httprsbinfonihgovijdownloadhtml)
-13. [Retrieve all the reagents manufactured by Sigma-Aldrich in protocol "Isolation of Lung Infiltrating Cell in Mice"](#retrieve-all-the-reagents-manufactured-by-sigma-aldrich-in-protocol-isolation-of-lung-infiltrating-cell-in-mice)
-14. [Retrieve all the diseases caused by the reagents in the protocol “Extraction of total RNA from fresh/frozen tissue (FT)”](#retrieve-all-the-diseases-caused-by-the-reagents-in-the-protocol-extraction-of-total-rna-from-freshfrozen-tissue-ft)  
+4. [Retrieve all the reagents along with the different web sites to buy them and all the different manufacturers registered for every reagent](#4-retrieve-all-the-reagents-along-with-the-different-web-sites-to-buy-them-and-all-the-different-manufacturers-registered-for-every-reagent)
+5. [Retrieve all the protocols with Fetal bovine serum (FBS) as a reagent](#5-retrieve-all-the-protocols-with-fetal-bovine-serum-fbs-as-a-reagent)
+6. [Retrieve the application of the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](#6-retrieve-the-application-of-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
+7. [Retrieve the procedure labels involved in the protocol titled “Extraction of total RNA from fresh/frozen tissue (FT)”](#7-retrieve-the-procedure-labels-involved-in-the-protocol-titled-extraction-of-total-rna-from-freshfrozen-tissue-ft)
+8. [Retrieve the purpose of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#8-retrieve-the-purpose-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
+9. [Retrieve the reagent list and equipment and supplies list of the protocol titled “Isolation of Lung Infiltrating Cell in Mice”](#9-retrieve-the-reagent-list-and-equipment-and-supplies-list-of-the-protocol-titled-isolation-of-lung-infiltrating-cell-in-mice)
+10. [Retrieve the protocols that use the reagents “Dulbecco’s modified eagle medium (DMEM)”, “Fetal bovine serum (FBS)” and “Phosphate buffered saline (PBS)”](#10-retrieve-the-protocols-that-use-the-reagents-dulbeccos-modified-eagle-medium-dmem-fetal-bovine-serum-fbs-and-phosphate-buffered-saline-pbs)
+11. [Retrieve all the protocols that contains Mouse as a Sample](#11-retrieve-all-the-protocols-that-contains-mouse-as-a-sample)
+12. [Retrieve all the protocols that use the software “ImageJ” along wiht its homepage (http://rsb.info.nih.gov/ij/download.html).](#12-retrieve-all-the-protocols-that-use-the-software-imagej-along-wiht-its-homepage-httprsbinfonihgovijdownloadhtml)
+13. [Retrieve all the reagents manufactured by Sigma-Aldrich in protocol "Isolation of Lung Infiltrating Cell in Mice"](#13-retrieve-all-the-reagents-manufactured-by-sigma-aldrich-in-protocol-isolation-of-lung-infiltrating-cell-in-mice)
+14. [Retrieve all the diseases caused by the reagents in the protocol “Extraction of total RNA from fresh/frozen tissue (FT)”](#14-retrieve-all-the-diseases-caused-by-the-reagents-in-the-protocol-extraction-of-total-rna-from-freshfrozen-tissue-ft)  
 Makes use of external resources, federated query  
-15. [Retrieve all the protocols with “Schizosaccharomyces pombe” in their samples lists](#retrieve-all-the-protocols-with-schizosaccharomyces-pombe-in-their-samples-lists)  
-16. [Retrieve all the protocols with procedures and subprocedures](#retrieve-all-the-protocols-with-procedures-and-subprocedures)  
-17. [Retrieve the critical steps included in the protocol titled “[Bio101] Subcutaneous Injection of Tumor Cells”](#retrieve-the-critical-steps-included-in-the-protocol-titled-bio101-subcutaneous-injection-of-tumor-cells)
-18. [Retrieve the advantages and limitations of the protocol titled “Defining transcribed regions using RNA-seq”](#retrieve-the-advantages-and-limitations-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq)  
-19. [Retrieve the recipe list of the protocol titled “Defining transcribed regions using RNA-seq”](#retrieve-the-recipe-list-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq) 
-20. [For the protocol titled “Defining transcribed regions using RNA-seq”, give me the steps that include cautions as alert message and the materials participating in such step](#for-the-protocol-titled-defining-transcribed-regions-using-rna-seq-give-me-the-steps-that-include-cautions-as-alert-message-and-the-materials-participating-in-such-step)  
+15. [Retrieve all the protocols with “Schizosaccharomyces pombe” in their samples lists](#15-retrieve-all-the-protocols-with-schizosaccharomyces-pombe-in-their-samples-lists)  
+16. [Retrieve all the protocols with procedures and subprocedures](#16-retrieve-all-the-protocols-with-procedures-and-subprocedures)  
+17. [Retrieve the critical steps included in the protocol titled “[Bio101] Subcutaneous Injection of Tumor Cells”](#17-retrieve-the-critical-steps-included-in-the-protocol-titled-bio101-subcutaneous-injection-of-tumor-cells)
+18. [Retrieve the advantages and limitations of the protocol titled “Defining transcribed regions using RNA-seq”](#18-retrieve-the-advantages-and-limitations-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq)  
+19. [Retrieve the recipe list of the protocol titled “Defining transcribed regions using RNA-seq”](#19-retrieve-the-recipe-list-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq) 
+20. [For the protocol titled “Defining transcribed regions using RNA-seq”, give me the steps that include cautions as alert message and the materials participating in such step](#20-for-the-protocol-titled-defining-transcribed-regions-using-rna-seq-give-me-the-steps-that-include-cautions-as-alert-message-and-the-materials-participating-in-such-step)  
 21. [Retrieve the provenance of the protocol titled “Scratch Wound Healing Assay”
-](#retrieve-the-provenance-of-the-protocol-titled-scratch-wound-healing-assay) 
-22. [Retrieve the specimen names that could be tested in the protocols titled “A simplified universal genomic DNA extraction protocol suitable for PCR” and “RNA Isolation from Synechocystis”](#retrieve-the-specimen-names-that-could-be-tested-in-the-protocols-titled-a-simplified-universal-genomic-dna-extraction-protocol-suitable-for-pcr-and-rna-isolation-from-synechocystis)  
+](#21-retrieve-the-provenance-of-the-protocol-titled-scratch-wound-healing-assay) 
+22. [Retrieve the specimen names that could be tested in the protocols titled “A simplified universal genomic DNA extraction protocol suitable for PCR” and “RNA Isolation from Synechocystis”](#22-retrieve-the-specimen-names-that-could-be-tested-in-the-protocols-titled-a-simplified-universal-genomic-dna-extraction-protocol-suitable-for-pcr-and-rna-isolation-from-synechocystis)  
 
 
 
