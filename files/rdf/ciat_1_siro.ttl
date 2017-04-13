@@ -1,0 +1,346 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
+
+<http://smartprotocols.org/ciat_1>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/ciat_1/publication> ;
+    ro:has_part <http://smartprotocols.org/ciat_1/cover-date> .
+<http://smartprotocols.org/ciat_1/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/ciat_1/publication-name> .
+<http://smartprotocols.org/ciat_1/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Biotechnology lab - CIAT" .
+
+<http://smartprotocols.org/ciat_1/cover-date>
+    a prism:coverDate ;
+    rdf:value "01/01/2000" .
+
+<http://smartprotocols.org/ciat_1>
+    sp:hasTitle <http://smartprotocols.org/ciat_1/title> .
+<http://smartprotocols.org/ciat_1/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "Extracción de ADN total (Neoleucinodes - CIAT)" .
+
+<http://smartprotocols.org/ciat_1> sp:hasIdentifier <http://smartprotocols.org/ciat_1/identifier> .
+<http://smartprotocols.org/ciat_1/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "ciat_1" .
+
+<http://smartprotocols.org/ciat_1> sp:hasPurpose <http://smartprotocols.org/ciat_1/purpose> .
+<http://smartprotocols.org/ciat_1/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "Extracción de ADN total (Neoleucinodes - CIAT)" .
+
+<http://smartprotocols.org/ciat_1> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/reagents> .
+<http://smartprotocols.org/ciat_1/execution> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/reagents> .
+<http://smartprotocols.org/ciat_1/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/1-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/1>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/1-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/1-name>
+    a sp:ReagentName ;
+    rdf:value "EDTA 50mM pH=8" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/1>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_42191> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/1>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/6049#section=Top> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/2-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/2-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "NaCl 500 mM" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/2>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_26710> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/2>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/5234> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/3-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/3-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "0,1% B-Mercaptoetanol" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/3>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_41218> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/3>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/1567#section=Top> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/4-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/4-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "SDS 10%." .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_8984> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/4>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/3423265#section=Top> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/5-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/5-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "5M Acetato de Potasio pH=5.5" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_32029> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/5>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/517044> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/6-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/6-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "Isopropanol 100%" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/6>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_17824> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/6>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/3776> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/7-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/7-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "etanol al 70%" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/7>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62218> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/8-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/8-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "agarose" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/8>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_2511> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/8>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/11966311#section=Top> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/9-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/9>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/9-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/9-name>
+    a sp:ReagentName ;
+    rdf:value "RNAsa" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/9>
+    owl:sameAs <http://www.semanticweb.org/BiPON/BiPON_00000779> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/10-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/10>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/10-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/10-name>
+    a sp:ReagentName ;
+    rdf:value "TE buffer" .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/10>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/16218629#section=Top> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/10>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHMO_0002069> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/11-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/11>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/11-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/11-name>
+    a sp:ReagentName ;
+    rdf:value "buffer de extracción" .
+
+<http://smartprotocols.org/ciat_1/materials/recipes/1>
+    ro:part_of <http://smartprotocols.org/ciat_1/materials/reagents/11> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/12-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/12>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/12-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/12-name>
+    a sp:ReagentName ;
+    rdf:value "TE+RNAsa" .
+
+<http://smartprotocols.org/ciat_1/materials/recipes/2>
+    ro:part_of <http://smartprotocols.org/ciat_1/materials/reagents/12> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/reagents/13-name> .
+<http://smartprotocols.org/ciat_1/materials/reagents/13>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/reagents/13-name> .
+
+<http://smartprotocols.org/ciat_1/materials/reagents/13-name>
+    a sp:ReagentName ;
+    rdf:value "gel de agarosa al 1%" .
+
+<http://smartprotocols.org/ciat_1/materials/recipes/3>
+    ro:part_of <http://smartprotocols.org/ciat_1/materials/reagents/13> .
+
+<http://smartprotocols.org/ciat_1/execution> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/equipments> .
+<http://smartprotocols.org/ciat_1> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/equipments> .
+<http://smartprotocols.org/ciat_1/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/ciat_1/materials/equipments>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/equipments/1-name> .
+<http://smartprotocols.org/ciat_1/materials/equipments/1>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/equipments/1-name> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/1-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "tubo eppendorf" .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/1>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#MicrocentrifugeTube> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/equipments/2-name> .
+<http://smartprotocols.org/ciat_1/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/equipments/2-name> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "vortex" .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/2>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C29544> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/equipments/3-name> .
+<http://smartprotocols.org/ciat_1/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/equipments/3-name> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "centrifuge" .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/3>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400106> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/equipments/4-name> .
+<http://smartprotocols.org/ciat_1/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/equipments/4-name> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "freezer" .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000979> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/equipments/5-name> .
+<http://smartprotocols.org/ciat_1/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/equipments/5-name> .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "incubator" .
+
+<http://smartprotocols.org/ciat_1/materials/equipments/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000136> .
+
+<http://smartprotocols.org/ciat_1/execution> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/recipes> .
+<http://smartprotocols.org/ciat_1> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/specimens> .
+<http://smartprotocols.org/ciat_1/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/ciat_1/materials/specimens>
+    ro:has_part <http://smartprotocols.org/ciat_1/materials/specimens/1-name> .
+<http://smartprotocols.org/ciat_1/materials/specimens/1>
+    sp:hasName <http://smartprotocols.org/ciat_1/materials/specimens/1-name> .
+
+<http://smartprotocols.org/ciat_1/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "Neoleucinodes" .
+
+<http://smartprotocols.org/ciat_1/materials/specimens/1>
+    a obi:0100026 .
+
+<http://smartprotocols.org/ciat_1/materials/specimens/1>
+    owl:sameAs <http://purl.bioontology.org/ontology/NCBITAXON/581932> .
+
+<http://smartprotocols.org/ciat_1/materials/specimens/1>
+    owl:sameAs <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi> .
+
+<http://smartprotocols.org/ciat_1/materials/specimens/1>
+    a obi:0100026 .

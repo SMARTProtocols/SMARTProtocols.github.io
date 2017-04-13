@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220>
     a sp:ExperimentalProtocol ;
@@ -422,12 +423,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
-    a CL:0000000 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
+    a CL:0000000 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
     owl:sameAs <http://purl.bioontology.org/ontology/npo#NPO_1584> .
@@ -438,12 +441,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
-    a BFO:0000040 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name>
     a sp:SpecimenName ;
     rdf:value "stained colony of cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
+    a BFO:0000040 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
     a BFO:0000040 .
@@ -485,14 +490,13 @@
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/execution>
     a sp:ExperimentalProtocolExecution ;
-    sp:documentedIn <http://smartprotocols.org/10.21769/BioProtoc.220> .
+    sp:isDocumentedIn <http://smartprotocols.org/10.21769/BioProtoc.220> .
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/execution>
     sp:hasProcedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1> .
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
-    a sp:LaboratoryProcedure ;
-    rdf:value "" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1> .
@@ -500,12 +504,9 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>.
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
-    rdfs:label "" .
-
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "treatment of the samples" .
+    rdfs:label "treatment of the samples" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2> .
@@ -513,20 +514,21 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1>
-    rdfs:label "Cells that have been knocked down or been treated with other procedures like drugs or some interferences are harvested and pipetted well to become single-cell suspension in complete culture media in a given concentration (such as 1 x 106/ml)." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1/description> a sp:SubprocedureDescription ;
+rdf:value "Cells that have been knocked down or been treated with other procedures like drugs or some interferences are harvested and pipetted well to become single-cell suspension in complete culture media in a given concentration (such as 1 x 106/ml)." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.1>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "pre-warm 10% FBS DMEM at 37 °C" .
+    rdfs:label "pre-warm 10% FBS DMEM at 37 °C" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3> .
@@ -537,16 +539,17 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2>
-    rdfs:label "They are then put at room temperature and should be ready to use. At the same time, pre-warm 10% FBS DMEM at 37 °C, ready to use" .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2/description> a sp:SubprocedureDescription ;
+rdf:value "They are then put at room temperature and should be ready to use. At the same time, pre-warm 10% FBS DMEM at 37 °C, ready to use" .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.2>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Melt 4% agar" .
+    rdfs:label "Melt 4% agar" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4> .
@@ -564,28 +567,29 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>
-    rdfs:label "Melt 4% agar (in glass bottle) by microwave and keep warm in 56 °C water bath, ready to use" .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3/description> a sp:SubprocedureDescription ;
+rdf:value "Melt 4% agar (in glass bottle) by microwave and keep warm in 56 °C water bath, ready to use" .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/7>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/5>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/6>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/3>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.3>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Make bottom layer" .
+    rdfs:label "Make bottom layer" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5> .
@@ -596,28 +600,29 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>
-    rdfs:label "Make bottom layer. Make 5 ml of 10% FBS DMEM containing 0.75% agar (the volume of 4% agar was calculated by: 5 ml multiply 0.75%=X multiply 4%). Therefore, you need to quickly take about 0.9 ml 4% agar from the bottle in water bath and mix it with 4.1 ml pre-warmed of 10% FBS DMEM well and put the mixture into 60-mm culture dish in the flow hood. Wait a few minutes for it to become solid." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4/description> a sp:SubprocedureDescription ;
+rdf:value "Make bottom layer. Make 5 ml of 10% FBS DMEM containing 0.75% agar (the volume of 4% agar was calculated by: 5 ml multiply 0.75%=X multiply 4%). Therefore, you need to quickly take about 0.9 ml 4% agar from the bottle in water bath and mix it with 4.1 ml pre-warmed of 10% FBS DMEM well and put the mixture into 60-mm culture dish in the flow hood. Wait a few minutes for it to become solid." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/7>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/2>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/7>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.4>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Make the top layer." .
+    rdfs:label "Make the top layer." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6> .
@@ -635,28 +640,29 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>
-    rdfs:label "Make the top layer. It contains 3 x 104 cells in 3 ml of 10% FBS DMEM and 0.36% agar. Dilute the single-cell suspension to 3 x 104 (or 1.5 x 104) in 3ml of 10% FBS DMEM (1 x 104/ml). You need to mix 2.73 ml pre-warmed 10% FBS DMEM cell suspension with 270 μl of 4% pre-warmed agar (56 °C)." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5/description> a sp:SubprocedureDescription ;
+rdf:value "Make the top layer. It contains 3 x 104 cells in 3 ml of 10% FBS DMEM and 0.36% agar. Dilute the single-cell suspension to 3 x 104 (or 1.5 x 104) in 3ml of 10% FBS DMEM (1 x 104/ml). You need to mix 2.73 ml pre-warmed 10% FBS DMEM cell suspension with 270 μl of 4% pre-warmed agar (56 °C)." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/7>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/8>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.5>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>
     a sp:LaboratorySubprocedure ;
-    rdf:value "grow the cell" .
+    rdfs:label "grow the cell" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7> .
@@ -674,36 +680,37 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>
-    rdfs:label "Now the dish contains 2 layers. Mark the dish and put it at 37 °C incubator for 3 weeks. Then the colonies were stained with 0.04% crystal violet-2% ethanol in PBS. Photographs of the stained colonies should be taken." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6/description> a sp:SubprocedureDescription ;
+rdf:value "Now the dish contains 2 layers. Mark the dish and put it at 37 °C incubator for 3 weeks. Then the colonies were stained with 0.04% crystal violet-2% ethanol in PBS. Photographs of the stained colonies should be taken." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/2>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/4>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/4>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/6>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/8.equipments/9>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/8.equipments/9-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.6>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7>
     a sp:LaboratorySubprocedure ;
-    rdf:value "count the number of colonies" .
+    rdfs:label "count the number of colonies" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8> .
@@ -714,12 +721,13 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7>
-    rdfs:label "If the colony number is too high to count, you can decrease cells to a total of 1.5 x 104. This would be easy to count." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7/description> a sp:SubprocedureDescription ;
+rdf:value "If the colony number is too high to count, you can decrease cells to a total of 1.5 x 104. This would be easy to count." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7/description> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Before mix agarose gel with medium and cells" .
+    rdfs:label "Before mix agarose gel with medium and cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>
     sp:isPrecededBy <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.7> .
@@ -727,25 +735,26 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>
-    rdfs:label "Before you mix agarose gel with medium and cells. You should get pipette, tips ready to use, and perform it as fast as possible." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8/description> a sp:SubprocedureDescription ;
+rdf:value "Before you mix agarose gel with medium and cells. You should get pipette, tips ready to use, and perform it as fast as possible." .
+<http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/2>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/8>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/10>
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/equipments/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.220/methods/1.8>.
 

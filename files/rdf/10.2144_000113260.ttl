@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.2144/000113260>
     a sp:ExperimentalProtocol ;
@@ -573,12 +574,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "tumor tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
     owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18009> .
@@ -589,12 +592,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     a sp:SpecimenName ;
     rdf:value "homogenized tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
     owl:sameAs <http://purl.org/net/SMARTprotocol#HomogenizedTissue> .
@@ -605,12 +610,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     a sp:SpecimenName ;
     rdf:value "RNA" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33697> .
@@ -621,12 +628,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name>
     a sp:SpecimenName ;
     rdf:value "DNA" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33696> .
@@ -637,12 +646,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name>
     a sp:SpecimenName ;
     rdf:value "Protein" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_36080> .
@@ -701,14 +712,13 @@
 
 <http://smartprotocols.org/10.2144/000113260/execution>
     a sp:ExperimentalProtocolExecution ;
-    sp:documentedIn <http://smartprotocols.org/10.2144/000113260> .
+    sp:isDocumentedIn <http://smartprotocols.org/10.2144/000113260> .
 
 
 <http://smartprotocols.org/10.2144/000113260/execution>
     sp:hasProcedure <http://smartprotocols.org/10.2144/000113260/methods/1> .
 <http://smartprotocols.org/10.2144/000113260/methods/1>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Protocol overview" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/2> .
@@ -719,12 +729,13 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1>.
 
-<http://smartprotocols.org/10.2144/000113260/methods/1>
-    rdfs:label "sample preparation" .
+<http://smartprotocols.org/10.2144/000113260/methods/1/description> a sp:ProcedureDescription ;
+rdf:value "sample preparation" .
+<http://smartprotocols.org/10.2144/000113260/methods/1> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/1/description> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "recover tumor tissue and inmerse in TRIzol" .
+    rdfs:label "recover tumor tissue and inmerse in TRIzol" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/1.2> .
@@ -732,24 +743,25 @@
 <http://smartprotocols.org/10.2144/000113260/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/1.1> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/1.1>
-    rdfs:label "Recover tumor tissue at the time of surgery, trim into 1-cm3 fragments, and immerse immediately in TRIzol reagent prior to freezing at -80°C." .
+<http://smartprotocols.org/10.2144/000113260/methods/1.1/description> a sp:SubprocedureDescription ;
+rdf:value "Recover tumor tissue at the time of surgery, trim into 1-cm3 fragments, and immerse immediately in TRIzol reagent prior to freezing at -80°C." .
+<http://smartprotocols.org/10.2144/000113260/methods/1.1> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/1.1/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/1>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/6>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1.1>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Thaw and weigh tissue" .
+    rdfs:label "Thaw and weigh tissue" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/1.3> .
@@ -760,20 +772,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/1.2> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/1.2>
-    rdfs:label "Thaw and weigh tissue prior to RNA extraction, working quickly." .
+<http://smartprotocols.org/10.2144/000113260/methods/1.2/description> a sp:SubprocedureDescription ;
+rdf:value "Thaw and weigh tissue prior to RNA extraction, working quickly." .
+<http://smartprotocols.org/10.2144/000113260/methods/1.2> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/1.2/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/7>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1.2>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "homogenization of tissue" .
+    rdfs:label "homogenization of tissue" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.3>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/1.2> .
@@ -781,18 +794,18 @@
 <http://smartprotocols.org/10.2144/000113260/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/1.3> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/1.3>
-    rdfs:label "Use a tissue power homogenizer (or a mortar and pestle) to homogenize tissue by hand." .
+<http://smartprotocols.org/10.2144/000113260/methods/1.3/description> a sp:SubprocedureDescription ;
+rdf:value "Use a tissue power homogenizer (or a mortar and pestle) to homogenize tissue by hand." .
+<http://smartprotocols.org/10.2144/000113260/methods/1.3> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/1.3/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/8>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/1.3>.
 
 
 <http://smartprotocols.org/10.2144/000113260/execution>
     sp:hasProcedure <http://smartprotocols.org/10.2144/000113260/methods/2> .
 <http://smartprotocols.org/10.2144/000113260/methods/2>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Prior to RNA extraction: cleaning process of equipment" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3> .
@@ -805,7 +818,7 @@
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Autoclave or wash equipment" .
+    rdfs:label "Autoclave or wash equipment" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.1>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/2.2> .
@@ -813,40 +826,41 @@
 <http://smartprotocols.org/10.2144/000113260/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/2.1> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/2.1>
-    rdfs:label "Autoclave or wash equipment (i.e., tissue storage container, homogenizer blades, forceps, scalpel holder) in Neutracon solution for 2–4 h." .
+<http://smartprotocols.org/10.2144/000113260/methods/2.1/description> a sp:SubprocedureDescription ;
+rdf:value "Autoclave or wash equipment (i.e., tissue storage container, homogenizer blades, forceps, scalpel holder) in Neutracon solution for 2–4 h." .
+<http://smartprotocols.org/10.2144/000113260/methods/2.1> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/2.1/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/9>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/9-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/1>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/2>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/3>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/2>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.1>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "rinse equipment by using SDS" .
+    rdfs:label "rinse equipment by using SDS" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/2.3> .
@@ -857,36 +871,37 @@
 <http://smartprotocols.org/10.2144/000113260/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/2.2> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/2.2>
-    rdfs:label "Rinse equipment well in 1% SDS (prepared using DEPC-treated or other nuclease-free water)." .
+<http://smartprotocols.org/10.2144/000113260/methods/2.2/description> a sp:SubprocedureDescription ;
+rdf:value "Rinse equipment well in 1% SDS (prepared using DEPC-treated or other nuclease-free water)." .
+<http://smartprotocols.org/10.2144/000113260/methods/2.2> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/2.2/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/1>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/2>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/3>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/recipes/1>
+<http://smartprotocols.org/10.2144/000113260/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.2>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Rinse equipment in 100% ethanol" .
+    rdfs:label "Rinse equipment in 100% ethanol" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.3>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/2.2> .
@@ -894,38 +909,38 @@
 <http://smartprotocols.org/10.2144/000113260/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/2.3> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/2.3>
-    rdfs:label "Rinse in 100% ethanol and leave to air-dry." .
+<http://smartprotocols.org/10.2144/000113260/methods/2.3/description> a sp:SubprocedureDescription ;
+rdf:value "Rinse in 100% ethanol and leave to air-dry." .
+<http://smartprotocols.org/10.2144/000113260/methods/2.3> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/2.3/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/1>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.3>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/2>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.3>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/3>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.3>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/4>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.3>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/5>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.3>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/>
+<http://smartprotocols.org/10.2144/000113260/materials/-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/2.3>.
 
 
 <http://smartprotocols.org/10.2144/000113260/execution>
     sp:hasProcedure <http://smartprotocols.org/10.2144/000113260/methods/3> .
 <http://smartprotocols.org/10.2144/000113260/methods/3>
-    a sp:LaboratoryProcedure ;
-    rdf:value "RNA extraction" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/2> .
@@ -941,7 +956,7 @@
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Weight the sample" .
+    rdfs:label "Weight the sample" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.1>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.2> .
@@ -949,20 +964,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.1> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.1>
-    rdfs:label "Weigh thawed sample to determine quantity of TRIzol reagent required (use 1 mL TRIzol per 50–100 mg of tissue)." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.1/description> a sp:SubprocedureDescription ;
+rdf:value "Weigh thawed sample to determine quantity of TRIzol reagent required (use 1 mL TRIzol per 50–100 mg of tissue)." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.1> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.1/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.1>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/1>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.1>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "homogenize the tissue" .
+    rdfs:label "homogenize the tissue" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.3> .
@@ -979,20 +995,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.2> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.2>
-    rdfs:label "Homogenize sample using tissue homogenizer." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.2/description> a sp:SubprocedureDescription ;
+rdf:value "Homogenize sample using tissue homogenizer." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.2> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.2/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.2>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/8>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.2>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Centrifuge" .
+    rdfs:label "Centrifuge" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.3>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.4> .
@@ -1003,20 +1020,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.3> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.3>
-    rdfs:label "Centrifuge at 12,000× g for 10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.3/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge at 12,000× g for 10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.3> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.3/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.3>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/10>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.3>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Transfer the cleared homogenate" .
+    rdfs:label "Transfer the cleared homogenate" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.4>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.5> .
@@ -1024,20 +1042,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3.4>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/3.3> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.4>
-    rdfs:label "Transfer cleared homogenate to fresh tube; discard insoluble material and upper fat layer, if present." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.4/description> a sp:SubprocedureDescription ;
+rdf:value "Transfer cleared homogenate to fresh tube; discard insoluble material and upper fat layer, if present." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.4> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.4/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.4>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.4>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.5>
     a sp:LaboratorySubprocedure ;
-    rdf:value "incubate to room temperature" .
+    rdfs:label "incubate to room temperature" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.5>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.6> .
@@ -1048,16 +1067,17 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.5> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.5>
-    rdfs:label "Incubate homogenized sample at room temperature for 5 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.5/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate homogenized sample at room temperature for 5 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.5> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.5/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.5>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.6>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add chloroform" .
+    rdfs:label "Add chloroform" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.6>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.7> .
@@ -1068,28 +1088,29 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.6> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.6>
-    rdfs:label "Add 0.2 mL chloroform per 1 mL TRIzol and cap tube tightly." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.6/description> a sp:SubprocedureDescription ;
+rdf:value "Add 0.2 mL chloroform per 1 mL TRIzol and cap tube tightly." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.6> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.6/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.6>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/1>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.6>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/3>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.6>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.6>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.7>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Shake by hand" .
+    rdfs:label "Shake by hand" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.7>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.8> .
@@ -1100,12 +1121,13 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.7> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.7>
-    rdfs:label "Shake vigorously by hand for 15 s." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.7/description> a sp:SubprocedureDescription ;
+rdf:value "Shake vigorously by hand for 15 s." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.7> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.7/description> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.8>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Incubate at room temperature" .
+    rdfs:label "Incubate at room temperature" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.8>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.9> .
@@ -1116,16 +1138,17 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.8> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.8>
-    rdfs:label "Incubate at room temperature for 3 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.8/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate at room temperature for 3 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.8> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.8/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.8>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.9>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Centrifuge" .
+    rdfs:label "Centrifuge" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.9>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.10> .
@@ -1136,20 +1159,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.9> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.9>
-    rdfs:label "Centrifuge at 12,000× g for 15 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.9/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge at 12,000× g for 15 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.9> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.9/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.9>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/10>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.9>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.10>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Transfer aqueous phase  to a new tube." .
+    rdfs:label "Transfer aqueous phase  to a new tube." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.10>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.11> .
@@ -1160,20 +1184,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.10> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.10>
-    rdfs:label "Transfer aqueous phase (colorless upper phase) to a new tube." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.10/description> a sp:SubprocedureDescription ;
+rdf:value "Transfer aqueous phase (colorless upper phase) to a new tube." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.10> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.10/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.10>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.10>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.11>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Retain organic phase and store at -20°C." .
+    rdfs:label "Retain organic phase and store at -20°C." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.11>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.12> .
@@ -1184,24 +1209,25 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.11> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.11>
-    rdfs:label "Retain organic phase for DNA/protein extraction, if required (store at -20°C)." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.11/description> a sp:SubprocedureDescription ;
+rdf:value "Retain organic phase for DNA/protein extraction, if required (store at -20°C)." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.11> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.11/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.11>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.11>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/6>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.11>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.12>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add isopropyl alcohol" .
+    rdfs:label "Add isopropyl alcohol" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.12>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.13> .
@@ -1212,24 +1238,25 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.12> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.12>
-    rdfs:label "Add 0.5 mL isopropyl alcohol per 1 mL TRIzol." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.12/description> a sp:SubprocedureDescription ;
+rdf:value "Add 0.5 mL isopropyl alcohol per 1 mL TRIzol." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.12> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.12/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.12>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/1>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.12>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/5>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.12>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.13>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Incubate at room temperature" .
+    rdfs:label "Incubate at room temperature" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.13>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.14> .
@@ -1240,16 +1267,17 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.13> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.13>
-    rdfs:label "Incubate at room temperature for 10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.13/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate at room temperature for 10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.13> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.13/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.13>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.14>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Centrifuge and discard the supernatant)." .
+    rdfs:label "Centrifuge and discard the supernatant)." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.14>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.15> .
@@ -1260,20 +1288,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.14> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.14>
-    rdfs:label "Centrifuge at 12,000× g for 10 min (RNA forms a gel-like pellet on the side and bottom of the tube; discard the supernatant)." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.14/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge at 12,000× g for 10 min (RNA forms a gel-like pellet on the side and bottom of the tube; discard the supernatant)." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.14> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.14/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.14>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/10>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.14>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.15>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add 75% ethanol and vortex" .
+    rdfs:label "Add 75% ethanol and vortex" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.15>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.16> .
@@ -1284,24 +1313,25 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.15> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.15>
-    rdfs:label "Add 1 mL 75% ethanol per 1 mL TRIzol and vortex for 10 s." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.15/description> a sp:SubprocedureDescription ;
+rdf:value "Add 1 mL 75% ethanol per 1 mL TRIzol and vortex for 10 s." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.15> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.15/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.15>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/recipes/2>
+<http://smartprotocols.org/10.2144/000113260/materials/recipes/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.15>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/13>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/13-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.15>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.16>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Centrifuge" .
+    rdfs:label "Centrifuge" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.16>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.17> .
@@ -1312,20 +1342,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.16> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.16>
-    rdfs:label "Centrifuge at 7500× g for 5 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.16/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge at 7500× g for 5 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.16> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.16/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.16>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipmens/10>
+<http://smartprotocols.org/10.2144/000113260/materials/equipmens/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.16>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.17>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Air-dry RNA pellet" .
+    rdfs:label "Air-dry RNA pellet" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.17>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.18> .
@@ -1336,16 +1367,17 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.17> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.17>
-    rdfs:label "Air-dry RNA pellet for 5–10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.17/description> a sp:SubprocedureDescription ;
+rdf:value "Air-dry RNA pellet for 5–10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.17> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.17/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.17>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.18>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add RNase-free water" .
+    rdfs:label "Add RNase-free water" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.18>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.19> .
@@ -1356,24 +1388,25 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.18> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.18>
-    rdfs:label "Add 20 μL RNase-free water and mix by gentle pipetting." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.18/description> a sp:SubprocedureDescription ;
+rdf:value "Add 20 μL RNase-free water and mix by gentle pipetting." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.18> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.18/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.18>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/reagents/7>
+<http://smartprotocols.org/10.2144/000113260/materials/reagents/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.18>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/14>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/14-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.18>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.19>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Incubate at 60°C" .
+    rdfs:label "Incubate at 60°C" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.19>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.20> .
@@ -1384,20 +1417,21 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.19> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.19>
-    rdfs:label "Incubate at 60°C for 10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.19/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate at 60°C for 10 min." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.19> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.19/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.19>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/12>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/12-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.19>.
 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.20>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Store RNA at -80°C" .
+    rdfs:label "Store RNA at -80°C" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.20>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/3.19> .
@@ -1405,17 +1439,18 @@
 <http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.2144/000113260/methods/3.20> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/3.20>
-    rdfs:label "Store RNA in labeled tube at -80°C until required." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.20/description> a sp:SubprocedureDescription ;
+rdf:value "Store RNA in labeled tube at -80°C until required." .
+<http://smartprotocols.org/10.2144/000113260/methods/3.20> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3.20/description> .
 
-<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.20>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/11>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.20>.
 
 
-<http://smartprotocols.org/10.2144/000113260/materials/equipments/6>
+<http://smartprotocols.org/10.2144/000113260/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3.20>.
 

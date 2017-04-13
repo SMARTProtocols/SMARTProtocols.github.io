@@ -1,0 +1,1920 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/10.14440/jbm.2015.96/publication> ;
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/cover-date> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/publication-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Journal of Biological Methods" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/cover-date>
+    a prism:coverDate ;
+    rdf:value "17/11/2015" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/keywords/3Dcellculture> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/keywords/3Dcellculture>
+    a prism:keyword ;
+    rdf:value "3D cell culture" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/keywords/extracellularmatrix> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/keywords/extracellularmatrix>
+    a prism:keyword ;
+    rdf:value " extracellular matrix" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/keywords/proteinanalysis> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/keywords/proteinanalysis>
+    a prism:keyword ;
+    rdf:value " protein analysis" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/keywords/phosphoproteomics> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/keywords/phosphoproteomics>
+    a prism:keyword ;
+    rdf:value " phosphoproteomics" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/keywords/signaling> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/keywords/signaling>
+    a prism:keyword ;
+    rdf:value " signaling" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    sp:hasTitle <http://smartprotocols.org/10.14440/jbm.2015.96/title> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "Comprehensive analysis of signal transduction in three-dimensional ECM-based tumor cell cultures" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasIdentifier <http://smartprotocols.org/10.14440/jbm.2015.96/identifier> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "10.14440/jbm.2015.96" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasPurpose <http://smartprotocols.org/10.14440/jbm.2015.96/purpose> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "present an easy-to-perform, reliable and time-efficient method for the production of 3D cell lysates that does not compromise cell adhesion before cell lysis" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/authors> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors> ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/authors/1-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/authors/1-name> .
+
+    <http://smartprotocols.org/10.14440/jbm.2015.96/authors/1-name>
+    rdf:value "Iris Eke" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors> ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/authors/2-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/authors/2-name> .
+
+    <http://smartprotocols.org/10.14440/jbm.2015.96/authors/2-name>
+    rdf:value "Stephanie Hehlgans" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors> ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/authors/3-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors/3>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/authors/3-name> .
+
+    <http://smartprotocols.org/10.14440/jbm.2015.96/authors/3-name>
+    rdf:value "Yaping Zong" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors> ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/authors/4-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/authors/4>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/authors/4-name> .
+
+    <http://smartprotocols.org/10.14440/jbm.2015.96/authors/4-name>
+    rdf:value "Nils Cordes" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1-name>
+    a sp:ReagentName ;
+    rdf:value "Laminin-rich extracellular matrix (lrECM) (BD MatrigelTM)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "354248" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1>
+    foaf:homepage <http://www.scientificlabs.co.uk/product/354248> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/1>
+    obi:0000304 <http://smartprotocols.org/manufacturers/16> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "Agarose type I-A" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "A0169-500G" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2>
+    foaf:homepage <www.sigmaaldrich.com/catalog/product/sial/a0169> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/2>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "Cell culture medium" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "E15-883" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/3>
+    obi:0000304 <http://smartprotocols.org/manufacturers/33> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "Fetal bovine serum (FBS)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "A15-101" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/4>
+    obi:0000304 <http://smartprotocols.org/manufacturers/33> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "Trypsin-EDTA, 1×" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "L11-660" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5>
+    obi:0000304 <http://smartprotocols.org/manufacturers/33> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "Phosphate-buffered saline, 1×" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "H15-002" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/6>
+    obi:0000304 <http://smartprotocols.org/manufacturers/33> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "Protein extraction buffer" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "EXB050" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7>
+    foaf:homepage <http://www.fullmoonbio.com/product/extraction-buffer-50/> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/7>
+    obi:0000304 <http://smartprotocols.org/manufacturers/40> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "Complete protease inhibitor cocktail tablets" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "11697498001" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/search?term=11697498001&interface=All_JA&N=0&mode=match%20partialmax&lang=en&region=CO&focus=product> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/8>
+    obi:0000304 <http://smartprotocols.org/manufacturers/38> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9-name>
+    a sp:ReagentName ;
+    rdf:value "Phosphatase inhibitor Sodium orthovanadate (AppliChem, Cat. # A2196,0005)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "A2196,0005" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9>
+    foaf:homepage <https://www.applichem.com/en/shop/product-detail/as/natriumorthovanadat-ibiochemicai/> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/9>
+    obi:0000304 <http://smartprotocols.org/manufacturers/36> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10-name>
+    a sp:ReagentName ;
+    rdf:value "Phosphatase inhibitor Sodium fluoride (AppliChem, Cat. # 7681-49-4)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "7681-49-4" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/10>
+    obi:0000304 <http://smartprotocols.org/manufacturers/36> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11-name>
+    a sp:ReagentName ;
+    rdf:value "Ponceau S solution" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "P7170" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11>
+    foaf:homepage <www.sigmaaldrich.com/catalog/product/sial/p7170> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/11>
+    obi:0000304 <http://smartprotocols.org/manufacturers/1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12-name>
+    a sp:ReagentName ;
+    rdf:value "Nonidet P-40" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "743858" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/12>
+    obi:0000304 <http://smartprotocols.org/manufacturers/29> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13-name>
+    a sp:ReagentName ;
+    rdf:value "EDTA" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "3619.1" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13>
+    foaf:homepage <https://www.carlroth.com/en/en/Chemicals/A-Z-Chemicals/E/EDTA-disodium-salt-solution-A-(0,1-N)/EDTA-disodium-salt-solution-A/p/00000001000006a300020023_en> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/13>
+    obi:0000304 <http://smartprotocols.org/manufacturers/35> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14-name>
+    a sp:ReagentName ;
+    rdf:value "Sodium deoxycholate" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "A1531,0100" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14>
+    foaf:homepage <https://www.applichem.com/en/shop/product-detail/as/natriumdeoxycholat-ibiochemicai/> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/14>
+    obi:0000304 <http://smartprotocols.org/manufacturers/36> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15-name>
+    a sp:ReagentName ;
+    rdf:value "Sodium chloride" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "1.06404.1000" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15>
+    foaf:homepage <https://www.emdmillipore.com/CA/en/product/Sodium-chloride,MDA_CHEM-106404> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/15>
+    obi:0000304 <http://smartprotocols.org/manufacturers/41> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16-name>
+    a sp:ReagentName ;
+    rdf:value "Glycerol" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "3783.1" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16>
+    foaf:homepage <https://www.carlroth.com/de/de/Chemikalien/A-Z-Chemikalien/G/Glycerin/Glycerin/p/00000001000018bb00020023_de> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/16>
+    obi:0000304 <http://smartprotocols.org/manufacturers/35> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17-name>
+    a sp:ReagentName ;
+    rdf:value "DTT" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "A1101,0025" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17>
+    foaf:homepage <https://www.applichem.com/en/shop/product-detail/as/dtt-ibiochemicai/> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/17>
+    obi:0000304 <http://smartprotocols.org/manufacturers/36> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18-name>
+    a sp:ReagentName ;
+    rdf:value "Sodium dodecyl sulfate (SDS)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "2326.2" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18>
+    foaf:homepage <https://www.carlroth.com/at/de/Chemikalien/A-Z-Chemikalien/S/SDS/SDS-ultra-pure/p/0000000100003fa900020023_de> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/18>
+    obi:0000304 <http://smartprotocols.org/manufacturers/35> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19-name>
+    a sp:ReagentName ;
+    rdf:value "Tris" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "5429.3" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19>
+    foaf:homepage <https://www.carlroth.com/en/en/Life-Science/Biochemistry/Biological-Buffer-salts/Biological-Buffer-salts/TRIS/p/000000010000516c00020023_en> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/19>
+    obi:0000304 <http://smartprotocols.org/manufacturers/35> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20-name>
+    a sp:ReagentName ;
+    rdf:value "Bromophenol blue" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "15375" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20>
+    foaf:homepage <http://www.serva.de/servaWeb/www_root/ar03/templates/Ar03ProductDetail.jsp?artNr=15375> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/20>
+    obi:0000304 <http://smartprotocols.org/manufacturers/39> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes> .
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    a sp:RecipeList .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name> ;
+    IAO:0000115 "Add FBS up to 10% or 20%, according to the American Type Culture Collection (ATCC) recommendation for each specific cell line, and store at 4°C for up to 1 month." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name>
+    a sp:RecipeName ;
+    rdf:value "Cell culture medium" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1/storage> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1/storage>
+    a sp:StorageCondition ;
+    rdf:value "store at 4°C for up to 1 month." .
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2-name> ;
+    IAO:0000115 "Prepare 1% Agarose by weighing in 1 g Agarose type I-A and addition of double-distilled water up to 100 ml. Autoclave the solution at 121°C for 15 min, cool down and store at room temperature for up to 4 months." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2-name>
+    a sp:RecipeName ;
+    rdf:value "Agarose, 1%" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2/storage> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2/storage>
+    a sp:StorageCondition ;
+    rdf:value "store at room temperature for up to 4 months" .
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/3-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/3>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/3-name> ;
+    IAO:0000115 "Prepare the buffer according to manufacturer’s instructions. Add Complete protease inhibitor cocktail to 1× final concentration." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/3-name>
+    a sp:RecipeName ;
+    rdf:value "Protein extraction buffer (Full Moon)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/4-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/4>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/4-name> ;
+    IAO:0000115 "Prepare a solution containing 50 mM Tris (pH = 7.4), 1% Nonidet P-40, 0.25% sodium deoxycholate, 150 mM sodium choride and 1 mM EDTA in double-distilled water. Add Complete protease inhibitor cocktail (1× final concentration) and phoshatase inhibitors sodium orthovanadate (final concentration 1 mM) and sodium fluoride (final concentration 2 mM) immediately before use." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/4-name>
+    a sp:RecipeName ;
+    rdf:value "Protein extraction buffer (RIPA)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5-name> ;
+    IAO:0000115 "Remove the lrECM from -20 or -80°C and place in a refrigerator at 4°C 2 days before the start of the assay. After 24 h add cell culture medium (without FBS) to a final concentration of 10 mg/ml and incubate on a rotary shaker over night at 4°C. The solution must be kept on ice while pipetting since it gels rapidly. Store at 4°C for up to 2 weeks." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5-name>
+    a sp:RecipeName ;
+    rdf:value "lrECM working solution" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5/storage> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5/storage>
+    a sp:StorageCondition ;
+    rdf:value "Store at 4°C for up to 2 weeks" .
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6-name> ;
+    IAO:0000115 "Prepare a solution containing 50% glycerol, 0.6 M DTT, 10.28% SDS, 0.35 M Tris (pH = 6.8) and 0.012% bromophenol blue in double-distilled water. Store at -20°C." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6-name>
+    a sp:RecipeName ;
+    rdf:value "6× Sample buffer" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6/storage> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6/storage>
+    a sp:StorageCondition ;
+    rdf:value "Store at -20°C." .
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments> .
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/1-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/1>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/1-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/1-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Cell culture incubator (humidified, 7% CO2)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/2-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/2-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Biological hood with laminar flow" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/3-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/3-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Incubator for medium" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Inverted phase microscope with ×2.5 and ×10 objectives (equipped with 2.5×/0.65 A-Plan and 10×/0.25 Ph1 CP-ACHROMAT objectives)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "Axiovert 25" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/4>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/8> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Centrifuge with a swing-bucket rotor, refrigerated" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "5804 R" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5>
+    foaf:homepage <https://online-shop.eppendorf.com/OC-en/Centrifugation-44533/Centrifuges-44534/Centrifuge-5804--5804R-PF-9270.html> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/30> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Eppendorf Research® pipette, 10-100 µl" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "3111 000.149" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/z368105?lang=en&region=CO> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/6>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/30> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Eppendorf Research® pipette, 20-200 µl" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "3111 000.157" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/z368113?lang=en&region=CO> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/30> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Eppendorf Research® pipette, 100-1000 µl" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "3111 000.165" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/z368121?lang=en&region=CO> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/30> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Pipettor" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "26300" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9>
+    foaf:homepage <http://www.brand.de/en/products/liquid-handling/pipette-controllers/accu-jetr-pro/> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/9>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/31> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Neubauer counting chamber" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "06 401 30" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/10>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/32> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/11-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/11>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/11-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/11-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "microwave oven" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/11>
+    owl:sameAs <http://dbpedia.org/page/Microwave_oven> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "24-well Microplates, Tissue culture treated, polystyrene, flat bottom, with low-evaporation lid (BD FalconTM)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "353226" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12>
+    foaf:homepage <https://catalog2.corning.com/LifeSciences/en-US/Shopping/ProductDetails.aspx?productid=353226(Lifesciences)> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/16> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "centrifugation tube" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C126367> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#CentrifugeTube> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Tubes, 50 ml, PP, sterile" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "210261" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/t2068?lang=en&region=CO> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/14>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/34> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Safe Lock 1.5 ml reaction tubes" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "30120086" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15>
+    foaf:homepage <https://online-shop.eppendorf.com/OC-en/Laboratory-Consumables-44512/Tubes-44515/Eppendorf-Safe-Lock-Tubes-PF-8863.html> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/30> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Serological pipette, 1 ml, sterile" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "604181" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16>
+    foaf:homepage <http://choosebuy.biz/catalog/product_info.php?products_id=71> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/16>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/34> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Serological pipette, 5 ml, sterile" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "606180" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17>
+    foaf:homepage <https://shop.gbo.com/en/row/products/5/5_0060/5_0060_0100/5_0060_0100_0010/5_0060_0100_0010_0020/606180.html> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/17>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/34> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Serological pipette, 10 ml, sterile" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "607180" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18>
+    foaf:homepage <https://shop.gbo.com/en/row/products/5/5_0060/5_0060_0100/5_0060_0100_0010/5_0060_0100_0010_0020/607180.html> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/18>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/34> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Serological pipette, 25 ml, sterile" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "760180" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19>
+    foaf:homepage <https://shop.gbo.com/en/row/products/5/5_0060/5_0060_0100/5_0060_0100_0010/5_0060_0100_0010_0030/760180.html> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/19>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/34> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "ART 100E Aerosol resistant tips, 100 µl" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "2065E" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20>
+    foaf:homepage <https://www.thermofisher.com/order/catalog/product/2065E-05-RI> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/20>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/37> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "ART 200 Aerosol resistant tips, 100 µl" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "2069" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21>
+    foaf:homepage <https://us.vwr.com/store/product/4679601/art-200-self-sealing-barrier-pipet-tips-molecular-bioproducts> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/21>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/37> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "ART 1000E Aerosol resistant tips, 1000 µl" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "2079E" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22>
+    foaf:homepage <https://www.coleparmer.com/i/thermo-scientific-art-tips-2079e-pipette-tips-100-1000ul-sterile-8-traysx100-finn/2571656> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/22>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/37> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Insulin syringe with 27 G × 5/8 in. BD Micro-Fine™ IV (Orange) permanently attached needle" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "309310" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23>
+    foaf:homepage <http://catalog.bd.com/nexus-ecat/getProductDetail?productId=309310&parentCategory=1275&parentCategoryName=Syringes%20with%20Attached%20Needles&categoryId=1284&categoryName=Insulin%20Syringes&searchUrl=> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23>
+    obi:0000304 <http://smartprotocols.org/10.14440/jbm.2015.96/manufacturers/16> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "Full Moon Phospho Explorer Array (PEX100)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24>
+    sp:hasCatalogNumber <http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24-catalog-number> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "Cat. # SEV03; Σ 580 proteins, Σ 1358 phospho sites)" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24>
+    foaf:homepage <http://www.fullmoonbio.com/product/phospho-explorer-antibody-array/> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes> .
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1>
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "tumor cell" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1>
+    owl:sameAs <http://purl.bioontology.org/ontology/npo#NPO_1584> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2>
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2-name>
+    a sp:SpecimenName ;
+    rdf:value "cells inserted in 3D lrECM" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3>
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3-name>
+    a sp:SpecimenName ;
+    rdf:value "lrECM-cell layer" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4>
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    a sp:SpecimenName ;
+    rdf:value "lysated cells" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5>
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5-name>
+    a sp:SpecimenName ;
+    rdf:value "cell protein" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6>
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6-name>
+    a sp:SpecimenName ;
+    rdf:value "cell pellet" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_1000024> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/software> .
+<http://smartprotocols.org/10.14440/jbm.2015.96> sp:hasExperimentalInput <http://smartprotocols.org/10.14440/jbm.2015.96/materials/software> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/software>
+    a sp:SoftwareList .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/software>
+    ro:has_part <http://smartprotocols.org/10.14440/jbm.2015.96/materials/software/1-name> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/software/1>
+    a ERO:0000071 ;
+    sp:hasName <http://smartprotocols.org/10.14440/jbm.2015.96/materials/software/1-name> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/software/1-name>
+    a sp:SoftwareName ;
+    rdf:value "ImageJ software" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/software/1>
+    foaf:homepage <http://imagej.nih.gov/ij/> .
+
+<http://smartprotocols.org/manufacturers/31>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/31-name> .
+
+<http://smartprotocols.org/manufacturers/31-name>
+    a sp:ManufacturerName ;
+    rdf:value "BRAND" .
+
+<http://smartprotocols.org/manufacturers/31>
+    foaf:homepage <http://www.brand.de/en/products/general-lab-products/> .
+
+<http://smartprotocols.org/manufacturers/32>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/32-name> .
+
+<http://smartprotocols.org/manufacturers/32-name>
+    a sp:ManufacturerName ;
+    rdf:value "Marienfeld" .
+
+<http://smartprotocols.org/manufacturers/32>
+    foaf:homepage <http://www.marienfeld-superior.com/> .
+
+<http://smartprotocols.org/manufacturers/33>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/33-name> .
+
+<http://smartprotocols.org/manufacturers/33-name>
+    a sp:ManufacturerName ;
+    rdf:value "PAA" .
+
+<http://smartprotocols.org/manufacturers/33>
+    foaf:homepage <http://paa.com> .
+
+<http://smartprotocols.org/manufacturers/34>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/34-name> .
+
+<http://smartprotocols.org/manufacturers/34-name>
+    a sp:ManufacturerName ;
+    rdf:value "Greiner bio-one" .
+
+<http://smartprotocols.org/manufacturers/34>
+    foaf:homepage <http://www.greinerbioone.com/en/start/> .
+
+<http://smartprotocols.org/manufacturers/35>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/35-name> .
+
+<http://smartprotocols.org/manufacturers/35-name>
+    a sp:ManufacturerName ;
+    rdf:value "ROTH" .
+
+<http://smartprotocols.org/manufacturers/35>
+    foaf:homepage <https://www.carlroth.com/en/en/> .
+
+<http://smartprotocols.org/manufacturers/36>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/36-name> .
+
+<http://smartprotocols.org/manufacturers/36-name>
+    a sp:ManufacturerName ;
+    rdf:value "AppliChem" .
+
+<http://smartprotocols.org/manufacturers/36>
+    foaf:homepage <https://www.applichem.com/start.html> .
+
+<http://smartprotocols.org/manufacturers/37>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/37-name> .
+
+<http://smartprotocols.org/manufacturers/37-name>
+    a sp:ManufacturerName ;
+    rdf:value "Molecular bioproducts " .
+
+<http://smartprotocols.org/manufacturers/38>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/38-name> .
+
+<http://smartprotocols.org/manufacturers/38-name>
+    a sp:ManufacturerName ;
+    rdf:value "Roche" .
+
+<http://smartprotocols.org/manufacturers/38>
+    foaf:homepage <http://www.roche.com/> .
+
+<http://smartprotocols.org/manufacturers/39>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/39-name> .
+
+<http://smartprotocols.org/manufacturers/39-name>
+    a sp:ManufacturerName ;
+    rdf:value "Serva" .
+
+<http://smartprotocols.org/manufacturers/39>
+    foaf:homepage <http://www.serva.de/enDE> .
+
+<http://smartprotocols.org/manufacturers/40>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/40-name> .
+
+<http://smartprotocols.org/manufacturers/40-name>
+    a sp:ManufacturerName ;
+    rdf:value "Full Moon BioSystems" .
+
+<http://smartprotocols.org/manufacturers/40>
+    foaf:homepage <http://www.fullmoonbio.com/> .
+
+<http://smartprotocols.org/manufacturers/41>
+    a sp:Manufacturer ;
+    sp:hasName <http://smartprotocols.org/manufacturers/41-name> .
+
+<http://smartprotocols.org/manufacturers/41-name>
+    a sp:ManufacturerName ;
+    rdf:value "Merk" .
+
+<http://smartprotocols.org/manufacturers/41>
+    foaf:homepage <http://www.merck.com/index.html> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution>
+    a sp:ExperimentalProtocolExecution ;
+    sp:isDocumentedIn <http://smartprotocols.org/10.14440/jbm.2015.96> .
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1>.
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1/hint> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1/hint>
+    a sp:Hint ;
+    rdf:value "Cell number is cell line- and incubation time-dependent and may range from 1 × 105 to 1 × 106 cells per well." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1>
+    rdfs:label "Inserting of cells in 3D lrECM" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Heat 1% agarose in microwave until it is completely resolved. Pipette 250 µl 1% Agarose per well under sterile conditions in a 24-well plate and distribute it evenly in the well by horizontally shaking the plate." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>
+    rdfs:label "Heat 1% agarose in microwave until it is completely resolved. Pipette 250 µl 1% Agarose per well under sterile conditions in a 24-well plate and distribute it evenly in the well by horizontally shaking the plate." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/11-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Trypsinize and count cells. Calculate and pipette the required amount of cells in a centrifugation tube. Centrifuge at 130 × g for 3 min at room temperature. Remove the supernatant." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>
+    rdfs:label "Trypsinize and count cells. Calculate and pipette the required amount of cells in a centrifugation tube. Centrifuge at 130 × g for 3 min at room temperature. Remove the supernatant." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/reagents/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/13-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Prepare an lrECM solution with a final concentration of 0.5 mg/ml using cell culture medium (with FBS)." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3>
+    rdfs:label "Prepare an lrECM solution with a final concentration of 0.5 mg/ml using cell culture medium (with FBS)." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Resuspend the cell pellet with lrECM solution and pipette 1 ml per well in the agarose-coated 24-well plate." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>
+    rdfs:label "Resuspend the cell pellet with lrECM solution and pipette 1 ml per well in the agarose-coated 24-well plate." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/6-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/2-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "After 2 h-incubation at 37°C, 7% CO2, carefully add 200 µl of cell culture medium (with FBS) to each well. (When cells are cultured less than 3 days, this step is optional)." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>
+    rdfs:label "After 2 h-incubation at 37°C, 7% CO2, carefully add 200 µl of cell culture medium (with FBS) to each well. (When cells are cultured less than 3 days, this step is optional)." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/2>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2>.
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2/description> a sp:ProcedureDescription ;
+rdf:value "Treatment of 3D lrECM cell cultures" .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "For treatment of cells with inhibitors/chemotherapeutics carefully add the desired amount of drug in the upper medium layer. Take the volume of the lrECM-cell layer and media (1.2 ml per well) into account. For controls, treat corresponding numbers of wells with lrECM-cell layers with the same amount of solvent." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1/description> a sp:SubprocedureDescription ;
+rdf:value "For treatment of cells with inhibitors/chemotherapeutics carefully add the desired amount of drug in the upper medium layer. Take the volume of the lrECM-cell layer and media (1.2 ml per well) into account. For controls, treat corresponding numbers of wells with lrECM-cell layers with the same amount of solvent." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "If indicated, remove the drug by several (at least 5) medium changes without touching the lrECM-cell layer" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2/description> a sp:SubprocedureDescription ;
+rdf:value "If indicated, remove the drug by several (at least 5) medium changes without touching the lrECM-cell layer" .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3>.
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3/hint> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3/hint>
+    a sp:Hint ;
+    rdf:value "The cell layer should be completely covered to allow cell lysis. Cell lysates should be kept on ice at all times. Make sure, that the complete lysate is passed 5 times through the needle to accomplish complete cell lysis." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3/description> a sp:ProcedureDescription ;
+rdf:value "Harvesting of 3D lrECM cell cultures" .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "For preparation of protein lysates from 24-well plates with 3D lrECM-cell cultures, place the plate on ice." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1/description> a sp:SubprocedureDescription ;
+rdf:value "For preparation of protein lysates from 24-well plates with 3D lrECM-cell cultures, place the plate on ice." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "The cells should be visible in the lower third of the lrECM-cell layer. To reduce lrECM-FBS contamination in the protein lysate, carefully remove the layer containing media and excess lrECM-media mixture without aspirating the cells." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2/description> a sp:SubprocedureDescription ;
+rdf:value "The cells should be visible in the lower third of the lrECM-cell layer. To reduce lrECM-FBS contamination in the protein lysate, carefully remove the layer containing media and excess lrECM-media mixture without aspirating the cells." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/3-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Immediately add 200 µl of Protein extraction buffer (supplemented with Protease inhibitor cocktail) to the wells." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3/description> a sp:SubprocedureDescription ;
+rdf:value "Immediately add 200 µl of Protein extraction buffer (supplemented with Protease inhibitor cocktail) to the wells." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/7-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Incubate the plate on ice for 30 min. Transfer cell lysate to a 1.5 ml ice-cold reaction tube." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate the plate on ice for 30 min. Transfer cell lysate to a 1.5 ml ice-cold reaction tube." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Pass the cell lysate through an insulin syringe with a 27 gauge needle 5 times, while on ice, to ensure complete cell lysis." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5/description> a sp:SubprocedureDescription ;
+rdf:value "Pass the cell lysate through an insulin syringe with a 27 gauge needle 5 times, while on ice, to ensure complete cell lysis." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/23-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Incubate for an additional 30 min on ice. Centrifuge lysate for 20 min at 16,000 × g and 4°C." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate for an additional 30 min on ice. Centrifuge lysate for 20 min at 16,000 × g and 4°C." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Transfer supernatant to a new 1.5 ml reaction tube and proceed with western blotting or phosphoproteome analysis." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.6> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7/description> a sp:SubprocedureDescription ;
+rdf:value "Transfer supernatant to a new 1.5 ml reaction tube and proceed with western blotting or phosphoproteome analysis." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/15-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3.7>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4>.
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4>
+    sp:hasAlertMessage <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4/hint> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4/hint>
+    a sp:Hint ;
+    rdf:value "For densitometric analysis make sure to include background correction." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4/description> a sp:ProcedureDescription ;
+rdf:value "Western Blot and protein estimation" .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Mix 15 µl of 3D lysate with 3 µl of 6× sample buffer. Heat samples at 95°C for 5 min." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1/description> a sp:SubprocedureDescription ;
+rdf:value "Mix 15 µl of 3D lysate with 3 µl of 6× sample buffer. Heat samples at 95°C for 5 min." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Load Western blot gels with at least two different amounts of a 2D lysate with known concentration (for example 25 µg and 20 µg per lane) mixed with sample buffer. Then load 3D samples." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.1> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2/description> a sp:SubprocedureDescription ;
+rdf:value "Load Western blot gels with at least two different amounts of a 2D lysate with known concentration (for example 25 µg and 20 µg per lane) mixed with sample buffer. Then load 3D samples." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/recipes/6-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Perform western blotting and transfer protein to nitrocellulose membrane" .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.2> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3/description> a sp:SubprocedureDescription ;
+rdf:value "Perform western blotting and transfer protein to nitrocellulose membrane" .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Analyze β-Actin expression by incubation with specific primary and secondary antibodies according to the manufacturer’s instructions." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.3> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4/description> a sp:SubprocedureDescription ;
+rdf:value "Analyze β-Actin expression by incubation with specific primary and secondary antibodies according to the manufacturer’s instructions." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/3-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Perform a densitometric analysis using a suitable software (e.g. ImageJ) by measuring the mean grey value." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5>
+    sp:precedes <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5/description> a sp:SubprocedureDescription ;
+rdf:value "Perform a densitometric analysis using a suitable software (e.g. ImageJ) by measuring the mean grey value." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/software/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Calculate the cell protein concentration of 3D lysates by comparison with densitometric values of 2D lysates." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6/description> a sp:SubprocedureDescription ;
+rdf:value "Calculate the cell protein concentration of 3D lysates by comparison with densitometric values of 2D lysates." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4.6>.
+
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.14440/jbm.2015.96/methods/5> .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5>
+    sp:isPrecededBy <http://smartprotocols.org/10.14440/jbm.2015.96/methods/4> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/specimens/5>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/5> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5/description> a sp:ProcedureDescription ;
+rdf:value "Phosphoproteome array" .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/5/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Perform phosphoproteome array or send samples to phosphoproteome service on dry ice. Further information about available arrays from Full moon Biosystems as well as detailed user manuals can be found at the following website: http://www.fullmoonbio.com/services/antibody-array-assay-service/." .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5.1/description> a sp:SubprocedureDescription ;
+rdf:value "Perform phosphoproteome array or send samples to phosphoproteome service on dry ice. Further information about available arrays from Full moon Biosystems as well as detailed user manuals can be found at the following website: http://www.fullmoonbio.com/services/antibody-array-assay-service/." .
+<http://smartprotocols.org/10.14440/jbm.2015.96/methods/5.1> sp:hasDescription <http://smartprotocols.org/10.14440/jbm.2015.96/methods/5.1/description> .
+
+<http://smartprotocols.org/10.14440/jbm.2015.96/materials/equipments/24-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.14440/jbm.2015.96/methods/5.1>.
+

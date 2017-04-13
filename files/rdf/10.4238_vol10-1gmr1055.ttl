@@ -1,0 +1,1398 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/10.4238/vol10-1gmr1055/publication> ;
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/cover-date> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/publication-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Genet. Mol. Res" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/cover-date>
+    a prism:coverDate ;
+    rdf:value "March 29, 2011" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/keywords/DNAextraction> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/keywords/DNAextraction>
+    a prism:keyword ;
+    rdf:value "DNA extraction" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/keywords/PCR> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/keywords/PCR>
+    a prism:keyword ;
+    rdf:value " PCR" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/keywords/Protocol> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/keywords/Protocol>
+    a prism:keyword ;
+    rdf:value " Protocol" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055>
+    sp:hasTitle <http://smartprotocols.org/10.4238/vol10-1gmr1055/title> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "A simplified universal genomic DNA extraction protocol suitable for PCR" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasIdentifier <http://smartprotocols.org/10.4238/vol10-1gmr1055/identifier> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "10.4238/vol10-1gmr1055" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasPurpose <http://smartprotocols.org/10.4238/vol10-1gmr1055/purpose> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "We developed a simple, time-saving and cost-efficient method for genomic DNA extraction from various types of organisms, using relatively innocuous reagents." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasApplication <http://smartprotocols.org/10.4238/vol10-1gmr1055/application> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/application>
+    a sp:ApplicationOfTheProtocol ;
+    rdf:value "The extracted DNA was successfully used in PCR, restriction enzyme digestion and for recombinant selection studies." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasAdvantage <http://smartprotocols.org/10.4238/vol10-1gmr1055/advantage> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/advantage>
+    a sp:AdvantageOfTheProtocol ;
+    rdf:value "Mean DNA yields were 20-30 μg/cm3 from fresh tissues (comparable to yields given by commercial extraction kits), and the 260/280 nm absorbance ratio was 1.8-2.0, demonstrating a good degree of purity." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors> ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/1-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/1-name> .
+
+    <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/1-name>
+    rdf:value "T.Y. Wang" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors> ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/2-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/2-name> .
+
+    <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/2-name>
+    rdf:value "L. Wang" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors> ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/3-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/3>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/3-name> .
+
+    <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/3-name>
+    rdf:value "J.H. Zhang" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors> ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/4-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/4>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/4-name> .
+
+    <http://smartprotocols.org/10.4238/vol10-1gmr1055/authors/4-name>
+    rdf:value "W.H. Dong" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1-name>
+    a sp:ReagentName ;
+    rdf:value "GuSCN (guanidinium thiocyanate)" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/65046#section=Top> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "Tris-HCl buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHMO_0001755> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "EDTA" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_42191> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/6049#section=Top> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4-name>
+    a sp:ReagentName ;
+    rdf:value "Triton X-100" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/5590> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_9750> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/5-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/5>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/5-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/5-name>
+    a sp:ReagentName ;
+    rdf:value "70% EtOH" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/5>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62218> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/6-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/6>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/6-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/6-name>
+    a sp:ReagentName ;
+    rdf:value "Taq DNA polymerase" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/6>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#TaqPolymerase> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/7-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/7>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/7-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/7-name>
+    a sp:ReagentName ;
+    rdf:value "dNTPs (TaKaRa)" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/REO_0000421> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8-name>
+    a sp:ReagentName ;
+    rdf:value "liquid nitrogen" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C68796> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8>
+    owl:sameAs <http://dbpedia.org/page/Liquid_nitrogen> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9-name>
+    a sp:ReagentName ;
+    rdf:value "PBS" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/substance/56311855#section=Top> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/24978514#section=Top> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#PhosphateBufferedSaline> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10-name>
+    a sp:ReagentName ;
+    rdf:value "agarose" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_2511> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10>
+    owl:sameAs <https://pubchem.ncbi.nlm.nih.gov/compound/11966311#section=Top> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/11-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/11>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/11-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/11-name>
+    a sp:ReagentName ;
+    rdf:value "primer1: P1: 5ꞌ-TTAGTAAGACATCACCTTGCATTT-3ꞌ" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/11>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#Primer> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/12-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/12>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/12-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/12-name>
+    a sp:ReagentName ;
+    rdf:value "primer2: P2: 5ꞌ-AGCCATAGTTTGAGTTACCCTTT-3ꞌ" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/12>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#Primer> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/13-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/13>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/13-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/13-name>
+    a sp:ReagentName ;
+    rdf:value "primer3: P3: 5ꞌ-ATATATCCCAATGGCATCGTA-3ꞌ" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/13>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#Primer> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/14-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/14>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/14-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/14-name>
+    a sp:ReagentName ;
+    rdf:value "primer4: P4: 5ꞌ-AAATCAAAACTGGTGAAACTC-3ꞌ" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/14>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#Primer> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/15-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/15>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/15-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/15-name>
+    a sp:ReagentName ;
+    rdf:value "ethidium bromide" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    a sp:RecipeList .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1-name>
+    a sp:RecipeName ;
+    rdf:value "Extraction buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1>
+    sp:hasQuantity <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1/quantity> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1/quantity>
+    a <http://semanticscience.org/resource/SIO_000052> ;
+    rdf:value "1(24gr), 2(20 mL), 5( 4.4 mL), 4(0.5 mL)" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/4> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2,5> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2-name>
+    a sp:RecipeName ;
+    rdf:value "0.1 M Tris-HCl, pH 6.4" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "0.1 M" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3-name>
+    a sp:RecipeName ;
+    rdf:value "10 mM Tris-HCl buffer, pH 8.0" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "10 mM" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5-name>
+    a sp:RecipeName ;
+    rdf:value "0.2 M EDTA, pH 8.0" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "0.2 M" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6-name>
+    a sp:RecipeName ;
+    rdf:value "1 mM EDTA, pH 8.0" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "1 mM" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7-name>
+    a sp:RecipeName ;
+    rdf:value "Binding buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7>
+    sp:hasQuantity <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7/quantity> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7/quantity>
+    a <http://semanticscience.org/resource/SIO_000052> ;
+    rdf:value "1(24gr),  2(20 mL), 5( 4.4 mL)" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/1> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/5> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8-name>
+    a sp:RecipeName ;
+    rdf:value "Washing buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/5> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9-name>
+    a sp:RecipeName ;
+    rdf:value "10 mM NaCl TE buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "10 mM" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/9>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/6> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10-name>
+    a sp:RecipeName ;
+    rdf:value "TE buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11-name>
+    a sp:RecipeName ;
+    rdf:value "0.8% agarose gel" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "0.80%" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12-name>
+    a sp:RecipeName ;
+    rdf:value "1X Taq DNA polymerase buffer (Mg2+ plus)" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "1X" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13-name>
+    a sp:RecipeName ;
+    rdf:value "1.0% agarose gel" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13>
+    sp:hasFinalConcentration <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13/final-concentration> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13/final-concentration>
+    a sp:FinalConcentration ;
+    rdf:value "1.0%" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13>
+    sp:hasQuantity <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13/quantity> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13/quantity>
+    a <http://semanticscience.org/resource/SIO_000052> ;
+    rdf:value "15(10 mg/mL)" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/10> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/15> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13>
+    ro:part_of <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/14> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/14-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/14>
+    a Thesaurus:C70830 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/14-name> ;
+    IAO:0000115 "" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/14-name>
+    a sp:RecipeName ;
+    rdf:value "1X TBE buffer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "1.5mL microcentrifuge tube" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/3-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/3-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "culture dish" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "centrifuge" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400106> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4>
+    owl:sameAs <http://dbpedia.org/page/Centrifuge> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "spin column" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000570> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "spectrophotometer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400115> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6>
+    owl:sameAs <http://dbpedia.org/page/Spectrophotometry> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/7-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/7-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "freezer" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000979> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/8-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/8-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "thermal cycler" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/8>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0400116> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/9-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/9-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "UV gel documentation system." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/9>
+    owl:sameAs <http://purl.org/net/SMARTprotocol#GelDocumentationSystem> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "Tissues" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2-name>
+    a sp:SpecimenName ;
+    rdf:value "Cells" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2>
+    owl:sameAs <http://purl.obolibrary.org/obo/CL_0000000> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/2>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3-name>
+    a sp:SpecimenName ;
+    rdf:value "Dunaliella salina" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3>
+    owl:sameAs <http://purl.bioontology.org/ontology/NCBITAXON/3046> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3>
+    owl:sameAs <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/3>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4-name>
+    a sp:SpecimenName ;
+    rdf:value "Peripheral blood" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4>
+    owl:sameAs <http://purl.bioontology.org/ontology/SNOMEDCT/119273009> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4>
+    owl:sameAs <http://purl.obolibrary.org/obo/BTO_0000553> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/4>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5-name>
+    a sp:SpecimenName ;
+    rdf:value "Mouse liver" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C22515> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/5>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6-name>
+    a sp:SpecimenName ;
+    rdf:value "Escherichia coli" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6>
+    owl:sameAs <http://purl.bioontology.org/ontology/NCBITAXON/562> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6>
+    owl:sameAs <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/6>
+    a obi:0100026 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7-name>
+    a sp:SpecimenName ;
+    rdf:value "CHO cells" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7>
+    owl:sameAs <http://purl.obolibrary.org/obo/CLO_0002421> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/7>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name>
+    a sp:SpecimenName ;
+    rdf:value "DNA" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8>
+    owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_16991> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/9-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/9>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/9-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/9-name>
+    a sp:SpecimenName ;
+    rdf:value "Cell pellets" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/9>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_1000024> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/10-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/10>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/10-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/10-name>
+    a sp:SpecimenName ;
+    rdf:value "White blood cells" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/11-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/11>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/11-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/11-name>
+    a sp:SpecimenName ;
+    rdf:value "cultured cells" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/11>
+    owl:sameAs <http://purl.obolibrary.org/obo/CL_0000010> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12-name>
+    a sp:SpecimenName ;
+    rdf:value "PCR products" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12>
+    a sp:ProcessedDNA .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12>
+    owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000406> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12>
+    a sp:ProcessedDNA .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/13-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/13>
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/13-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/13-name>
+    a sp:SpecimenName ;
+    rdf:value "" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055> sp:hasExperimentalInput <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software>
+    a sp:SoftwareList .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/2-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/2>
+    a ERO:0000071 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/2-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/2-name>
+    a sp:SoftwareName ;
+    rdf:value "ActiveState PERL" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/3-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/3>
+    a ERO:0000071 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/3-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/3-name>
+    a sp:SoftwareName ;
+    rdf:value "R" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software>
+    ro:has_part <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/4-name> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/4>
+    a ERO:0000071 ;
+    sp:hasName <http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/4-name> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/software/4-name>
+    a sp:SoftwareName ;
+    rdf:value "Bioconductor" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution>
+    a sp:ExperimentalProtocolExecution ;
+    sp:isDocumentedIn <http://smartprotocols.org/10.4238/vol10-1gmr1055> .
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/13>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1>.
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1>
+    rdfs:label "DNA extraction protocol" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Lysis/homogenization" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1>
+    sp:hasAlertMessage <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1/hint> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1/hint>
+    a sp:Hint ;
+    rdf:value "To minimize shearing the DNA molecules, mix DNA solutions by inversion; avoid vigorous shaking or vortexing." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1/description> a sp:SubprocedureDescription ;
+rdf:value "Add 0.6 mL extraction buffer to 20-80 mg tissue (animal or plant) or 105 -108 cells (cultured cells, white cells in whole blood)." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/13-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1/description> a sp:SubprocedureDescription ;
+rdf:value "A. Tissues: Grind the tissue into a powder under liquid nitrogen or on an ice bath. Transfer up to 50 mg tissue to a 1.5- or 2.0-mL microcentrifuge tube. Add extraction buffer and store for 5-10 min at room temperature." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2/description> a sp:SubprocedureDescription ;
+rdf:value "B. Cells: Cells grown in monolayer should be lysed directly in a culture dish. Pour off media, then add extraction buffer. Cell pellets or suspensions: add 1 mL extraction buffer to 107 cells (suspended in 0.2 mL PBS) and lyse the cells by repeated pipetting. Decrease the extraction buffer by one half if using less than 5 × 106 cells. White blood cells: add 1 mL extraction buffer to the cells from more than 0.5 mL normal whole blood." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/11-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/3-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/9-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/9-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/10-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Centrifuge" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.1> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge for 10 min at 13,000 g at 4-25°C" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "transfer the supernatant to the spin column and centrifuge." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3/description> a sp:SubprocedureDescription ;
+rdf:value "Following centrifugation, transfer the resulting viscous supernatant to the spin column. Centrifuge at 12,000 g for 30 s. Discard flow-through." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Add binding buffer to the spin column and centrifuge" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4/description> a sp:SubprocedureDescription ;
+rdf:value "Add 500 μL binding buffer to the spin column. Centrifuge at 12,000 g for 30 s. Discard flow-through." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/7-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4.-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Add washing buffer to the spin column and centrifuge" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.4> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5/description> a sp:SubprocedureDescription ;
+rdf:value "Add 600 μL washing buffer to the spin column. Centrifuge at 12,000 g for 1 min. Discard flow-through." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Repeat step 5." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.5> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6/description> a sp:SubprocedureDescription ;
+rdf:value "Repeat step 5." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Centrifuge and transfer the spin column to a sterile microcentrifuge tube." .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.6> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge for an additional 1 min at 12,000 g and transfer the spin column to a sterile 1.5-mL microcentrifuge tube." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/5-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Add TE buffer, and incubate at room temperature" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.7> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8/description> a sp:SubprocedureDescription ;
+rdf:value "Add 10 to 200 μL TE buffer, and incubate at room temperature for 1 min" .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "Centrifuge " .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.8> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge at 12,000 g for 1 min. The buffer in the microcentrifuge tube contains the DNA." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/4-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/10-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/1-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "measure DNA concentration" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.9> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10/description> a sp:SubprocedureDescription ;
+rdf:value "DNA concentrations were measured by running aliquots on 0.8% agarose gel and by reading absorbance at 260 nm with a spectrophotometer." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/11-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/6-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "storage of the samples" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.10> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11/description> a sp:SubprocedureDescription ;
+rdf:value "The DNA samples were stored at -20°C until further use." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/7-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1.11>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/execution>
+    sp:hasProcedure <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2> .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2>
+    a sp:LaboratoryProcedure .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/1> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2>.
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2>
+    rdfs:label "PCR amplification and gel electrophoresis" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "PCR reaction mixture" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1/description> a sp:SubprocedureDescription ;
+rdf:value "PCR was carried out in a 50-μL reaction mixture, which contained 50 ng template DNA (CHO genomic DNA extracted as described above), 0. 25 U Taq DNA polymerase, 2.0 mM dNTPs, 1X Taq DNA polymerase buffer (Mg2+ plus) and 20 μM primer. The sequences of the designed primer were as follows: P1: 5ꞌ-TTAGTAAGACATCACCTTGCATTT-3ꞌ, P2: 5ꞌ-AGCCATAGTTTGAGTTACCCTTT-3ꞌ; P3: 5ꞌ-ATATATCCCAATGGCATCGTA-3ꞌ, P4: 5ꞌ-AAATCAAAACTGGTGAAACTC-3ꞌ." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/6-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/7-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/11-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/13-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/reagents/14-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "DNA amplification conditions" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2>
+    sp:precedes <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.1> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2/description> a sp:SubprocedureDescription ;
+rdf:value "DNA amplification was done under the following conditions: 95°C for 5 min, followed by 30 cycles of 94°C for 30 s, 50°C for 45 s, and 72°C for 1.0 min, with a final extension at 72°C for 3 min." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/8-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3>
+    a sp:LaboratorySubprocedure ;
+    rdfs:label "" .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3>
+    sp:isPrecededBy <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.2> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3/description> a sp:SubprocedureDescription ;
+rdf:value "The PCR products were fractionated on a 1.0% agarose gel using 1X TBE buffer containing 10 mg/mL ethidium bromide and were visualized under UV light, and the gels were photographed using a UV gel documentation system." .
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3> sp:hasDescription <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3/description> .
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/specimens/12-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/recipes/13-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3>.
+
+
+<http://smartprotocols.org/10.4238/vol10-1gmr1055/materials/equipments/9-name>
+    <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.4238/vol10-1gmr1055/methods/2.3>.
+

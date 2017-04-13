@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229>
     a sp:ExperimentalProtocol ;
@@ -1813,12 +1814,14 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
-    a obi:0100026 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "Schizosaccharomyces pombe" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
+    a obi:0100026 .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
     owl:sameAs <http://purl.bioontology.org/ontology/NCBITAXON/4896> .
@@ -1832,7 +1835,6 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
@@ -1842,10 +1844,12 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
     a obi:0000047 .
 
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+    a obi:0000047 .
+
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name>
@@ -1855,10 +1859,12 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3>
     a obi:0000047 .
 
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3>
+    a obi:0000047 .
+
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name>
@@ -1868,10 +1874,12 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
     a obi:0000671 .
 
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+    a obi:0000671 .
+
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name>
@@ -1881,15 +1889,20 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
     a obi:0000047 .
 
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
+    a obi:0000047 .
+
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name>
     a sp:SpecimenName ;
     rdf:value "cDNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
     owl:sameAs <http://www.bioassayontology.org/bao#BAO_0000315> .
@@ -1900,7 +1913,6 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name>
@@ -1910,15 +1922,20 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7>
     a obi:0000047 .
 
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7>
+    a obi:0000047 .
+
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     a sp:SpecimenName ;
     rdf:value "yeast cell" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
     owl:sameAs <http://purl.org/net/SMARTprotocol#YeastCell> .
@@ -1929,12 +1946,14 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name>
     a sp:SpecimenName ;
     rdf:value "mRNA" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33699> .
@@ -1945,12 +1964,14 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
-    a CHEBI:16991 ;
     sp:hasName <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name>
     a sp:SpecimenName ;
     rdf:value "PCR product" .
+
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
+    a CHEBI:16991 .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
     owl:sameAs <http://purl.obolibrary.org/obo/OBI_0000406> .
@@ -2083,14 +2104,13 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     a sp:ExperimentalProtocolExecution ;
-    sp:documentedIn <http://smartprotocols.org/10.1038/nprot.2009.229> .
+    sp:isDocumentedIn <http://smartprotocols.org/10.1038/nprot.2009.229> .
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Yeast culture" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2> .
@@ -2106,7 +2126,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Preculture of S. pombe" .
+    rdfs:label "Preculture of S. pombe" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2> .
@@ -2114,32 +2134,33 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>
-    rdfs:label "Start preculture of S. pombe growing at 32 °C in 50 ml flask overnight by inoculating 30 ml of YES media with cells picked from a YES agar plate. For timing estimates of the different steps, see Figure 1." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1/description> a sp:SubprocedureDescription ;
+rdf:value "Start preculture of S. pombe growing at 32 °C in 50 ml flask overnight by inoculating 30 ml of YES media with cells picked from a YES agar plate. For timing estimates of the different steps, see Figure 1." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/5>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Incubation" .
+    rdfs:label "Incubation" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3> .
@@ -2150,48 +2171,49 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2>
-    rdfs:label "From the exponentially growing preculture (OD 595 < 0.5), transfer a suf cient volume of precultured yeast to 100 ml of fresh YES media such that the nal OD of the harvested material will be between 0.2 and 0.5 (i.e., inoculate 100 ml YES with a small amount of exponential-phase preculture and incubate at 32 °C until it reaches OD 595 of 0.2–0.5)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2/description> a sp:SubprocedureDescription ;
+rdf:value "From the exponentially growing preculture (OD 595 < 0.5), transfer a suf cient volume of precultured yeast to 100 ml of fresh YES media such that the nal OD of the harvested material will be between 0.2 and 0.5 (i.e., inoculate 100 ml YES with a small amount of exponential-phase preculture and incubate at 32 °C until it reaches OD 595 of 0.2–0.5)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/5>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.2>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Separate and centrifuge" .
+    rdfs:label "Separate and centrifuge" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3>
-    rdfs:label "Separate the culture into two 50 ml Falcon tubes and centrifuge for 2 min at 1,500g at 25 °C to form cell pellets." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3/description> a sp:SubprocedureDescription ;
+rdf:value "Separate the culture into two 50 ml Falcon tubes and centrifuge for 2 min at 1,500g at 25 °C to form cell pellets." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/1.3>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
-    a sp:LaboratoryProcedure ;
-    rdf:value "rna extraction" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3> .
@@ -2210,7 +2232,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Discard the supernatant" .
+    rdfs:label "Discard the supernatant" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2> .
@@ -2218,24 +2240,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1>
-    rdfs:label "Discard the supernatant, add 750 μl of TES to pellet and resuspend cells with pipette" .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1/description> a sp:SubprocedureDescription ;
+rdf:value "Discard the supernatant, add 750 μl of TES to pellet and resuspend cells with pipette" .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/4>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value " add acidic phenol–chloroform" .
+    rdfs:label " add acidic phenol–chloroform" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3> .
@@ -2244,30 +2267,31 @@
     sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2/caution> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2/caution>
-    a sp:Caution ;
+    a <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122> ;
     rdf:value "May cause irritation to the eye and the skin. May cause depression of the central nervous system, cardiac disturbances, reproductive and fetal effects, cancer based on animal studies and irritation to the respiratory and the digestive tracts. Use gloves and safety glasses and work under a fume hood." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2>
-    rdfs:label "Immediately add 750 μl acidic phenol–chloroform and vortex the sample for 15 s" .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2/description> a sp:SubprocedureDescription ;
+rdf:value "Immediately add 750 μl acidic phenol–chloroform and vortex the sample for 15 s" .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.2>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "incubate the sample" .
+    rdfs:label "incubate the sample" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4> .
@@ -2278,24 +2302,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3>
-    rdfs:label "Place the sample into a preheated 65 °C heat block. Incubate all the samples at 65 °C for 1 h. Every 10 min, vortex each sample for 10 s." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3/description> a sp:SubprocedureDescription ;
+rdf:value "Place the sample into a preheated 65 °C heat block. Incubate all the samples at 65 °C for 1 h. Every 10 min, vortex each sample for 10 s." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.3>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Place the samples on ice, vortex and centrifuge" .
+    rdfs:label "Place the samples on ice, vortex and centrifuge" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5> .
@@ -2306,24 +2331,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4>
-    rdfs:label "Place the samples on ice for 1 min, vortex for 20 s and centrifuge for 15 min at 14,000g at 4 °C." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4/description> a sp:SubprocedureDescription ;
+rdf:value "Place the samples on ice for 1 min, vortex for 20 s and centrifuge for 15 min at 14,000g at 4 °C." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.4>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Prespin" .
+    rdfs:label "Prespin" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6> .
@@ -2334,24 +2360,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5>
-    rdfs:label "Prespin 2 ml yellow phase-lock tubes for 10 s at 14,000g at RT." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5/description> a sp:SubprocedureDescription ;
+rdf:value "Prespin 2 ml yellow phase-lock tubes for 10 s at 14,000g at RT." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.5>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add acidic phenol–chloroform" .
+    rdfs:label "Add acidic phenol–chloroform" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7> .
@@ -2362,24 +2389,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6>
-    rdfs:label "Add 700 μl of acidic phenol–chloroform to each phase-lock tube." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6/description> a sp:SubprocedureDescription ;
+rdf:value "Add 700 μl of acidic phenol–chloroform to each phase-lock tube." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/17-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.6>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Take a vol of the aqueous phase from step 2.4 (Step 8 original text), and add to the phase-lock tubes from step 2.6 (step 10 original text)." .
+    rdfs:label "Take a vol of the aqueous phase from step 2.4 (Step 8 original text), and add to the phase-lock tubes from step 2.6 (step 10 original text)." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8> .
@@ -2390,20 +2418,21 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7>
-    rdfs:label "Take 700 μl of the aqueous phase from Step 8 and add to the phase-lock tubes from Step 10." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7/description> a sp:SubprocedureDescription ;
+rdf:value "Take 700 μl of the aqueous phase from Step 8 and add to the phase-lock tubes from Step 10." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.7>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Mix the tubes by inverting and centrifuge" .
+    rdfs:label "Mix the tubes by inverting and centrifuge" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9> .
@@ -2421,24 +2450,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8>
-    rdfs:label "Mix the tubes thoroughly by inverting (do not vortex the tubes) and then centrifuge for 5 min at 14,000g at 4 °C." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8/description> a sp:SubprocedureDescription ;
+rdf:value "Mix the tubes thoroughly by inverting (do not vortex the tubes) and then centrifuge for 5 min at 14,000g at 4 °C." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.8>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Prespin  as in step 2.5 (Step 9 original text)." .
+    rdfs:label "Prespin  as in step 2.5 (Step 9 original text)." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10> .
@@ -2449,24 +2479,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9>
-    rdfs:label "Prespin 2 ml phase-lock tubes as in Step 9." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9/description> a sp:SubprocedureDescription ;
+rdf:value "Prespin 2 ml phase-lock tubes as in Step 9." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.9>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add chloroform:isoamyl alcohol (24:1)" .
+    rdfs:label "Add chloroform:isoamyl alcohol (24:1)" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11> .
@@ -2477,24 +2508,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10>
-    rdfs:label "Add 700 μl of chloroform:isoamyl alcohol (24:1) to each phase-lock tube from Step 13." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10/description> a sp:SubprocedureDescription ;
+rdf:value "Add 700 μl of chloroform:isoamyl alcohol (24:1) to each phase-lock tube from Step 13." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/22-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.10>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Take a vol of the aqueous phase from step 2.8 ( Step 12 original text) and add to the phase-lock tubes from Step 2.9 (step 13 original text)." .
+    rdfs:label "Take a vol of the aqueous phase from step 2.8 ( Step 12 original text) and add to the phase-lock tubes from Step 2.9 (step 13 original text)." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12> .
@@ -2505,20 +2537,21 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11>
-    rdfs:label "Take 700 μl of the aqueous phase from Step 12 and add to the phase-lock tubes from Step 13." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11/description> a sp:SubprocedureDescription ;
+rdf:value "Take 700 μl of the aqueous phase from Step 12 and add to the phase-lock tubes from Step 13." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.11>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Mix the tubes  by inverting and centrifuge" .
+    rdfs:label "Mix the tubes  by inverting and centrifuge" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13> .
@@ -2536,24 +2569,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12>
-    rdfs:label "Mix the tubes thoroughly by inverting (do not vortex tubes) and then centrifuge for 5 min at 14,000g at 4 °C." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12/description> a sp:SubprocedureDescription ;
+rdf:value "Mix the tubes thoroughly by inverting (do not vortex tubes) and then centrifuge for 5 min at 14,000g at 4 °C." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/11-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.12>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Prepare normal 2 ml Eppendorf tubes with EtOH and 3 M NaAc pH 5.2." .
+    rdfs:label "Prepare normal 2 ml Eppendorf tubes with EtOH and 3 M NaAc pH 5.2." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14> .
@@ -2564,24 +2598,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13>
-    rdfs:label "Prepare normal 2 ml Eppendorf tubes with 1.5 ml of ice cold 100% EtOH and 50 μl of 3 M NaAc pH 5.2." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13/description> a sp:SubprocedureDescription ;
+rdf:value "Prepare normal 2 ml Eppendorf tubes with 1.5 ml of ice cold 100% EtOH and 50 μl of 3 M NaAc pH 5.2." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/13-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/23-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/9-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.13>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Transfer a vol of aqueous phase from Step 2.12 (Step 16 original text) to the tubes from Step 2.13 (step 17 in original text) and vortex. " .
+    rdfs:label "Transfer a vol of aqueous phase from Step 2.12 (Step 16 original text) to the tubes from Step 2.13 (step 17 in original text) and vortex. " .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15> .
@@ -2599,24 +2634,25 @@
     a sp:PausePoint ;
     rdf:value "Samples can be left overnight at − 20 °C." .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14>
-    rdfs:label "Transfer 500 μl of aqueous phase from Step 16 to the tubes from Step 17 and vortex tubes for 10 s." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14/description> a sp:SubprocedureDescription ;
+rdf:value "Transfer 500 μl of aqueous phase from Step 16 to the tubes from Step 17 and vortex tubes for 10 s." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.14>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Centrifuge. Discard the supernatant and add  70% (vol/vol) EtOH. " .
+    rdfs:label "Centrifuge. Discard the supernatant and add  70% (vol/vol) EtOH. " .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16> .
@@ -2634,24 +2670,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15>
-    rdfs:label "Centrifuge for 10 min at 14,000g at RT. Discard the supernatant and add 500 μl 70% (vol/vol) EtOH (4 °C, prepared with DEPC water)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15/description> a sp:SubprocedureDescription ;
+rdf:value "Centrifuge for 10 min at 14,000g at RT. Discard the supernatant and add 500 μl 70% (vol/vol) EtOH (4 °C, prepared with DEPC water)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/12>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/12-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.15>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Spin the tubes, aspirate most of the supernatant and spin the tubes " .
+    rdfs:label "Spin the tubes, aspirate most of the supernatant and spin the tubes " .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17> .
@@ -2662,24 +2699,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16>
-    rdfs:label "Spin the tubes for 1 min with the tubes in same orientation as in Step 2.15. When finished, aspirate most of the supernatant and spin the tubes again for 5 s and remove rest of the liquid with pipette." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16/description> a sp:SubprocedureDescription ;
+rdf:value "Spin the tubes for 1 min with the tubes in same orientation as in Step 2.15. When finished, aspirate most of the supernatant and spin the tubes again for 5 s and remove rest of the liquid with pipette." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.16>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Air dry pellets for 5 min at RT." .
+    rdfs:label "Air dry pellets for 5 min at RT." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18> .
@@ -2690,16 +2728,17 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17>
-    rdfs:label "Air dry pellets for 5 min at RT." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17/description> a sp:SubprocedureDescription ;
+rdf:value "Air dry pellets for 5 min at RT." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.17>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add DEPC water and incubate. Dissolve pellet." .
+    rdfs:label "Add DEPC water and incubate. Dissolve pellet." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19> .
@@ -2710,28 +2749,29 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>
-    rdfs:label "Add 100 μl of DEPC water and incubate 1 min at 65 °C (or 10 min at RT). Dissolve pellet first by pipetting up and down (~30×) until no particles are left, then gently vortex for 10 s." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18/description> a sp:SubprocedureDescription ;
+rdf:value "Add 100 μl of DEPC water and incubate 1 min at 65 °C (or 10 min at RT). Dissolve pellet first by pipetting up and down (~30×) until no particles are left, then gently vortex for 10 s." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/1>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.18>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Measure the RNA concentration " .
+    rdfs:label "Measure the RNA concentration " .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.20> .
@@ -2763,30 +2803,30 @@
     a sp:PausePoint ;
     rdf:value "RNA can be stored indefinitely at − 70 °C." .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>
-    rdfs:label "Measure the RNA concentration by Nanodrop (or alternative UV spectrophotometer) with DEPC water as reference." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19/description> a sp:SubprocedureDescription ;
+rdf:value "Measure the RNA concentration by Nanodrop (or alternative UV spectrophotometer) with DEPC water as reference." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/23-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/1>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/2.19>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3>
-    a sp:LaboratoryProcedure ;
-    rdf:value "rna purification" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4> .
@@ -2805,7 +2845,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "purify the RNA" .
+    rdfs:label "purify the RNA" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2> .
@@ -2813,24 +2853,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1>
-    rdfs:label "If required because of residual organics (low 260:230 ratio), further purify 100 μg of RNA from Step 2.19 (step 23 in original text) on an RNeasy spin column according to the manufacturer’s instructions." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1/description> a sp:SubprocedureDescription ;
+rdf:value "If required because of residual organics (low 260:230 ratio), further purify 100 μg of RNA from Step 2.19 (step 23 in original text) on an RNeasy spin column according to the manufacturer’s instructions." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/18-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Incubate RNA" .
+    rdfs:label "Incubate RNA" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3> .
@@ -2841,24 +2882,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2>
-    rdfs:label "Incubate RNA with RNase-free DNase for 30 min at 37 °C according to manufacturer’s instructions." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate RNA with RNase-free DNase for 30 min at 37 °C according to manufacturer’s instructions." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/35-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.2>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Purify samples using Qiagen RNAeasy columns " .
+    rdfs:label "Purify samples using Qiagen RNAeasy columns " .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4> .
@@ -2876,20 +2918,21 @@
     a sp:PausePoint ;
     rdf:value "RNA can be stored indefinitely at − 70 °C." .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3>
-    rdfs:label "Purify samples using Qiagen RNAeasy columns as in Step 3.1 (step 24 in original text)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3/description> a sp:SubprocedureDescription ;
+rdf:value "Purify samples using Qiagen RNAeasy columns as in Step 3.1 (step 24 in original text)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/24-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.3>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Assess the quality of the purified RNA" .
+    rdfs:label "Assess the quality of the purified RNA" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4>
     sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4/hint> .
@@ -2901,22 +2944,22 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4>
-    rdfs:label "Assess the quality of the purified RNA using an RNA Nano chip on the Agilent Bioanalyzer. Profile and electrophoretogram should look like the one shown in Figure 3." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4/description> a sp:SubprocedureDescription ;
+rdf:value "Assess the quality of the purified RNA using an RNA Nano chip on the Agilent Bioanalyzer. Profile and electrophoretogram should look like the one shown in Figure 3." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/14-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/3.4>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Poly(A) enrichment of RNA" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5> .
@@ -2935,7 +2978,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Enrich the RNA sample for mRNA" .
+    rdfs:label "Enrich the RNA sample for mRNA" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1>
     sp:hasAlertMessage <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1/troubleshooting> .
@@ -2947,26 +2990,26 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1>
-    rdfs:label "Enrich the RNA sample for mRNA by using a poly(A) + RNA selection kit, such as the Oligotex mRNA purification kit from Qiagen. Carry out two sequential rounds of poly(A) enrichment on each sample according to the manufacturer’s instructions and measure RNA quantity by Nanodrop." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1/description> a sp:SubprocedureDescription ;
+rdf:value "Enrich the RNA sample for mRNA by using a poly(A) + RNA selection kit, such as the Oligotex mRNA purification kit from Qiagen. Carry out two sequential rounds of poly(A) enrichment on each sample according to the manufacturer’s instructions and measure RNA quantity by Nanodrop." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/19-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/9-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/4.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5>
-    a sp:LaboratoryProcedure ;
-    rdf:value "cDNApreparation" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6> .
@@ -2985,7 +3028,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "reverse transcription" .
+    rdfs:label "reverse transcription" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2> .
@@ -3000,24 +3043,25 @@
     a sp:PausePoint ;
     rdf:value "Synthesized cDNA can be stored indefinitely at − 20 °C." .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1>
-    rdfs:label "Carry out reverse transcription with SuperScript double-stranded cDNA synthesis kit or similar system using the manufacturer’s protocol for mRNA, with an oligo-dT20 primer. Carry out three independent RT reactions, purify the cDNAs using QIAquick PCR purification kit and pool them." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1/description> a sp:SubprocedureDescription ;
+rdf:value "Carry out reverse transcription with SuperScript double-stranded cDNA synthesis kit or similar system using the manufacturer’s protocol for mRNA, with an oligo-dT20 primer. Carry out three independent RT reactions, purify the cDNAs using QIAquick PCR purification kit and pool them." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/21-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/31-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "" .
+    rdfs:label "" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2>
     sp:isPrecededBy <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.1> .
@@ -3032,18 +3076,18 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2>
-    rdfs:label "Assess the quality of the prepared cDNA by using a DNA 1000 kit on the Agilent Bioanalyzer." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2/description> a sp:SubprocedureDescription ;
+rdf:value "Assess the quality of the prepared cDNA by using a DNA 1000 kit on the Agilent Bioanalyzer." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/16-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/5.2>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
-    a sp:LaboratoryProcedure ;
-    rdf:value "sample preparation for Illumina 1G machine" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7> .
@@ -3062,7 +3106,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Dilute the pooled cDNA" .
+    rdfs:label "Dilute the pooled cDNA" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2> .
@@ -3070,24 +3114,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1>
-    rdfs:label "Dilute the pooled cDNA sample to a volume of 50 μl with TE and 700 μl of nebulization buffer (Illumina)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1/description> a sp:SubprocedureDescription ;
+rdf:value "Dilute the pooled cDNA sample to a volume of 50 μl with TE and 700 μl of nebulization buffer (Illumina)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/3>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/36>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/36-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Fragment samples" .
+    rdfs:label "Fragment samples" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3> .
@@ -3098,16 +3143,17 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2>
-    rdfs:label "Fragment samples at 32–35 psi for 6 min on ice using nebulizer." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2/description> a sp:SubprocedureDescription ;
+rdf:value "Fragment samples at 32–35 psi for 6 min on ice using nebulizer." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.2>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Purify the fragmentation products using QIAquick kit" .
+    rdfs:label "Purify the fragmentation products using QIAquick kit" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4> .
@@ -3118,24 +3164,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3>
-    rdfs:label "Purify the fragmentation products using QIAquick kit eluting in 50 μl of water. Qiagen PB buffer can be pipetted around the nebulizer to recover the maximum amount of sample." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3/description> a sp:SubprocedureDescription ;
+rdf:value "Purify the fragmentation products using QIAquick kit eluting in 50 μl of water. Qiagen PB buffer can be pipetted around the nebulizer to recover the maximum amount of sample." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/21-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/22-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.3>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Incubate fragments" .
+    rdfs:label "Incubate fragments" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5> .
@@ -3146,24 +3193,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4>
-    rdfs:label "Incubate fragments with 50 U of Klenow DNA polymerase and 30 units of T4 DNA polymerase with 20 μl of a mix of 10 mM dNTPs for 30 min at 16 °C to blunt fragment ends." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4/description> a sp:SubprocedureDescription ;
+rdf:value "Incubate fragments with 50 U of Klenow DNA polymerase and 30 units of T4 DNA polymerase with 20 μl of a mix of 10 mM dNTPs for 30 min at 16 °C to blunt fragment ends." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/28-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/34-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.4>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Purify blunt end-repair fragments" .
+    rdfs:label "Purify blunt end-repair fragments" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6> .
@@ -3174,16 +3222,17 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5>
-    rdfs:label "Purify blunt end-repair fragments (Step 34) using a QIAquick PCR purification column with sample eluted in 32 μl of Qiagen elution buffer." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5/description> a sp:SubprocedureDescription ;
+rdf:value "Purify blunt end-repair fragments (Step 34) using a QIAquick PCR purification column with sample eluted in 32 μl of Qiagen elution buffer." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.5>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6>
     a sp:LaboratorySubprocedure ;
-    rdf:value "" .
+    rdfs:label "" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7> .
@@ -3194,24 +3243,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6>
-    rdfs:label "Add 15 units of exo-Klenow, 10 μl of 1 mM dATP and 5 μl of 10× Klenow buffer and incubate at 37 °C for 30 min to add a 3′ adenine overhang to the blunt-ended double-stranded cDNA fragments." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6/description> a sp:SubprocedureDescription ;
+rdf:value "Add 15 units of exo-Klenow, 10 μl of 1 mM dATP and 5 μl of 10× Klenow buffer and incubate at 37 °C for 30 min to add a 3′ adenine overhang to the blunt-ended double-stranded cDNA fragments." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/27-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/14-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.6>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Ligate the fragments" .
+    rdfs:label "Ligate the fragments" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8> .
@@ -3222,20 +3272,21 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7>
-    rdfs:label "Ligate the tailed cDNA fragments to the two proprietary oligonucleotide adaptors (Illumina) that will permit the nonspecific amplification of cDNA fragments. Add adaptors and T4 DNA ligase (NEB, Ipswitch, Massachusetts, USA) according to the current Illumina protocols and incubate at RT for 15 min." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7/description> a sp:SubprocedureDescription ;
+rdf:value "Ligate the tailed cDNA fragments to the two proprietary oligonucleotide adaptors (Illumina) that will permit the nonspecific amplification of cDNA fragments. Add adaptors and T4 DNA ligase (NEB, Ipswitch, Massachusetts, USA) according to the current Illumina protocols and incubate at RT for 15 min." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/37-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.7>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Separate ligation products" .
+    rdfs:label "Separate ligation products" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9> .
@@ -3246,20 +3297,21 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8>
-    rdfs:label "Separate ligation products on a 2% (wt/vol) Tris-acetate-EDTA (TAE)-agarose gel. Using a razor blade, excise the specific region of the gel desired, according to the size range for the insert (generally 120–170 bp in size)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8/description> a sp:SubprocedureDescription ;
+rdf:value "Separate ligation products on a 2% (wt/vol) Tris-acetate-EDTA (TAE)-agarose gel. Using a razor blade, excise the specific region of the gel desired, according to the size range for the insert (generally 120–170 bp in size)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/13>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/13-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/10.>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/10.-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.8>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Use Qiagen Gel" .
+    rdfs:label "Use Qiagen Gel" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10> .
@@ -3270,20 +3322,21 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9>
-    rdfs:label "Use Qiagen Gel puri cation kit to extract ligation products according to the manufacturer’s protocol, eluting fragments in 30 μl of water." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9/description> a sp:SubprocedureDescription ;
+rdf:value "Use Qiagen Gel puri cation kit to extract ligation products according to the manufacturer’s protocol, eluting fragments in 30 μl of water." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/25-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.9>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Set up PCR reactions" .
+    rdfs:label "Set up PCR reactions" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11> .
@@ -3301,20 +3354,21 @@
     a sp:PausePoint ;
     rdf:value "PCR reactions can be left at 4 °C overnight." .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10>
-    rdfs:label "Set up PCR reactions using 1 μl of purified cDNA fragments (Step 39), 22 μl of water, 25 μl of 2X Phusion Taq master mix and 1 μl each of 1.1 and 2.1 primers (Illumina)—these primers are complementary to the ligated adaptors (Step 37) and compatible with oligonucleotides attached to the Illumina flowcell" .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10/description> a sp:SubprocedureDescription ;
+rdf:value "Set up PCR reactions using 1 μl of purified cDNA fragments (Step 39), 22 μl of water, 25 μl of 2X Phusion Taq master mix and 1 μl each of 1.1 and 2.1 primers (Illumina)—these primers are complementary to the ligated adaptors (Step 37) and compatible with oligonucleotides attached to the Illumina flowcell" .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33,>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/33,-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.10>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11>
     a sp:LaboratorySubprocedure ;
-    rdf:value "purify the PCR products" .
+    rdfs:label "purify the PCR products" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12> .
@@ -3325,24 +3379,25 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11>
-    rdfs:label "Following amplification of ligation products, purify the PCR products using QIAquick PCR kit or equivalent and measure the concentration with a Nanodrop." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11/description> a sp:SubprocedureDescription ;
+rdf:value "Following amplification of ligation products, purify the PCR products using QIAquick PCR kit or equivalent and measure the concentration with a Nanodrop." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/reagents/20-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5.>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/5.-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Dilute the cDNA" .
+    rdfs:label "Dilute the cDNA" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12>
     sp:isPrecededBy <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.11> .
@@ -3357,22 +3412,22 @@
     a sp:PausePoint ;
     rdf:value "Fragment library can be stored indefinitely at − 20 °C." .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12>
-    rdfs:label "Dilute the cDNA to a working concentration of 10 nM in TE." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12/description> a sp:SubprocedureDescription ;
+rdf:value "Dilute the cDNA to a working concentration of 10 nM in TE." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/3.>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/recipes/3.-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6.12>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Illumina genome analyzer analysis" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:isPrecededBy <http://smartprotocols.org/10.1038/nprot.2009.229/methods/6> .
@@ -3385,7 +3440,7 @@
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "run the appropriate .xml script" .
+    rdfs:label "run the appropriate .xml script" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2> .
@@ -3393,20 +3448,21 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1>
-    rdfs:label "Using Illumina cluster station, run the appropriate .xml script to operate syringe pump to load cDNA fragments onto an Illumina flowcell." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1/description> a sp:SubprocedureDescription ;
+rdf:value "Using Illumina cluster station, run the appropriate .xml script to operate syringe pump to load cDNA fragments onto an Illumina flowcell." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/1>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1>.
 
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/specimens/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.1>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Run the ‘on board’ Illumina analysis pipeline" .
+    rdfs:label "Run the ‘on board’ Illumina analysis pipeline" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3> .
@@ -3417,16 +3473,17 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2>
-    rdfs:label "Run the ‘on board’ Illumina analysis pipeline (Firecrest, Bustard and Gerald)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2/description> a sp:SubprocedureDescription ;
+rdf:value "Run the ‘on board’ Illumina analysis pipeline (Firecrest, Bustard and Gerald)." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2/description> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/1>
+<http://smartprotocols.org/10.1038/nprot.2009.229/materials/equipments/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.2>.
 
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "store data in FASTA format." .
+    rdfs:label "store data in FASTA format." .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4> .
@@ -3437,12 +3494,13 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3>
-    rdfs:label "Parse through all FASTQ files to strip quality scores and temporarily store data in FASTA format." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3/description> a sp:SubprocedureDescription ;
+rdf:value "Parse through all FASTQ files to strip quality scores and temporarily store data in FASTA format." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.3/description> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Noise reduction" .
+    rdfs:label "Noise reduction" .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5> .
@@ -3460,14 +3518,14 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4>
-    rdfs:label "Identify sequence reads which contain only Ns as base-calls and remove from the dataset." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4/description> a sp:SubprocedureDescription ;
+rdf:value "Identify sequence reads which contain only Ns as base-calls and remove from the dataset." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.4/description> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Noise reduction" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5>
     sp:precedes <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6> .
@@ -3478,14 +3536,14 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5>
-    rdfs:label "Identify sequence reads which contain < 15 bp of sequence before the first N base is called and remove these from the dataset." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5/description> a sp:ProcedureDescription ;
+rdf:value "Identify sequence reads which contain < 15 bp of sequence before the first N base is called and remove these from the dataset." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5/description> .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/execution>
     sp:hasProcedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6> .
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6>
-    a sp:LaboratoryProcedure ;
-    rdf:value "Noise reduction" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6>
     sp:isPrecededBy <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.5> .
@@ -3493,5 +3551,6 @@
 <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7>
     sp:hasSubprocedure <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6> .
 
-<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6>
-    rdfs:label "Identify sequence reads that are homopolymeric A/T stretches and remove these from the analysis." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6/description> a sp:ProcedureDescription ;
+rdf:value "Identify sequence reads that are homopolymeric A/T stretches and remove these from the analysis." .
+<http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6> sp:hasDescription <http://smartprotocols.org/10.1038/nprot.2009.229/methods/7.6/description> .

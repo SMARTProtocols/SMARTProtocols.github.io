@@ -1,0 +1,428 @@
+
+@prefix prism: <http://prismstandard.org-namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sp: <http://purl.org/net/SMARTprotocol#> .
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix Thesaurus: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix MSH: <http://purl.bioontology.org/ontology/MSH/> .
+@prefix ERO: <http://purl.obolibrary.org/obo/ERO_> .
+@prefix crisp: <http://purl.bioontology.org/ontology/CSP/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
+
+<http://smartprotocols.org/P-06-6>
+    a sp:ExperimentalProtocol ;
+    sp:publishedIn  <http://smartprotocols.org/P-06-6/publication> ;
+    ro:has_part <http://smartprotocols.org/P-06-6/cover-date> .
+<http://smartprotocols.org/P-06-6/publication>
+    a sp:Publication ;
+    sp:hasName <http://smartprotocols.org/P-06-6/publication-name> .
+<http://smartprotocols.org/P-06-6/publication-name>
+    a sp:PublicationName ;
+    rdf:value "Pathology lab - CIAT" .
+
+<http://smartprotocols.org/P-06-6/cover-date>
+    a prism:coverDate ;
+    rdf:value "01/01/2000" .
+
+<http://smartprotocols.org/P-06-6>
+    sp:hasTitle <http://smartprotocols.org/P-06-6/title> .
+<http://smartprotocols.org/P-06-6/title>
+    a sp:TitleOfProtocol ;
+    rdf:value "Preparacion de suspension conidial" .
+
+<http://smartprotocols.org/P-06-6> sp:hasIdentifier <http://smartprotocols.org/P-06-6/identifier> .
+<http://smartprotocols.org/P-06-6/identifier>
+    a sp:ProtocolIdentifier ;
+    rdf:value "P-06-6" .
+
+<http://smartprotocols.org/P-06-6> sp:hasPurpose <http://smartprotocols.org/P-06-6/purpose> .
+<http://smartprotocols.org/P-06-6/purpose>
+    a sp:PurposeOfProtocol ;
+    rdf:value "este protocolo explica la preparacion de una suspension de conidios de hongo cosechados de un cultivo solido, ajustado a una concentracion deseada." .
+
+<http://smartprotocols.org/P-06-6> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/reagents> .
+<http://smartprotocols.org/P-06-6/execution> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/reagents> .
+<http://smartprotocols.org/P-06-6/materials/reagents> a sp:ReagentList .
+
+<http://smartprotocols.org/P-06-6/materials/reagents>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/reagents/1-name> .
+<http://smartprotocols.org/P-06-6/materials/reagents/1>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/reagents/1-name> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/1-name>
+    a sp:ReagentName ;
+    rdf:value "Triton X-100" .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/1>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/reagents/1-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/reagents/1-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "T8787" .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/1>
+    foaf:homepage <http://www.sigmaaldrich.com/catalog/product/sigma/t8787?lang=en&region=US> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/1>
+    obi:0000304 <http://smartprotocols.org/manufacturers/Sigma> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/reagents/2-name> .
+<http://smartprotocols.org/P-06-6/materials/reagents/2>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/reagents/2-name> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/2-name>
+    a sp:ReagentName ;
+    rdf:value "Noble agar" .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/reagents/2-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/reagents/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "214230" .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/2>
+    foaf:homepage <http://www.bd.com/ds/productCenter/214230.asp> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/2>
+    obi:0000304 <http://smartprotocols.org/manufacturers/Difco> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/reagents/3-name> .
+<http://smartprotocols.org/P-06-6/materials/reagents/3>
+    a CHEBI:33893 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/reagents/3-name> .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/3-name>
+    a sp:ReagentName ;
+    rdf:value "etanol 70%" .
+
+<http://smartprotocols.org/P-06-6/materials/reagents/3>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62218> .
+
+<http://smartprotocols.org/P-06-6/execution> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/equipments> .
+<http://smartprotocols.org/P-06-6> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/equipments> .
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    a sp:EquipmentAndSuppliesList .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/1-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/1>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/1-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/1-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "tubos de microcentrifuga 1.5 ml" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/1>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/1-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/1-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "1615-5500" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/1>
+    foaf:homepage <http://www.usascientific.com/Seal-Rite-1.5-ml-tube.aspx> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/1>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/42> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/2-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/2>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/2-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/2-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "tubos de centrifuga 15 ml" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/2>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/2-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/2-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "05-539-5" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/2>
+    foaf:homepage <https://www.fishersci.com/shop/products/fisherbrand-easy-reader-polypropylene-centrifuge-tubes-9/055395> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/2>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/11> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/3-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/3>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/3-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/3-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "tubos de centrifuga 50 ml" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/3>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/3-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/3-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "05-539-6" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/3>
+    foaf:homepage <https://www.fishersci.com/shop/products/fisherbrand-easy-reader-polypropylene-centrifuge-tubes-9/055396#?keyword=05-539-6> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/3>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/11> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/4-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/4>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/4-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/4-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "puntas para pipeta 10 ml" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/4>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/4-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/4-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "13-678-11E" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/4>
+    foaf:homepage <https://www.fishersci.com/shop/products/fisherbrand-sterile-polystyrene-disposable-serological-pipets-magnifier-stripe-30/1367811e?searchHijack=true&searchTerm=1367811E&typeAheadCat=fisherCatNum&matchedCatNo=1367811E> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/4>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/11> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/5-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/5>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/5-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/5-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "puntas de micropipeta 100-1250 ul" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/5>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/5-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/5-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "02-707-406" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/5>
+    foaf:homepage <https://www.fishersci.com/shop/products/fisherbrand-sureone-micropoint-pipet-tips-universal-fit-37/02707406?searchHijack=true&searchTerm=02707406&searchType=RAPID&matchedCatNo=02707406> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/5>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/11> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/6-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/6>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/6-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/6-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "puntas de micropipeta 1-200 ul" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/6>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/6-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/6-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "02-707-421" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/6>
+    foaf:homepage <https://www.fishersci.com/shop/products/fisherbrand-sureone-beveled-pipet-tips-universal-fit-1-200-l-16/02707421?searchHijack=true&searchTerm=02707421&typeAheadCat=fisherCatNum&matchedCatNo=02707421> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/6>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/11> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/7-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/7>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/7-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/7-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "gasa" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/7>
+    owl:sameAs <http://cognonto.com/knowledge-graph/reference-concept/?uri=MedicalPad> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/8-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/8>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/8-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/8-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "beaker 100 ml" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/9-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/9>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/9-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/9-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "probeta 1l" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/9>
+    owl:sameAs <http://purl.obolibrary.org/obo/MMO_0000213> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/10-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/10>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/10-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/10-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "caja petri 100x15" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/10>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C96141> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/11-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/11>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/11-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/11-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "micropipeta 50-200 ul" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/11>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/11-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/11-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "F123601" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/11>
+    foaf:homepage <http://www.gilson.com/Pipette/Products/47.221/Default.aspx?d=358#.WO5q-FN97jF> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/11>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/43> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/12-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/12>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/12-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/12-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "micropipeta 200-1000 ul" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/12>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/12-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/12-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "F123602" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/12>
+    foaf:homepage <http://www.gilson.com/Pipette/Products/47.221/Default.aspx?d=358#.WO5q-FN97jF> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/12>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/43> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/13-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/13>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/13-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/13-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "pipeteador electrico" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/13>
+    sp:hasCatalogNumber <http://smartprotocols.org/P-06-6/materials/equipments/13-catalog-number> .
+<http://smartprotocols.org/P-06-6/materials/equipments/13-catalog-number>
+    a sp:CatalogNumber ;
+    rdf:value "03-692-164" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/13>
+    foaf:homepage <https://www.fishersci.com/shop/products/fisherbrand-motorized-pipet-fillers-dispensers-13/03692164?searchHijack=true&searchTerm=03692164&typeAheadCat=fisherCatNum&matchedCatNo=03692164> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/13>
+    obi:0000304 <http://smartprotocols.org/P-06-6/manufacturers/11> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/14-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/14>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/14-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/14-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "gradilla" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/14>
+    owl:sameAs <http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Rack> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/15-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/15>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/15-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/15-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "camara de flujo laminar" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/15>
+    owl:sameAs <http://purl.obolibrary.org/obo/ERO_0000239> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/equipments/16-name> .
+<http://smartprotocols.org/P-06-6/materials/equipments/16>
+    a MSH:D004864 ;
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/equipments/16-name> .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/16-name>
+    a sp:EquipmentOrSuppliesName ;
+    rdf:value "vortex" .
+
+<http://smartprotocols.org/P-06-6/materials/equipments/16>
+    owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C29544> .
+
+<http://smartprotocols.org/P-06-6/execution> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/recipes> .
+<http://smartprotocols.org/P-06-6> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/specimens> .
+<http://smartprotocols.org/P-06-6/materials/specimens>
+    a sp:SpecimenList .
+
+<http://smartprotocols.org/P-06-6/materials/specimens>
+    ro:has_part <http://smartprotocols.org/P-06-6/materials/specimens/1-name> .
+<http://smartprotocols.org/P-06-6/materials/specimens/1>
+    sp:hasName <http://smartprotocols.org/P-06-6/materials/specimens/1-name> .
+
+<http://smartprotocols.org/P-06-6/materials/specimens/1-name>
+    a sp:SpecimenName ;
+    rdf:value "Conidium" .
+
+<http://smartprotocols.org/P-06-6/materials/specimens/1>
+    a CL:0000521 .
+
+<http://smartprotocols.org/P-06-6/materials/specimens/1>
+    owl:sameAs <http://purl.obolibrary.org/obo/CL_0000599> .
+
+<http://smartprotocols.org/P-06-6/materials/specimens/1>
+    a CL:0000521 .

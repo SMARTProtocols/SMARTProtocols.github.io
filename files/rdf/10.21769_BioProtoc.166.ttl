@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166>
     a sp:ExperimentalProtocol ;
@@ -397,12 +398,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
-    a crisp:4000-0119 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "Tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+    a crisp:4000-0119 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
     owl:sameAs <http://purl.bioontology.org/ontology/npo#NPO_1584> .
@@ -413,12 +416,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
-    a obi:0100026 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name>
     a sp:SpecimenName ;
     rdf:value "CB17 scid/scid mice" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+    a obi:0100026 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
     owl:sameAs <https://www.ncbi.nlm.nih.gov/pubmed/8022201> .
@@ -432,7 +437,6 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name>
@@ -442,15 +446,20 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
     a obi:0000047 .
 
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+    a obi:0000047 .
+
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name>
     a sp:SpecimenName ;
     rdf:value "mice injected with tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
+    a obi:0000047 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
     a obi:0000047 .
@@ -484,21 +493,17 @@
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/execution>
     a sp:ExperimentalProtocolExecution ;
-    sp:documentedIn <http://smartprotocols.org/10.21769/BioProtoc.166> .
+    sp:isDocumentedIn <http://smartprotocols.org/10.21769/BioProtoc.166> .
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/execution>
     sp:hasProcedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
-    a sp:LaboratoryProcedure ;
-    rdf:value "" .
-
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
-    rdfs:label "" .
+    a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>
     a sp:LaboratorySubprocedure ;
-    rdf:value "wash the cells" .
+    rdfs:label "wash the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2> .
@@ -509,24 +514,25 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>
-    rdfs:label "Remove growth medium from cells and wash with 5 ml of PBS" .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1/description> a sp:SubprocedureDescription ;
+rdf:value "Remove growth medium from cells and wash with 5 ml of PBS" .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>
     a sp:LaboratorySubprocedure ;
-    rdf:value "add trypsin and incubate" .
+    rdfs:label "add trypsin and incubate" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3> .
@@ -537,28 +543,29 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>
-    rdfs:label "Aspirate PBS, add 2 ml of trypsin and incubate for 5 min, or until cells have detached, at 37 °C" .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2/description> a sp:SubprocedureDescription ;
+rdf:value "Aspirate PBS, add 2 ml of trypsin and incubate for 5 min, or until cells have detached, at 37 °C" .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Quench trypsin" .
+    rdfs:label "Quench trypsin" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4> .
@@ -569,20 +576,21 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>
-    rdfs:label "Quench trypsin by adding at least 3 volumes of 10% FBS containing medium" .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3/description> a sp:SubprocedureDescription ;
+rdf:value "Quench trypsin by adding at least 3 volumes of 10% FBS containing medium" .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Pellet cells by centrifugation" .
+    rdfs:label "Pellet cells by centrifugation" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5> .
@@ -593,20 +601,21 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>
-    rdfs:label "Pellet cells by centrifugation for 5 min at 1,100 rpm and 37 °C." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4/description> a sp:SubprocedureDescription ;
+rdf:value "Pellet cells by centrifugation for 5 min at 1,100 rpm and 37 °C." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>
     a sp:LaboratorySubprocedure ;
-    rdf:value "wash the cells" .
+    rdfs:label "wash the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6> .
@@ -617,28 +626,29 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>
-    rdfs:label "Aspirate medium, wash cells with 10 ml sterile PBS, mix well with pipette and save 50 μl aliquot of cells for counting." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5/description> a sp:SubprocedureDescription ;
+rdf:value "Aspirate medium, wash cells with 10 ml sterile PBS, mix well with pipette and save 50 μl aliquot of cells for counting." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/recipes/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Pellet cells by centrifugation" .
+    rdfs:label "Pellet cells by centrifugation" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7> .
@@ -649,20 +659,21 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>
-    rdfs:label "Pellet cells by centrifugation for 5 min at 1,100 rpm and 37 °C." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6/description> a sp:SubprocedureDescription ;
+rdf:value "Pellet cells by centrifugation for 5 min at 1,100 rpm and 37 °C." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>
     a sp:LaboratorySubprocedure ;
-    rdf:value "add trypan blue" .
+    rdfs:label "add trypan blue" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8> .
@@ -680,24 +691,25 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>
-    rdfs:label "While cells are spinning, add 50 μl of trypan blue to saved aliquot, mix well and count cells using a hemocytometer." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7/description> a sp:SubprocedureDescription ;
+rdf:value "While cells are spinning, add 50 μl of trypan blue to saved aliquot, mix well and count cells using a hemocytometer." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/6-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/4-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>
     a sp:LaboratorySubprocedure ;
-    rdf:value "resuspend cells in fresh PBS" .
+    rdfs:label "resuspend cells in fresh PBS" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9> .
@@ -715,24 +727,25 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>
-    rdfs:label "Aspirate PBS, resuspend cells in fresh PBS to a concentration 1 x 106 cells/100 μl and transfer cells to a sterile Eppendorf tube." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8/description> a sp:SubprocedureDescription ;
+rdf:value "Aspirate PBS, resuspend cells in fresh PBS to a concentration 1 x 106 cells/100 μl and transfer cells to a sterile Eppendorf tube." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/5-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/9-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Add  thawed Matrigel to cells" .
+    rdfs:label "Add  thawed Matrigel to cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10> .
@@ -756,24 +769,25 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>
-    rdfs:label "Add an equal volume of thawed Matrigel to cells and mix carefully with pipette." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9/description> a sp:SubprocedureDescription ;
+rdf:value "Add an equal volume of thawed Matrigel to cells and mix carefully with pipette." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/8-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/10-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10>
     a sp:LaboratorySubprocedure ;
-    rdf:value "" .
+    rdfs:label "" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11> .
@@ -797,20 +811,21 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10>
-    rdfs:label "Slowly pull up 100 μl of cells alone or 200 μl of cell/matrigel mixture using an insulin syringe." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10/description> a sp:SubprocedureDescription ;
+rdf:value "Slowly pull up 100 μl of cells alone or 200 μl of cell/matrigel mixture using an insulin syringe." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/equipments/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>
     a sp:LaboratorySubprocedure ;
-    rdf:value "Inject cells into the flanks of immune deficient mice, preferably CB17 scid/scid." .
+    rdfs:label "Inject cells into the flanks of immune deficient mice, preferably CB17 scid/scid." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12> .
@@ -821,20 +836,21 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>
-    rdfs:label "Inject 1 x 106 cells into the flanks of immune deficient mice, preferably CB17 scid/scid. To do this, pinch the skin of the mouse between your index finger and thumb and pull the skin away from the body of the mouse." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11/description> a sp:SubprocedureDescription ;
+rdf:value "Inject 1 x 106 cells into the flanks of immune deficient mice, preferably CB17 scid/scid. To do this, pinch the skin of the mouse between your index finger and thumb and pull the skin away from the body of the mouse." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>.
 
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12>
     a sp:LaboratorySubprocedure ;
-    rdf:value "" .
+    rdfs:label "" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12>
     sp:isPrecededBy <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11> .
@@ -852,17 +868,18 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1>
     sp:hasSubprocedure <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12>
-    rdfs:label "Inject slowly and evenly into the pouch created by your fingers, creating a single bubble of cells beneath the skin and avoiding too much spread of the cells." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12/description> a sp:SubprocedureDescription ;
+rdf:value "Inject slowly and evenly into the pouch created by your fingers, creating a single bubble of cells beneath the skin and avoiding too much spread of the cells." .
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12> sp:hasDescription <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12/description> .
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12>.
 
 
-<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7>
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents/7-name>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.12>.
 
