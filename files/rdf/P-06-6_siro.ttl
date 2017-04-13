@@ -52,6 +52,26 @@
     a sp:PurposeOfProtocol ;
     rdf:value "este protocolo explica la preparacion de una suspension de conidios de hongo cosechados de un cultivo solido, ajustado a una concentracion deseada." .
 
+<http://smartprotocols.org/P-06-6>
+    ro:has_part <http://smartprotocols.org/P-06-6/authors> .
+<http://smartprotocols.org/P-06-6/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/P-06-6/authors> ro:has_part <http://smartprotocols.org/P-06-6/authors/1-name> .
+<http://smartprotocols.org/P-06-6/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/P-06-6/authors/1-name> .
+
+    <http://smartprotocols.org/P-06-6/authors/1-name>
+    rdf:value "Soroush Parsa" .
+
+<http://smartprotocols.org/P-06-6/authors> ro:has_part <http://smartprotocols.org/P-06-6/authors/2-name> .
+<http://smartprotocols.org/P-06-6/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/P-06-6/authors/2-name> .
+
+    <http://smartprotocols.org/P-06-6/authors/2-name>
+    rdf:value "Viviana Ortiz" .
+
 <http://smartprotocols.org/P-06-6> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/reagents> .
 <http://smartprotocols.org/P-06-6/execution> sp:hasExperimentalInput <http://smartprotocols.org/P-06-6/materials/reagents> .
 <http://smartprotocols.org/P-06-6/materials/reagents> a sp:ReagentList .

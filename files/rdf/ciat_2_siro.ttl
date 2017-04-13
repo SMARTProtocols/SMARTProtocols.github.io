@@ -52,6 +52,26 @@
     a sp:PurposeOfProtocol ;
     rdf:value "Total RNA CTAB Extraction Method adapted for Cassava leafs" .
 
+<http://smartprotocols.org/ciat_2>
+    ro:has_part <http://smartprotocols.org/ciat_2/authors> .
+<http://smartprotocols.org/ciat_2/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/ciat_2/authors> ro:has_part <http://smartprotocols.org/ciat_2/authors/1-name> .
+<http://smartprotocols.org/ciat_2/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/ciat_2/authors/1-name> .
+
+    <http://smartprotocols.org/ciat_2/authors/1-name>
+    rdf:value "Cristian Olaya" .
+
+<http://smartprotocols.org/ciat_2/authors> ro:has_part <http://smartprotocols.org/ciat_2/authors/2-name> .
+<http://smartprotocols.org/ciat_2/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/ciat_2/authors/2-name> .
+
+    <http://smartprotocols.org/ciat_2/authors/2-name>
+    rdf:value "Wilmer Cuellar" .
+
 <http://smartprotocols.org/ciat_2> sp:hasExperimentalInput <http://smartprotocols.org/ciat_2/materials/reagents> .
 <http://smartprotocols.org/ciat_2/execution> sp:hasExperimentalInput <http://smartprotocols.org/ciat_2/materials/reagents> .
 <http://smartprotocols.org/ciat_2/materials/reagents> a sp:ReagentList .

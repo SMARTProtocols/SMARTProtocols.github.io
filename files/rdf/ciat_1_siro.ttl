@@ -52,6 +52,18 @@
     a sp:PurposeOfProtocol ;
     rdf:value "Extracción de ADN total (Neoleucinodes - CIAT)" .
 
+<http://smartprotocols.org/ciat_1>
+    ro:has_part <http://smartprotocols.org/ciat_1/authors> .
+<http://smartprotocols.org/ciat_1/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/ciat_1/authors> ro:has_part <http://smartprotocols.org/ciat_1/authors/1-name> .
+<http://smartprotocols.org/ciat_1/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/ciat_1/authors/1-name> .
+
+    <http://smartprotocols.org/ciat_1/authors/1-name>
+    rdf:value "Quintero C" .
+
 <http://smartprotocols.org/ciat_1> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/reagents> .
 <http://smartprotocols.org/ciat_1/execution> sp:hasExperimentalInput <http://smartprotocols.org/ciat_1/materials/reagents> .
 <http://smartprotocols.org/ciat_1/materials/reagents> a sp:ReagentList .

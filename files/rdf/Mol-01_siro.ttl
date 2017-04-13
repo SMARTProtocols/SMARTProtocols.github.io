@@ -52,6 +52,26 @@
     a sp:PurposeOfProtocol ;
     rdf:value "This protocol is specifically modified for detecting HPT gene in Transgenic Rice." .
 
+<http://smartprotocols.org/Mol-01>
+    ro:has_part <http://smartprotocols.org/Mol-01/authors> .
+<http://smartprotocols.org/Mol-01/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/Mol-01/authors> ro:has_part <http://smartprotocols.org/Mol-01/authors/1-name> .
+<http://smartprotocols.org/Mol-01/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/Mol-01/authors/1-name> .
+
+    <http://smartprotocols.org/Mol-01/authors/1-name>
+    rdf:value "Yoshimi Umemura" .
+
+<http://smartprotocols.org/Mol-01/authors> ro:has_part <http://smartprotocols.org/Mol-01/authors/2-name> .
+<http://smartprotocols.org/Mol-01/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/Mol-01/authors/2-name> .
+
+    <http://smartprotocols.org/Mol-01/authors/2-name>
+    rdf:value "Beata Dedicova" .
+
 <http://smartprotocols.org/Mol-01> sp:hasExperimentalInput <http://smartprotocols.org/Mol-01/materials/reagents> .
 <http://smartprotocols.org/Mol-01/execution> sp:hasExperimentalInput <http://smartprotocols.org/Mol-01/materials/reagents> .
 <http://smartprotocols.org/Mol-01/materials/reagents> a sp:ReagentList .
