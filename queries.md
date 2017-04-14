@@ -33,6 +33,7 @@ Makes use of external resources, federated query
 23. [Retrieve the protocols and the list of reagents for documents authored by Yanling Chen](#23-retrieve-the-protocols-and-the-list-of-reagents-for-documents-authored-by-yanling-chen)  
 24. [Retrieve the protocols authored by Cristian Olaya and Wilmer Cuellar using Cassava (NCBITAXON:3983) as a sample](#24-retrieve-the-protocols-authored-by-cristian-olaya-and-wilmer-cuellar-using-cassava-ncbitaxon3983-as-a-sample)
 25. [Retrieve the common reagents across the protocols “[Bio101] Subcutaneous Injection of Tumor Cells” and “Scratch Wound Healing Assay”](#25-retrieve-the-common-reagents-across-the-protocols-bio101-subcutaneous-injection-of-tumor-cells-and-scratch-wound-healing-assay)
+26. [Retrieve the protocols in which Bromophenol blue is used and tell me about the application of Bromophenol blue](#26-retrieve-the-protocols-in-which-bromophenol-blue-is-used-and-tell-me-about-the-application-of-bromophenol-blue)
 
 
 
@@ -621,7 +622,7 @@ WHERE {
 } GROUP BY ?title
 ```
 
-## 25. Retrieve the common reagents across the protocols "[Bio101] Subcutaneous Injection of Tumor Cells" and "Scratch Wound Healing Assay".
+## 25. Retrieve the common reagents across the protocols "[Bio101] Subcutaneous Injection of Tumor Cells" and "Scratch Wound Healing Assay"
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3FcommonReagentName%0D%0AWHERE+%7B%0D%0A++%3Fprotocol1+sp%3AhasTitle+%3Ftitle_uri1+.%0D%0A++%3Ftitle_uri1+rdf%3Avalue+%22%5BBio101%5D+Subcutaneous+Injection+of+Tumor+Cells%22+.%0D%0A++%3Fprotocol1+sp%3AhasExperimentalInput+%3Freagents1+.%0D%0A++%3Freagents1+a+sp%3AReagentList+.%0D%0A++%3Freagents1+ro%3Ahas_part+%3FreagentNameUri1+.%0D%0A++%3FreagentNameUri1+rdf%3Avalue+%3FcommonReagentName+.%0D%0A+%0D%0A++%3Fprotocol2+sp%3AhasTitle+%3Ftitle_uri2+.%0D%0A++%3Ftitle_uri2+rdf%3Avalue+%22Scratch+Wound+Healing+Assay%22+.%0D%0A++%3Fprotocol2+sp%3AhasExperimentalInput+%3Freagents2+.%0D%0A++%3Freagents2+a+sp%3AReagentList+.%0D%0A++%3Freagents2+ro%3Ahas_part+%3FreagentNameUri2+.%0D%0A++%3FreagentNameUri2+rdf%3Avalue+%3FcommonReagentName+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 ```
@@ -649,7 +650,7 @@ WHERE {
 }
 ```
 
-## 26. Retrieve the protocols in which Bromophenol blue is used and tell me about the application of Bromophenol blue.
+## 26. Retrieve the protocols in which Bromophenol blue is used and tell me about the application of Bromophenol blue
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0A%0D%0ASELECT+%3FreagentName+%3Fdesc+%28group_concat%28%3Ftitle%3B+separator%3D%22+%7C+%22%29+as+%3Fprotocols%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_59424%3E+.%0D%0A++%0D%0A++SERVICE+%3Chttp%3A%2F%2Fsparql.bioontology.org%2Fontologies%2Fsparql%2F%3Fapikey%3DINSERT+YOUR+BIOPORTAL+APIKEY+HERE%3E+%7B%0D%0A+++++++++++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_59424%3E+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fdef%3E+%3Fdesc+.%0D%0A++%7D%0D%0A%7D+GROUP+BY+%3FreagentName+%3Fdesc&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 ```
