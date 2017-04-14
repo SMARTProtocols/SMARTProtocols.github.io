@@ -30,6 +30,9 @@ Makes use of external resources, federated query
 21. [Retrieve the provenance of the protocol titled “Scratch Wound Healing Assay”
 ](#21-retrieve-the-provenance-of-the-protocol-titled-scratch-wound-healing-assay) 
 22. [Retrieve the specimen names that could be tested in the protocols titled “A simplified universal genomic DNA extraction protocol suitable for PCR” and “RNA Isolation from Synechocystis”](#22-retrieve-the-specimen-names-that-could-be-tested-in-the-protocols-titled-a-simplified-universal-genomic-dna-extraction-protocol-suitable-for-pcr-and-rna-isolation-from-synechocystis)  
+23. [Retrieve the protocols and the list of reagents for documents authored by Yanling Chen](#23-retrieve-the-protocols-and-the-list-of-reagents-for-documents-authored-by-yanling-chen)  
+24. [Retrieve the protocols authored by Cristian Olaya and Wilmer Cuellar using Cassava (NCBITAXON:3983) as a sample](#24-retrieve-the-protocols-authored-by-cristian-olaya-and-wilmer-cuellar-using-cassava-ncbitaxon3983-as-a-sample)
+25. [Retrieve the common reagents across the protocols “[Bio101] Subcutaneous Injection of Tumor Cells” and “Scratch Wound Healing Assay”](#25-retrieve-the-common-reagents-across-the-protocols-bio101-subcutaneous-injection-of-tumor-cells-and-scratch-wound-healing-assay)
 
 
 
