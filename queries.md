@@ -22,7 +22,7 @@ Makes use of external resources, federated query
 14. [Retrieve all the diseases caused by the reagents in the protocol “Extraction of total RNA from fresh/frozen tissue (FT)”](#14-retrieve-all-the-diseases-caused-by-the-reagents-in-the-protocol-extraction-of-total-rna-from-freshfrozen-tissue-ft)  
 Makes use of external resources, federated query  
 15. [Retrieve all the protocols with “Schizosaccharomyces pombe” in their samples lists](#15-retrieve-all-the-protocols-with-schizosaccharomyces-pombe-in-their-samples-lists)  
-16. [Retrieve all the protocols with procedures and subprocedures](#16-retrieve-all-the-protocols-with-procedures-and-subprocedures)  
+16. [Retrieve the protocols that include 2 or more procedures](#16-retrieve-the-protocols-that-include-2-or-more-procedures)  
 17. [Retrieve the critical steps included in the protocol titled “[Bio101] Subcutaneous Injection of Tumor Cells”](#17-retrieve-the-critical-steps-included-in-the-protocol-titled-bio101-subcutaneous-injection-of-tumor-cells)
 18. [Retrieve the advantages and limitations of the protocol titled “Defining transcribed regions using RNA-seq”](#18-retrieve-the-advantages-and-limitations-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq)  
 19. [Retrieve the recipe list of the protocol titled “Defining transcribed regions using RNA-seq”](#19-retrieve-the-recipe-list-of-the-protocol-titled-defining-transcribed-regions-using-rna-seq) 
