@@ -554,3 +554,94 @@ WHERE {
   FILTER(?title = "A simplified universal genomic DNA extraction protocol suitable for PCR" || ?title = "RNA Isolation from Synechocystis")
 } GROUP BY ?title
 ```
+
+
+## 23. Retrieve the protocols and the list of reagents for documents authored by Yanling Chen.
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3Ftitle+%28group_concat%28distinct%28%3FreagentName%29%3Bseparator%3D%22+%7C+%22%29+as+%3FreagentNames%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fauthors+.%0D%0A++%3Fauthors+a+IAO%3A0000321+.%0D%0A++%3Fauthors+ro%3Ahas_part+%3FauthorNameUri+.%0D%0A++%3FauthorNameUri+rdf%3Avalue+%22Yanling+Chen%22+.%0D%0A%7D+GROUP+BY+%3Ftitle&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT ?title (group_concat(distinct(?reagentName);separator=" | ") as ?reagentNames)
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  
+  ?protocol sp:hasExperimentalInput ?reagents .
+  ?reagents a sp:ReagentList .
+  ?reagents ro:has_part ?reagentNameUri .
+  ?reagentNameUri rdf:value ?reagentName .
+  
+  ?protocol ro:has_part ?authors .
+  ?authors a IAO:0000321 .
+  ?authors ro:has_part ?authorNameUri .
+  ?authorNameUri rdf:value "Yanling Chen" .
+} GROUP BY ?title
+```
+
+
+## 24. Retrieve the protocols authored by Cristian Olaya and Wilmer Cuellar using Cassava (NCBITAXON:3983) as a sample 
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3Ftitle+%28group_concat%28distinct%28%3FreagentName%29%3Bseparator%3D%22+%7C+%22%29+as+%3FprotocolReagents%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fsamples+.%0D%0A++%3Fsamples+a+sp%3ASpecimenList.%0D%0A++%3Fsamples+ro%3Ahas_part+%3FsampleNameUri+.%0D%0A++%3Fsample+sp%3AhasName+%3FsampleNameUri+.%0D%0A++%3Fsample+owl%3AsameAs+%3Chttp%3A%2F%2Fpurl.bioontology.org%2Fontology%2FNCBITAXON%2F3983%3E+.%0D%0A++%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fauthors+.%0D%0A++%3Fauthors+a+IAO%3A0000321+.%0D%0A++%3Fauthors+ro%3Ahas_part+%3FauthorNameUri1+.%0D%0A++%3FauthorNameUri1+rdf%3Avalue+%22Cristian+Olaya%22+.%0D%0A++%3Fauthors+ro%3Ahas_part+%3FauthorNameUri2+.%0D%0A++%3FauthorNameUri2+rdf%3Avalue+%22Wilmer+Cuellar%22+.%0D%0A%7D+GROUP+BY+%3Ftitle&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT ?title (group_concat(distinct(?reagentName);separator=" | ") as ?protocolReagents)
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  ?protocol sp:hasExperimentalInput ?samples .
+  ?samples a sp:SpecimenList.
+  ?samples ro:has_part ?sampleNameUri .
+  ?sample sp:hasName ?sampleNameUri .
+  ?sample owl:sameAs <http://purl.bioontology.org/ontology/NCBITAXON/3983> .
+  
+  ?protocol sp:hasExperimentalInput ?reagents .
+  ?reagents a sp:ReagentList .
+  ?reagents ro:has_part ?reagentNameUri .
+  ?reagentNameUri rdf:value ?reagentName .
+  
+  ?protocol ro:has_part ?authors .
+  ?authors a IAO:0000321 .
+  ?authors ro:has_part ?authorNameUri1 .
+  ?authorNameUri1 rdf:value "Cristian Olaya" .
+  ?authors ro:has_part ?authorNameUri2 .
+  ?authorNameUri2 rdf:value "Wilmer Cuellar" .
+} GROUP BY ?title
+```
+
+## 25. Retrieve the common reagents across the protocols "[Bio101] Subcutaneous Injection of Tumor Cells" and "Scratch Wound Healing Assay".
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3FcommonReagentName%0D%0AWHERE+%7B%0D%0A++%3Fprotocol1+sp%3AhasTitle+%3Ftitle_uri1+.%0D%0A++%3Ftitle_uri1+rdf%3Avalue+%22%5BBio101%5D+Subcutaneous+Injection+of+Tumor+Cells%22+.%0D%0A++%3Fprotocol1+sp%3AhasExperimentalInput+%3Freagents1+.%0D%0A++%3Freagents1+a+sp%3AReagentList+.%0D%0A++%3Freagents1+ro%3Ahas_part+%3FreagentNameUri1+.%0D%0A++%3FreagentNameUri1+rdf%3Avalue+%3FcommonReagentName+.%0D%0A+%0D%0A++%3Fprotocol2+sp%3AhasTitle+%3Ftitle_uri2+.%0D%0A++%3Ftitle_uri2+rdf%3Avalue+%22Scratch+Wound+Healing+Assay%22+.%0D%0A++%3Fprotocol2+sp%3AhasExperimentalInput+%3Freagents2+.%0D%0A++%3Freagents2+a+sp%3AReagentList+.%0D%0A++%3Freagents2+ro%3Ahas_part+%3FreagentNameUri2+.%0D%0A++%3FreagentNameUri2+rdf%3Avalue+%3FcommonReagentName+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT ?commonReagentName
+WHERE {
+  ?protocol1 sp:hasTitle ?title_uri1 .
+  ?title_uri1 rdf:value "[Bio101] Subcutaneous Injection of Tumor Cells" .
+  ?protocol1 sp:hasExperimentalInput ?reagents1 .
+  ?reagents1 a sp:ReagentList .
+  ?reagents1 ro:has_part ?reagentNameUri1 .
+  ?reagentNameUri1 rdf:value ?commonReagentName .
+ 
+  ?protocol2 sp:hasTitle ?title_uri2 .
+  ?title_uri2 rdf:value "Scratch Wound Healing Assay" .
+  ?protocol2 sp:hasExperimentalInput ?reagents2 .
+  ?reagents2 a sp:ReagentList .
+  ?reagents2 ro:has_part ?reagentNameUri2 .
+  ?reagentNameUri2 rdf:value ?commonReagentName .
+}
+```
