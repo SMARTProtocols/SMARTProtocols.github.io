@@ -411,24 +411,22 @@ WHERE {
 }
 ```
 
-## 16. Retrieve all the protocols with procedures and subprocedures
-<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Ftitle%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3FprotocolExecution+sp%3AisDocumentedIn+%3Fprotocol+.%0D%0A++%3FprotocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++%3Fprocedure+sp%3AhasSubprocedure+%3Fsubprocedure+.%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+## 16. Retrieve the protocols that include 2 or more procedures
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+%3Ftitle%0D%0A%7B%0D%0A++++%3FexperimentalProtocol+sp%3AhasTitle+%3FtitleUri+.%0D%0A++++%3FtitleUri+rdf%3Avalue+%3Ftitle+.%0D%0A++++%3FexperimentalProtocolExecution+sp%3AisDocumentedIn+%3FexperimentalProtocol+.%0D%0A++++%3FexperimentalProtocolExecution+sp%3AhasProcedure+%3Fprocedure+.%0D%0A++++%0D%0A%7D+GROUP+BY+%3Ftitle+HAVING+%28COUNT%28%3Fprocedure%29+%3E+1%29&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 ```
 PREFIX sp: <http://purl.org/net/SMARTprotocol#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?title
-WHERE {
-  ?protocol sp:hasTitle ?title_uri .
-  ?title_uri rdf:value ?title .
-  ?protocolExecution sp:isDocumentedIn ?protocol .
-  ?protocolExecution sp:hasProcedure ?procedure .
-  ?procedure sp:hasSubprocedure ?subprocedure .
-}
+SELECT ?title
+{
+    ?experimentalProtocol sp:hasTitle ?titleUri .
+    ?titleUri rdf:value ?title .
+    ?experimentalProtocolExecution sp:isDocumentedIn ?experimentalProtocol .
+    ?experimentalProtocolExecution sp:hasProcedure ?procedure .
+    
+} GROUP BY ?title HAVING (COUNT(?procedure) > 1)
 ```
 
 ## 17. Retrieve the critical steps included in the protocol titled “[Bio101] Subcutaneous Injection of Tumor Cells”
