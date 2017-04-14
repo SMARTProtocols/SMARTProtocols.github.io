@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220>
     a sp:ExperimentalProtocol ;
@@ -50,6 +51,18 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/purpose>
     a sp:PurposeOfProtocol ;
     rdf:value "This protocol provides a general workflow for establishing a soft-agar colony formation assay" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.220>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.220/authors> .
+<http://smartprotocols.org/10.21769/BioProtoc.220/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.220/authors> ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.220/authors/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.220/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.220/authors/1-name> .
+
+    <http://smartprotocols.org/10.21769/BioProtoc.220/authors/1-name>
+    rdf:value "FengZhi Liu" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents> .
 <http://smartprotocols.org/10.21769/BioProtoc.220/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.220/materials/reagents> .
@@ -363,12 +376,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
-    a CL:0000000 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
+    a CL:0000000 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/1>
     owl:sameAs <http://purl.bioontology.org/ontology/npo#NPO_1584> .
@@ -379,7 +394,6 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
-    a BFO:0000040 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2-name>
@@ -389,32 +403,5 @@
 <http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
     a BFO:0000040 .
 
-<http://smartprotocols.org/manufacturers/13>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/13-name> .
-
-<http://smartprotocols.org/manufacturers/13-name>
-    a sp:ManufacturerName ;
-    rdf:value "Guidechem" .
-
-<http://smartprotocols.org/manufacturers/13>
-    foaf:homepage <http://www.guidechem.com/> .
-
-<http://smartprotocols.org/manufacturers/14>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/14-name> .
-
-<http://smartprotocols.org/manufacturers/14-name>
-    a sp:ManufacturerName ;
-    rdf:value "Gibco" .
-
-<http://smartprotocols.org/manufacturers/14>
-    foaf:homepage <https://www.thermofisher.com/us/en/home/brands/gibco.html> .
-
-<http://smartprotocols.org/manufacturers/15>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/15-name> .
-
-<http://smartprotocols.org/manufacturers/15-name>
-    a sp:ManufacturerName ;
-    rdf:value "Matheson Coleman & BELL" .
+<http://smartprotocols.org/10.21769/BioProtoc.220/materials/specimens/2>
+    a BFO:0000040 .

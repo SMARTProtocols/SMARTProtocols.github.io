@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100>
     a sp:ExperimentalProtocol ;
@@ -50,6 +51,18 @@
 <http://smartprotocols.org/10.21769/BioProtoc.100/purpose>
     a sp:PurposeOfProtocol ;
     rdf:value "Scratch Wound Healing Assay" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.100/authors> .
+<http://smartprotocols.org/10.21769/BioProtoc.100/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/authors> ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.100/authors/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.100/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.100/authors/1-name> .
+
+    <http://smartprotocols.org/10.21769/BioProtoc.100/authors/1-name>
+    rdf:value "Yanling Chen" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.100/materials/reagents> .
 <http://smartprotocols.org/10.21769/BioProtoc.100/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.100/materials/reagents> .
@@ -366,12 +379,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/1-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/1>
-    a CLO:0000031 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "Human MDA-MB-231 cell line" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/1>
+    a CLO:0000031 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/1>
     owl:sameAs <http://purl.obolibrary.org/obo/CLO_0007634> .
@@ -382,7 +397,6 @@
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/2-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/2>
-    a CL:0000000 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/2-name>
@@ -392,10 +406,12 @@
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/2>
     a CL:0000000 .
 
+<http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/2>
+    a CL:0000000 .
+
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/3-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/3>
-    a BFO:0000040 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/3-name>
@@ -405,46 +421,5 @@
 <http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/3>
     a BFO:0000040 .
 
-<http://smartprotocols.org/manufacturers/9>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/9-name> .
-
-<http://smartprotocols.org/manufacturers/9-name>
-    a sp:ManufacturerName ;
-    rdf:value "ATCC" .
-
-<http://smartprotocols.org/manufacturers/9>
-    foaf:homepage <https://www.lgcstandards-atcc.org/> .
-
-<http://smartprotocols.org/manufacturers/10>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/10-name> .
-
-<http://smartprotocols.org/manufacturers/10-name>
-    a sp:ManufacturerName ;
-    rdf:value "Invitrogen" .
-
-<http://smartprotocols.org/manufacturers/10>
-    foaf:homepage <https://www.thermofisher.com/uk/en/home/brands/invitrogen.html> .
-
-<http://smartprotocols.org/manufacturers/11>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/11-name> .
-
-<http://smartprotocols.org/manufacturers/11-name>
-    a sp:ManufacturerName ;
-    rdf:value "Fisher Scientific" .
-
-<http://smartprotocols.org/manufacturers/11>
-    foaf:homepage <https://www.fishersci.com/> .
-
-<http://smartprotocols.org/manufacturers/12>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/12-name> .
-
-<http://smartprotocols.org/manufacturers/12-name>
-    a sp:ManufacturerName ;
-    rdf:value "Mettler-Toledo" .
-
-<http://smartprotocols.org/manufacturers/12>
-    foaf:homepage <http://www.mt.com/> .
+<http://smartprotocols.org/10.21769/BioProtoc.100/materials/specimens/3>
+    a BFO:0000040 .

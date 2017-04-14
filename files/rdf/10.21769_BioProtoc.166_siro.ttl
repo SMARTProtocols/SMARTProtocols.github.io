@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166>
     a sp:ExperimentalProtocol ;
@@ -50,6 +51,18 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/purpose>
     a sp:PurposeOfProtocol ;
     rdf:value "Subcutaneous Injection of Tumor Cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/authors> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/authors> ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/authors/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/authors/1-name> .
+
+    <http://smartprotocols.org/10.21769/BioProtoc.166/authors/1-name>
+    rdf:value "Jason Reuter" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.166/materials/reagents> .
@@ -345,12 +358,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
-    a crisp:4000-0119 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "Tumor cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
+    a crisp:4000-0119 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
     owl:sameAs <http://purl.bioontology.org/ontology/npo#NPO_1584> .
@@ -361,12 +376,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
-    a obi:0100026 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2-name>
     a sp:SpecimenName ;
     rdf:value "CB17 scid/scid mice" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
+    a obi:0100026 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/2>
     owl:sameAs <https://www.ncbi.nlm.nih.gov/pubmed/8022201> .
@@ -380,7 +397,6 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3-name>
@@ -390,10 +406,12 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
     a obi:0000047 .
 
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/3>
+    a obi:0000047 .
+
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
-    a obi:0000047 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4-name>
@@ -403,24 +421,5 @@
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
     a obi:0000047 .
 
-<http://smartprotocols.org/manufacturers/16>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/16-name> .
-
-<http://smartprotocols.org/manufacturers/16-name>
-    a sp:ManufacturerName ;
-    rdf:value "BD Biosciences" .
-
-<http://smartprotocols.org/manufacturers/16>
-    foaf:homepage <http://www.bdbiosciences.com/> .
-
-<http://smartprotocols.org/manufacturers/3>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/3-name> .
-
-<http://smartprotocols.org/manufacturers/3-name>
-    a sp:ManufacturerName ;
-    rdf:value "Life Technologies" .
-
-<http://smartprotocols.org/manufacturers/3>
-    foaf:homepage <https://www.thermofisher.com/uk/en/home/brands/life-technologies.html> .
+<http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/4>
+    a obi:0000047 .

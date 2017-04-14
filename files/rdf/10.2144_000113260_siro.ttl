@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.2144/000113260>
     a sp:ExperimentalProtocol ;
@@ -50,6 +51,80 @@
 <http://smartprotocols.org/10.2144/000113260/purpose>
     a sp:PurposeOfProtocol ;
     rdf:value "Extraction of total RNA from fresh/frozen tissue (FT)" .
+
+<http://smartprotocols.org/10.2144/000113260>
+    ro:has_part <http://smartprotocols.org/10.2144/000113260/authors> .
+<http://smartprotocols.org/10.2144/000113260/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/1-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/1-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/1-name>
+    rdf:value "Yanling Chen" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/2-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/2-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/2-name>
+    rdf:value "Kim M. Linton" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/3-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/3>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/3-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/3-name>
+    rdf:value "Yvonne Hey" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/4-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/4>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/4-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/4-name>
+    rdf:value "Sian Dibben" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/5-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/5>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/5-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/5-name>
+    rdf:value "Crispin J. Miller" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/6-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/6>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/6-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/6-name>
+    rdf:value "Anthony J. Freemont" .
+
+<http://smartprotocols.org/10.2144/000113260/authors/6>
+    sp:hasIdentifier <http://smartprotocols.org/10.2144/000113260/authors/6-identifier> .
+<http://smartprotocols.org/10.2144/000113260/authors/6-identifier>
+    a sp:AuthorIdentifier ;
+    rdf:value "orcid.org/0000-0002-9780-208X" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/7-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/7>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/7-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/7-name>
+    rdf:value "John A. Radford" .
+
+<http://smartprotocols.org/10.2144/000113260/authors> ro:has_part <http://smartprotocols.org/10.2144/000113260/authors/8-name> .
+<http://smartprotocols.org/10.2144/000113260/authors/8>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.2144/000113260/authors/8-name> .
+
+    <http://smartprotocols.org/10.2144/000113260/authors/8-name>
+    rdf:value "Stuart D. Pepper" .
 
 <http://smartprotocols.org/10.2144/000113260> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/reagents> .
 <http://smartprotocols.org/10.2144/000113260/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.2144/000113260/materials/reagents> .
@@ -429,12 +504,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "tumor tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
     owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18009> .
@@ -445,12 +522,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2-name>
     a sp:SpecimenName ;
     rdf:value "homogenized tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/2>
     owl:sameAs <http://purl.org/net/SMARTprotocol#HomogenizedTissue> .
@@ -461,12 +540,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3-name>
     a sp:SpecimenName ;
     rdf:value "RNA" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33697> .
@@ -477,12 +558,14 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/4-name>
     a sp:SpecimenName ;
     rdf:value "DNA" .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
+    a obi:0000671 .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/4>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_33696> .
@@ -493,7 +576,6 @@
 <http://smartprotocols.org/10.2144/000113260/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name> .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
-    a obi:0000671 ;
     sp:hasName <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5-name>
@@ -501,51 +583,10 @@
     rdf:value "Protein" .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
+    a obi:0000671 .
+
+<http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
     owl:sameAs <http://purl.obolibrary.org/obo/CHEBI_36080> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/5>
     a obi:0000671 .
-
-<http://smartprotocols.org/manufacturers/20>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/20-name> .
-
-<http://smartprotocols.org/manufacturers/20-name>
-    a sp:ManufacturerName ;
-    rdf:value "Decon" .
-
-<http://smartprotocols.org/manufacturers/20>
-    foaf:homepage <http://www.decon.co.uk/> .
-
-<http://smartprotocols.org/manufacturers/21>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/21-name> .
-
-<http://smartprotocols.org/manufacturers/21-name>
-    a sp:ManufacturerName ;
-    rdf:value "Ambion" .
-
-<http://smartprotocols.org/manufacturers/21>
-    foaf:homepage <http://www.ambioncorporation.com/> .
-
-<http://smartprotocols.org/manufacturers/5>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/5-name> .
-
-<http://smartprotocols.org/manufacturers/5-name>
-    a sp:ManufacturerName ;
-    rdf:value "Thermo Fisher Scientific" .
-
-<http://smartprotocols.org/manufacturers/5>
-    foaf:homepage <https://www.thermofisher.com/uk/en/home.html> .
-
-<http://smartprotocols.org/manufacturers/1>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/1-name> .
-
-<http://smartprotocols.org/manufacturers/1-name>
-    a sp:ManufacturerName ;
-    rdf:value "Sigma-Aldrich" .
-
-<http://smartprotocols.org/manufacturers/1>
-    foaf:homepage <https://www.sigmaaldrich.com/> .

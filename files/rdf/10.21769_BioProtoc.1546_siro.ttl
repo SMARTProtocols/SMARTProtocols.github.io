@@ -19,6 +19,7 @@
 @prefix CLO: <http://purl.obolibrary.org/obo/CLO_> .
 @prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
 @prefix CL: <http://purl.obolibrary.org/obo/CL_> .
+@prefix PO: <http://purl.obolibrary.org/obo/po.owl#> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546>
     a sp:ExperimentalProtocol ;
@@ -50,6 +51,26 @@
 <http://smartprotocols.org/10.21769/BioProtoc.1546/purpose>
     a sp:PurposeOfProtocol ;
     rdf:value "This protocol describes the steps involved in the whole mount processing of mouse eyes for visualization of the retinal vasculature." .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546>
+    ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/authors> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/authors> a IAO:0000321 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/authors> ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/authors/1-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/authors/1>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/authors/1-name> .
+
+    <http://smartprotocols.org/10.21769/BioProtoc.1546/authors/1-name>
+    rdf:value "Irit Adini" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/authors> ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/authors/2-name> .
+<http://smartprotocols.org/10.21769/BioProtoc.1546/authors/2>
+    a sp:Author ;
+    sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/authors/2-name> .
+
+    <http://smartprotocols.org/10.21769/BioProtoc.1546/authors/2-name>
+    rdf:value "Kaustabh Ghosh" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents> .
 <http://smartprotocols.org/10.21769/BioProtoc.1546/execution> sp:hasExperimentalInput <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/reagents> .
@@ -549,12 +570,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1>
-    a obi:0100026 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1-name>
     a sp:SpecimenName ;
     rdf:value "Mouse" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1>
+    a obi:0100026 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/1>
     owl:sameAs <http://dbpedia.org/resource/Mouse> .
@@ -565,12 +588,14 @@
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2>
-    a crisp:4000-0119 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2-name>
     a sp:SpecimenName ;
     rdf:value "Mouse eyes" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2>
+    a crisp:4000-0119 .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/2>
     owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C22711> .
@@ -581,7 +606,6 @@
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens>
     ro:has_part <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3-name> .
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
-    a crisp:4000-0119 ;
     sp:hasName <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3-name> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3-name>
@@ -589,95 +613,10 @@
     rdf:value "Mouse retinas" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
+    a crisp:4000-0119 .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
     owl:sameAs <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C22722> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/materials/specimens/3>
     a crisp:4000-0119 .
-
-<http://smartprotocols.org/manufacturers/1>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/1-name> .
-
-<http://smartprotocols.org/manufacturers/1-name>
-    a sp:ManufacturerName ;
-    rdf:value "Sigma-Aldrich" .
-
-<http://smartprotocols.org/manufacturers/1>
-    foaf:homepage <https://www.sigmaaldrich.com/> .
-
-<http://smartprotocols.org/manufacturers/2>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/2-name> .
-
-<http://smartprotocols.org/manufacturers/2-name>
-    a sp:ManufacturerName ;
-    rdf:value "Electron Microscopy Sciences" .
-
-<http://smartprotocols.org/manufacturers/2>
-    foaf:homepage <https://www.emsdiasum.com/microscopy/> .
-
-<http://smartprotocols.org/manufacturers/3>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/3-name> .
-
-<http://smartprotocols.org/manufacturers/3-name>
-    a sp:ManufacturerName ;
-    rdf:value "Life Technologies" .
-
-<http://smartprotocols.org/manufacturers/3>
-    foaf:homepage <https://www.thermofisher.com/uk/en/home/brands/life-technologies.html> .
-
-<http://smartprotocols.org/manufacturers/4>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/4-name> .
-
-<http://smartprotocols.org/manufacturers/4-name>
-    a sp:ManufacturerName ;
-    rdf:value "Fine Science Tools" .
-
-<http://smartprotocols.org/manufacturers/4>
-    foaf:homepage <http://www.finescience.com/> .
-
-<http://smartprotocols.org/manufacturers/5>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/5-name> .
-
-<http://smartprotocols.org/manufacturers/5-name>
-    a sp:ManufacturerName ;
-    rdf:value "Thermo Fisher Scientific" .
-
-<http://smartprotocols.org/manufacturers/5>
-    foaf:homepage <https://www.thermofisher.com/uk/en/home.html> .
-
-<http://smartprotocols.org/manufacturers/6>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/6-name> .
-
-<http://smartprotocols.org/manufacturers/6-name>
-    a sp:ManufacturerName ;
-    rdf:value "Leica Microsystems" .
-
-<http://smartprotocols.org/manufacturers/6>
-    foaf:homepage <http://www.leica-microsystems.com/home/> .
-
-<http://smartprotocols.org/manufacturers/7>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/7-name> .
-
-<http://smartprotocols.org/manufacturers/7-name>
-    a sp:ManufacturerName ;
-    rdf:value "Nikon Instruments" .
-
-<http://smartprotocols.org/manufacturers/7>
-    foaf:homepage <https://www.nikoninstruments.com> .
-
-<http://smartprotocols.org/manufacturers/8>
-    a sp:Manufacturer ;
-    sp:hasName <http://smartprotocols.org/manufacturers/8-name> .
-
-<http://smartprotocols.org/manufacturers/8-name>
-    a sp:ManufacturerName ;
-    rdf:value "Zeiss" .
-
-<http://smartprotocols.org/manufacturers/8>
-    foaf:homepage <https://www.zeiss.com> .
