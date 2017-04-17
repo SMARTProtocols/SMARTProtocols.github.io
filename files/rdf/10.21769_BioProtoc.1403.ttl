@@ -787,6 +787,9 @@
     rdfs:label "The lungs are harvested" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.1>
+    rdfs:label "The lungs are harvested" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.2> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1>
@@ -813,6 +816,9 @@ rdf:value "The lungs are harvested after animal euthanasia. Sterilize the skin o
     rdfs:label "Remove the left lung lobes." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.2>
+    rdfs:label "Remove the left lung lobes." .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.3> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.2>
@@ -831,6 +837,9 @@ rdf:value "Remove the left lung lobes." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.3>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Wash the lungs" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.3>
     rdfs:label "Wash the lungs" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.3>
@@ -867,6 +876,9 @@ rdf:value "Wash the lungs with sterile 1x PBS and placed in Petri dishes with RP
     rdfs:label "Mince the lungs" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.4>
+    rdfs:label "Mince the lungs" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.4>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.5> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.4>
@@ -893,6 +905,9 @@ rdf:value "Mince organ with forceps and scissors to 1mm sized chunks." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.5>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "incubate the tissue" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.5>
     rdfs:label "incubate the tissue" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.5>
@@ -957,6 +972,9 @@ rdf:value "Stop the reaction adding 1 ml of FBS heat inactivated." .
     rdfs:label "Disperse the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.7>
+    rdfs:label "Disperse the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.7>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.8> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.7>
@@ -979,6 +997,9 @@ rdf:value "Disperse the cells with a 10-ml syringe fitted with an 18-gauge needl
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.8>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Filter the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.8>
     rdfs:label "Filter the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.8>
@@ -1012,6 +1033,9 @@ rdf:value "Filter the cells using cell strainer (100 μm) using 50 ml conical tu
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.9>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Centrifuge the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.9>
     rdfs:label "Centrifuge the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.9>
@@ -1107,6 +1131,9 @@ rdf:value "Stop the reaction adding 10 ml of 1x PBS with 10% FBS heat inactivate
     rdfs:label "Centrifuge the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.13>
+    rdfs:label "Centrifuge the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.13>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.14> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.13>
@@ -1129,6 +1156,9 @@ rdf:value "Centrifuge the cells at 10 °C and 300 x g for 5 min." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.14>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "resuspend the pellet in RPMI supplemented with 10% FBS and gentamicin (10 μg/ml)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.14>
     rdfs:label "resuspend the pellet in RPMI supplemented with 10% FBS and gentamicin (10 μg/ml)" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1403/methods/1.14>

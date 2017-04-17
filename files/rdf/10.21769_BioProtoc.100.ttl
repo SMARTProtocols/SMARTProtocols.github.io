@@ -560,6 +560,9 @@
     rdfs:label "grow cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.1>
+    rdfs:label "grow cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.2> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1>
@@ -590,6 +593,9 @@ rdf:value "Grow cells in DMEM supplemented with 10% FBS" .
     rdfs:label "seed cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.2>
+    rdfs:label "seed cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.3> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.2>
@@ -612,6 +618,9 @@ rdf:value "Seed cells into 24-well tissue culture plate at a density that after 
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.3>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "scratch the monolayer" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.3>
     rdfs:label "scratch the monolayer" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.3>
@@ -640,6 +649,9 @@ rdf:value "Do not change the medium. Gently and slowly scratch the monolayer wit
     rdfs:label "scratch the monolayer" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.4>
+    rdfs:label "scratch the monolayer" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.4>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.5> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.4>
@@ -665,6 +677,9 @@ rdf:value "Scratch another straight line perpendicular to the first line to crea
     rdfs:label "wash to remove the detached cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.5>
+    rdfs:label "wash to remove the detached cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.5>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.6> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.5>
@@ -687,6 +702,9 @@ rdf:value "After scratching, gently wash the well twice with medium to remove th
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.6>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Replenish the well" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.6>
     rdfs:label "Replenish the well" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.6>
@@ -722,6 +740,9 @@ rdf:value "Replenish the well with fresh medium" .
     rdfs:label "grow cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.7>
+    rdfs:label "grow cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.7>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.8> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.7>
@@ -744,6 +765,9 @@ rdf:value "Grow cells for additional 48 h (or the time required if different cel
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.8>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Wash the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.8>
     rdfs:label "Wash the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.8>
@@ -776,6 +800,9 @@ rdf:value "Wash the cells twice with 1x PBS, then fix the cells with 3.7% parafo
     rdfs:label "Stain the fixed cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.9>
+    rdfs:label "Stain the fixed cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.9>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.10> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.9>
@@ -802,6 +829,9 @@ rdf:value "Stain the fixed cells with 1% crystal violet in 2% ethanol for 30 min
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.10>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Take photos for the stained monolayer on a microscope" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.10>
     rdfs:label "Take photos for the stained monolayer on a microscope" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.100/methods/1.10>

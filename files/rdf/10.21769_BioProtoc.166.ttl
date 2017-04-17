@@ -506,6 +506,9 @@
     rdfs:label "wash the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>
+    rdfs:label "wash the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/materials/specimens/1>
@@ -532,6 +535,9 @@ rdf:value "Remove growth medium from cells and wash with 5 ml of PBS" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "add trypsin and incubate" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>
     rdfs:label "add trypsin and incubate" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.2>
@@ -568,6 +574,9 @@ rdf:value "Aspirate PBS, add 2 ml of trypsin and incubate for 5 min, or until ce
     rdfs:label "Quench trypsin" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>
+    rdfs:label "Quench trypsin" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.3>
@@ -593,6 +602,9 @@ rdf:value "Quench trypsin by adding at least 3 volumes of 10% FBS containing med
     rdfs:label "Pellet cells by centrifugation" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>
+    rdfs:label "Pellet cells by centrifugation" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.4>
@@ -615,6 +627,9 @@ rdf:value "Pellet cells by centrifugation for 5 min at 1,100 rpm and 37 °C." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "wash the cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>
     rdfs:label "wash the cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.5>
@@ -651,6 +666,9 @@ rdf:value "Aspirate medium, wash cells with 10 ml sterile PBS, mix well with pip
     rdfs:label "Pellet cells by centrifugation" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>
+    rdfs:label "Pellet cells by centrifugation" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.6>
@@ -673,6 +691,9 @@ rdf:value "Pellet cells by centrifugation for 5 min at 1,100 rpm and 37 °C." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "add trypan blue" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>
     rdfs:label "add trypan blue" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.7>
@@ -712,6 +733,9 @@ rdf:value "While cells are spinning, add 50 μl of trypan blue to saved aliquot,
     rdfs:label "resuspend cells in fresh PBS" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>
+    rdfs:label "resuspend cells in fresh PBS" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.8>
@@ -746,6 +770,9 @@ rdf:value "Aspirate PBS, resuspend cells in fresh PBS to a concentration 1 x 106
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>
     a sp:LaboratorySubprocedure ;
     rdfs:label "Add  thawed Matrigel to cells" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>
+    rdfs:label "Add thawed Matrigel to cells" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.9>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.10> .
@@ -825,6 +852,9 @@ rdf:value "Slowly pull up 100 μl of cells alone or 200 μl of cell/matrigel mix
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Inject cells into the flanks of immune deficient mice, preferably CB17 scid/scid." .
+
+<http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>
     rdfs:label "Inject cells into the flanks of immune deficient mice, preferably CB17 scid/scid." .
 
 <http://smartprotocols.org/10.21769/BioProtoc.166/methods/1.11>

@@ -40,7 +40,7 @@
     sp:hasTitle <http://smartprotocols.org/Mol-01/title> .
 <http://smartprotocols.org/Mol-01/title>
     a sp:TitleOfProtocol ;
-    rdf:value "Southern  Blotting Protocol for HPT / HPTII gene" .
+    rdf:value "Southern Blotting Protocol for HPT / HPTII gene" .
 
 <http://smartprotocols.org/Mol-01> sp:hasIdentifier <http://smartprotocols.org/Mol-01/identifier> .
 <http://smartprotocols.org/Mol-01/identifier>

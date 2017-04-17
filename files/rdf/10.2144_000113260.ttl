@@ -721,6 +721,9 @@
     a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1>
+    rdfs:label "Protocol overview" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/1>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/2> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
@@ -735,6 +738,9 @@ rdf:value "sample preparation" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.1>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "recover tumor tissue and inmerse in TRIzol" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/1.1>
     rdfs:label "recover tumor tissue and inmerse in TRIzol" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.1>
@@ -764,6 +770,9 @@ rdf:value "Recover tumor tissue at the time of surgery, trim into 1-cm3 fragment
     rdfs:label "Thaw and weigh tissue" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.2>
+    rdfs:label "Thaw and weigh tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/1.2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/1.3> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.2>
@@ -789,6 +798,9 @@ rdf:value "Thaw and weigh tissue prior to RNA extraction, working quickly." .
     rdfs:label "homogenization of tissue" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1.3>
+    rdfs:label "homogenization of tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/1.3>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/1.2> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/1>
@@ -808,16 +820,23 @@ rdf:value "Use a tissue power homogenizer (or a mortar and pestle) to homogenize
     a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2>
+    rdfs:label "Prior to RNA extraction: cleaning process of equipment" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/1> .
 
-<http://smartprotocols.org/10.2144/000113260/methods/2>
-    rdfs:label "Prior to RNA extraction: cleaning process of equipment" .
+<http://smartprotocols.org/10.2144/000113260/methods/2/description> a sp:ProcedureDescription ;
+rdf:value "Prior to RNA extraction: cleaning process of equipment" .
+<http://smartprotocols.org/10.2144/000113260/methods/2> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/2/description> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.1>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Autoclave or wash equipment" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/2.1>
     rdfs:label "Autoclave or wash equipment" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.1>
@@ -863,6 +882,9 @@ rdf:value "Autoclave or wash equipment (i.e., tissue storage container, homogeni
     rdfs:label "rinse equipment by using SDS" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.2>
+    rdfs:label "rinse equipment by using SDS" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/2.2>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/2.3> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.2>
@@ -901,6 +923,9 @@ rdf:value "Rinse equipment well in 1% SDS (prepared using DEPC-treated or other 
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.3>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Rinse equipment in 100% ethanol" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/2.3>
     rdfs:label "Rinse equipment in 100% ethanol" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/2.3>
@@ -943,6 +968,9 @@ rdf:value "Rinse in 100% ethanol and leave to air-dry." .
     a sp:LaboratoryProcedure .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3>
+    rdfs:label "RNA extraction" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3>
     sp:isPrecededBy <http://smartprotocols.org/10.2144/000113260/methods/2> .
 
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/1>
@@ -951,11 +979,15 @@ rdf:value "Rinse in 100% ethanol and leave to air-dry." .
 <http://smartprotocols.org/10.2144/000113260/materials/specimens/3>
     <http://purl.obolibrary.org/obo/RO_0000056> <http://smartprotocols.org/10.2144/000113260/methods/3>.
 
-<http://smartprotocols.org/10.2144/000113260/methods/3>
-    rdfs:label "RNA extraction" .
+<http://smartprotocols.org/10.2144/000113260/methods/3/description> a sp:ProcedureDescription ;
+rdf:value "RNA extraction" .
+<http://smartprotocols.org/10.2144/000113260/methods/3> sp:hasDescription <http://smartprotocols.org/10.2144/000113260/methods/3/description> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.1>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Weight the sample" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.1>
     rdfs:label "Weight the sample" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.1>
@@ -978,6 +1010,9 @@ rdf:value "Weigh thawed sample to determine quantity of TRIzol reagent required 
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.2>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "homogenize the tissue" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.2>
     rdfs:label "homogenize the tissue" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.2>
@@ -1012,6 +1047,9 @@ rdf:value "Homogenize sample using tissue homogenizer." .
     rdfs:label "Centrifuge" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.3>
+    rdfs:label "Centrifuge" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.3>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.4> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.3>
@@ -1037,6 +1075,9 @@ rdf:value "Centrifuge at 12,000× g for 10 min." .
     rdfs:label "Transfer the cleared homogenate" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.4>
+    rdfs:label "Transfer the cleared homogenate" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.4>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.5> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.4>
@@ -1059,6 +1100,9 @@ rdf:value "Transfer cleared homogenate to fresh tube; discard insoluble material
     rdfs:label "incubate to room temperature" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.5>
+    rdfs:label "incubate to room temperature" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.5>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.6> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.5>
@@ -1077,6 +1121,9 @@ rdf:value "Incubate homogenized sample at room temperature for 5 min." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.6>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Add chloroform" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.6>
     rdfs:label "Add chloroform" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.6>
@@ -1113,6 +1160,9 @@ rdf:value "Add 0.2 mL chloroform per 1 mL TRIzol and cap tube tightly." .
     rdfs:label "Shake by hand" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.7>
+    rdfs:label "Shake by hand" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.7>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.8> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.7>
@@ -1127,6 +1177,9 @@ rdf:value "Shake vigorously by hand for 15 s." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.8>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Incubate at room temperature" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.8>
     rdfs:label "Incubate at room temperature" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.8>
@@ -1148,6 +1201,9 @@ rdf:value "Incubate at room temperature for 3 min." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.9>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Centrifuge" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.9>
     rdfs:label "Centrifuge" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.9>
@@ -1176,6 +1232,9 @@ rdf:value "Centrifuge at 12,000× g for 15 min." .
     rdfs:label "Transfer aqueous phase  to a new tube." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.10>
+    rdfs:label "Transfer aqueous phase to a new tube." .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.10>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.11> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.10>
@@ -1198,6 +1257,9 @@ rdf:value "Transfer aqueous phase (colorless upper phase) to a new tube." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.11>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Retain organic phase and store at -20°C." .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.11>
     rdfs:label "Retain organic phase and store at -20°C." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.11>
@@ -1230,6 +1292,9 @@ rdf:value "Retain organic phase for DNA/protein extraction, if required (store a
     rdfs:label "Add isopropyl alcohol" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.12>
+    rdfs:label "Add isopropyl alcohol" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.12>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.13> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.12>
@@ -1259,6 +1324,9 @@ rdf:value "Add 0.5 mL isopropyl alcohol per 1 mL TRIzol." .
     rdfs:label "Incubate at room temperature" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.13>
+    rdfs:label "Incubate at room temperature" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.13>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.14> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.13>
@@ -1277,6 +1345,9 @@ rdf:value "Incubate at room temperature for 10 min." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.14>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Centrifuge and discard the supernatant)." .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.14>
     rdfs:label "Centrifuge and discard the supernatant)." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.14>
@@ -1302,6 +1373,9 @@ rdf:value "Centrifuge at 12,000× g for 10 min (RNA forms a gel-like pellet on t
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.15>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Add 75% ethanol and vortex" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.15>
     rdfs:label "Add 75% ethanol and vortex" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.15>
@@ -1334,6 +1408,9 @@ rdf:value "Add 1 mL 75% ethanol per 1 mL TRIzol and vortex for 10 s." .
     rdfs:label "Centrifuge" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.16>
+    rdfs:label "Centrifuge" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.16>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.17> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.16>
@@ -1359,6 +1436,9 @@ rdf:value "Centrifuge at 7500× g for 5 min." .
     rdfs:label "Air-dry RNA pellet" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.17>
+    rdfs:label "Air-dry RNA pellet" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.17>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.18> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.17>
@@ -1377,6 +1457,9 @@ rdf:value "Air-dry RNA pellet for 5–10 min." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.18>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Add RNase-free water" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.18>
     rdfs:label "Add RNase-free water" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.18>
@@ -1409,6 +1492,9 @@ rdf:value "Add 20 μL RNase-free water and mix by gentle pipetting." .
     rdfs:label "Incubate at 60°C" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.19>
+    rdfs:label "Incubate at 60°C" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.19>
     sp:precedes <http://smartprotocols.org/10.2144/000113260/methods/3.20> .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.19>
@@ -1431,6 +1517,9 @@ rdf:value "Incubate at 60°C for 10 min." .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.20>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Store RNA at -80°C" .
+
+<http://smartprotocols.org/10.2144/000113260/methods/3.20>
     rdfs:label "Store RNA at -80°C" .
 
 <http://smartprotocols.org/10.2144/000113260/methods/3.20>

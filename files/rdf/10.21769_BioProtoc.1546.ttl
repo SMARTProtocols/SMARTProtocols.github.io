@@ -797,6 +797,9 @@
     rdfs:label "perfuse the animal" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.1>
+    rdfs:label "perfuse the animal" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.1>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.2> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1>
@@ -816,6 +819,9 @@ rdf:value "In order to visualize vessels and blood flow (leakage of blood as exa
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.2>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Euthanize the animal" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.2>
     rdfs:label "Euthanize the animal" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.2>
@@ -856,6 +862,9 @@ rdf:value "Euthanize the animal by using CO2 10 min after IV injection. Enucleat
     rdfs:label "Wash eyes" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.3>
+    rdfs:label "Wash eyes" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.3>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.4> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.3>
@@ -882,6 +891,9 @@ rdf:value "Wash eyes after formalin-fixation 3 times for 15 min with shaking at 
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.4>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "remove the cornea, iris, lens, sclera, and choroid" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.4>
     rdfs:label "remove the cornea, iris, lens, sclera, and choroid" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.4>
@@ -922,6 +934,9 @@ rdf:value "After washing the fixed, enucleated eyes, remove the cornea, iris, le
     rdfs:label "Incubate tissue (retinas)" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.5>
+    rdfs:label "Incubate tissue (retinas)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.5>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.6> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.5>
@@ -944,6 +959,9 @@ rdf:value "Incubate tissue (retinas) with blocking buffer (materials and reagent
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.6>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Incubate tissue (retinas)" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.6>
     rdfs:label "Incubate tissue (retinas)" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.6>
@@ -983,6 +1001,9 @@ rdf:value "Incubate retinas overnight at 4 °C under gentle agitation in blockin
     rdfs:label "Wash retinas" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.7>
+    rdfs:label "Wash retinas" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.7>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.8> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.7>
@@ -1012,6 +1033,9 @@ rdf:value "Wash retinas 4-5 times (1 h between washes) in PBS at room temperatur
     rdfs:label "make four incisions to the retinas" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.8>
+    rdfs:label "make four incisions to the retinas" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.8>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.9> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.8>
@@ -1034,6 +1058,9 @@ rdf:value "In order to flatten and mount the retina under a coverslip, make four
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.9>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "Place the retina onto a slide" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.9>
     rdfs:label "Place the retina onto a slide" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.9>
@@ -1078,6 +1105,9 @@ rdf:value "Place the retina onto a slide with the eyecup facing up, and cut the 
     rdfs:label "capture 3D images of the retinal vascular plexus" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.10>
+    rdfs:label "capture 3D images of the retinal vascular plexus" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.10>
     sp:precedes <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.11> .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.10>
@@ -1112,6 +1142,9 @@ rdf:value "Images of flat-mounted retinal vascular plexus are acquired with an e
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.11>
     a sp:LaboratorySubprocedure ;
+    rdfs:label "use the Angio Tool image software" .
+
+<http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.11>
     rdfs:label "use the Angio Tool image software" .
 
 <http://smartprotocols.org/10.21769/BioProtoc.1546/methods/1.11>
