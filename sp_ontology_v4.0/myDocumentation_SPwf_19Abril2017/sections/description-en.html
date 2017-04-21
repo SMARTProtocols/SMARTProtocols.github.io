@@ -1,0 +1,89 @@
+<h2 id="desc" class="list">SMART Protocols Ontology: workflow Module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>The workflow module delivers an extensible representation describing the sequence of activities in an experimental protocol.
+Our running example (see <a href="#fig1">Figure 1</a> and <a href="#table2">Table 2</a>), includes 3 laboratory procedures “Protocol overview” (indicating how to process the sample), “Prior to RNA extraction: cleaning process of equipment” and the “RNA extraction”. The first column in Table 2 includes the procedures from our running example. The second column includes subprocedures or instructions for each procedure.
+
+
+The  “Protocol overview” (<a style="font-family:'Courier New'">sp:lab procedure 1</a>) has experimental input (<a style="font-family:'Courier New'">sp:has experimental input</a>) a tumor tissue (<a style="font-family:'Courier New'">nci:tumor tissue</a>) and has output (<a style="font-family:'Courier New'">sp:has output</a>) a homogenized tissue (<a style="font-family:'Courier New'">sp:homogenized tissue</a>). The laboratory procedure 1 includes 3 subprocedures (or steps/instructions) indicating how to manipulate and prepare the sample: <a style="font-family:'Courier New'">sp:lab subprocedure1.1</a>, <a style="font-family:'Courier New'">sp:lab subprocedure 1.2</a> and <a style="font-family:'Courier New'">sp:lab subprocedure 1.3</a>. The order in which these subprocedures should be executed is represented by the BFO property <i>“is preceded by”</i> and <i>“precedes”</i>. The second lab procedure “Prior to RNA extraction: cleaning process of equipment" is a recipe describing how to clean the equipment to be used during the RNA extraction protocol. This recipe includes 3 steps, <a style="font-family:'Courier New'">sp:lab subprocedure2.1</a>, <a style="font-family:'Courier New'">sp:lab subprocedure 2.2</a> and <a style="font-family:'Courier New'">sp:lab subprocedure 2.3</a>.
+
+
+The last procedure “RNA extraction"  has as input the homogenized tissue (output from the lab procedure 1) and as output the <a style="font-family:'Courier New'">chebi:RNA</a>. It includes 20 subprocedures, these are not represented in the (<a href="#fig1">Figure 1</a>) due to lack of space. We propose the classes <a style="font-family:'Courier New'">sp:laboratory procedure</a> and <a style="font-family:'Courier New'">sp:laboratory subprocedure</a> for the representation of procedures and subprocedures. The property, <a style="font-family:'Courier New'">sp:has procedure</a>, is used to represent procedures in the protocol; the property <a style="font-family:'Courier New'">sp:has subprocedure</a>, is used to characterize the subprocedures  that are part of a given procedure.
+
+For representing “instruments”, “reagents/chemical compounds”, “organisms" and “sample/specimen” we are reusing, amongst others, NCBI organismal classification (<a href="http://www.obofoundry.org/ontology/ncbitaxon.html">NCBI taxon</a>), Cell Line Ontology (<a href="http://www.clo-ontology.org">CLO</a>), BioAssay Ontology (<a href="http://bioassayontology.org">BAO</a>), The Experimental Factor Ontology (<a href="http://www.ebi.ac.uk/efo/">EFO</a>), eagle-i resource ontology (<a href="https://open.med.harvard.edu/wiki/display/eaglei/Ontology">ERO</a>) and Chemical Entities of Biological Interest (<a href="https://www.ebi.ac.uk/chebi/">ChEBI</a>).
+</p>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        </style>
+    </head>
+    <body>
+        <caption> <a href="#ns"> Table 2</a>: Procedures and subprocedures from our running example, <a href="http://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Extraction-of-total-RNA-from-freshfrozen-tissue-FT/biotechniques-181792.html"> <i>"Extraction of total RNA from fresh/frozen tissue (FT)</i>"</a> </caption>
+        
+    <table style="width:95%">
+        <tr>
+            <th>Procedure</th>
+        <th>Subprocedure</th>
+<tr><td rowspan="3">Protocol overview (sp:lab procedure 1)</td>
+<td>Recover tumor tissue at the time of surgery, trim into 1-cm3 fragments, and immerse immediately in TRIzol reagent prior to freezing at -80 C.</td>
+</tr>
+<tr>
+<td>Thaw and weigh tissue prior to RNA extraction, working quickly.</td>
+</tr>
+<tr>
+<td>Use a tissue power homogenizer (or a mortar and pestle) to homogenize tissue by hand.</td>
+</tr>
+<tr>
+<td rowspan="3">Prior to RNA extraction: cleaning process of equipment (sp:lab procedure 2)</td>
+<td>Autoclave or wash equipment (i.e., tissue storage container, homogenizer blades, forceps, scalpel holder) in Neutracon solution for 2–4 h.</td>
+</tr>
+<tr>
+    <td>Rinse equipment well in 1% SDS (prepared using DEPC-treated or other nuclease-free water).</td>
+</tr>
+<tr>
+    <td>Rinse in 100% ethanol and leave to air-dry.</td>
+</tr>
+<tr>
+<td rowspan="4">RNA extraction (sp:lab procedure 3)</td>
+<td>Homogenize sample using tissue homogenizer.</td>
+</tr>
+<tr>
+    <td>Add 0.2 mL chloroform per 1 mL TRIzol and cap tube tightly.</td>
+</tr>
+<tr>
+    <td>Add 0.5 mL isopropyl alcohol per 1 mL TRIzol.</td>
+</tr>
+<tr>
+    <td>Add 1 mL 75% ethanol per 1 mL TRIzol and vortex for 10 s.</td>
+</tr>
+        </tr>
+    </table>
+    
+    </body>
+</html>
+
+
+<div align="center" id="fig1">
+    <img src="imagenes/figure1.png"></src>
+        <div> <a href="#fig1">Figure 1: </a> SP-Workflow module. This diagram illustrates the metadata elements described in Table 2. The classes, properties and individuals are represented by their respective labels.
+        </div>
+
+
+
+
+
+
+
+
+
+
+

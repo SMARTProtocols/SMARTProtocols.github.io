@@ -1,0 +1,130 @@
+<h2 id="desc" class="list">SMART Protocols Ontology: Document Module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>The document module of SMART Protocols is compatible with other formalisms in order to facilitate interoperability. The class <a style="font-family:'Courier New'">iao:information content entity</a> and its subclasses <a style="font-family:'Courier New'">iao:document</a>, <a style="font-family:'Courier New'">iao:document part</a>, <a style="font-family:'Courier New'">iao:textual entity</a> and <a style="font-family:'Courier New'">iao:data set</a> were imported from the Information Artifact Ontology (<a href="https://github.com/information-artifact-ontology/IAO/">IAO</a>). This module also represents metadata such as <a style="font-family:'Courier New'">sp:title of the protocol</a>, <a style="font-family:'Courier New'">sp:purpose of the protocol</a>, <a style="font-family:'Courier New'">sp:application of the protocol</a>, <a style="font-family:'Courier New'">sp:reagent list</a>, <a style="font-family:'Courier New'">sp:equipment and supplies list</a>, <a style="font-family:'Courier New'">sp:manufacturer</a>, <a style="font-family:'Courier New'">sp:catalog number</a> and <a style="font-family:'Courier New'">sp:storage conditions</a>.
+Our running example, <a href="http://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Extraction-of-total-RNA-from-freshfrozen-tissue-FT/biotechniques-181792.html"> <i>"Extraction of total RNA from fresh/frozen tissue (FT)</i>"</a>, is illustrated as an SMART Protocol. The application of the SMART Protocols-Document module is presented in (<a href="#table2">Table 2</a>) and (<a href="#fig1">Figure 1</a>); metadata elements are organized in SP-Document as <i>"information content entities"</i>.
+</p>
+
+
+<!DOCTYPE html>
+                        <html>
+                            <head>
+                                <style>
+                                    table, th, td {
+                                        border: 1px solid black;
+                                        border-collapse: collapse;
+                                    }
+                                th, td {
+                                    padding: 5px;
+                                    text-align: left;
+                                }
+                                </style>
+                            </head>
+                            <body>
+                            <caption> <a href="#ns"> Table 2</a>: Metadata represented in SP-Document </caption>
+                        
+                                <table style="width:95%">
+                                    <tr>
+                                        <th colspan="2"> Bibliographic metadata</th>
+                                    </tr>
+                                    <tr>
+                                        <td> sp:title of the protocol</td>
+                                        <td> "Extraction of total RNA from fresh/frozen tissue (FT)"</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="7"> sp:author name</td>
+                                        <td> "Kim M. Linton"</td>
+                                    </tr>
+                                    <tr>
+                                       <td>"Yvonne Hey"</td>
+                                    </tr>
+                                    <tr>
+                                       <td>"Sian Dibben"</td>
+                                    </tr>
+                                    <tr>
+                                      <td>"Crispin J. Miller"</td>
+                                    </tr>
+                                    <tr>
+                                      <td>"Anthony J. Freemont"</td>
+                                    </tr>
+                                    <tr>
+                                      <td>"John A. Radford"</td>
+                                    </tr>
+                                    <tr>
+                                      <td>"Stuart D. Pepper"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> sp:protocol identifier</td>
+                                        <td> "DOI:10.2144/000113260"</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2"> Descriptive metadata</th>
+                                    </tr>
+                                    <tr>
+                                        <td> sp:application of the protocol</td>
+                                        <td> "Methods comparison for high-resolution transcriptional analysis of archival material on Affymetrix Plus 2.0 and Exon 1.0 microarrays"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> sp:provenance of the protocol</td>
+                                        <td> "The extraction method (steps 2 - 21) is taken from the method supplied with TRIzol reagent (Invitrogen, Paisley, UK)."</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2"> Metadata about the input</th>
+                                    </tr>
+                                    <tr>
+                                        <td> sp:specimen name</td>
+                                        <td> "tumor tissue"</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2"> Metadata about the materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">sp:reagent name</th>
+                                        <td> "TRIzol"</td>
+                                    </tr>
+                                    <tr>
+                                       <td> "Chloroform"</td>
+                                    </tr>
+                                    <tr>
+                                      <td> "Ethyl alcohol"</td>
+                                    </tr>
+                                    <tr>
+                                      <td> "Isopropyl alcohol"</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">sp:manufacturer name</th>
+                                        <td> "Invitrogen"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Sigma-Aldrich"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Sigma-Aldrich"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Sigma-Aldrich"</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5"> sp:equipment or supplies name</td>
+                                        <td> "Tissue storage container"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Homogenizer blades"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Forceps"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Scalpel"</td>
+                                    </tr>
+                                    <tr>
+                                        <td> "Scalpel holder"</td>
+
+                                    </tr>
+                                </table>
+                                
+                            </body>
+                        </html>
+                        
+                        <div align="center" id="fig1">
+							<img src="imagenes/figure1.png"></src>
+                                <div> <a href="#fig1">Figure 1: </a> SP-Document module. This diagram illustrates the metadata elements described in table 2. The classes, properties and individuals are represented by their respective labels.
+							</div>
