@@ -1,0 +1,218 @@
+---
+layout: page
+title: Documentation
+permalink: /documentation/
+---
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+<style type="text/css">
+		/*
+		   This template uses the W3C css for working drafts, with small modiications.
+		   Original copyright:
+		   Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+		   The following software licensing rules apply:
+		   http://www.w3.org/Consortium/Legal/copyright-software */
+
+		/* $Id: base.css,v 1.26 2012/08/31 21:24:31 ijacobs Exp $ */
+
+		body {
+		  margin: 0;
+		  font-family: sans-serif;
+		  color: black;
+		  background: white;
+		  background-position: top left;
+		  background-attachment: fixed;
+		  background-repeat: no-repeat;
+		}
+		:link { color: #00C; background: transparent }
+		:visited { color: #609; background: transparent }
+		a:active { color: #C00; background: transparent }
+
+		a:link img, a:visited img { border-style: none } /* no border on img links */
+
+		a img { color: white; }        /* trick to hide the border in Netscape 4 */
+		@media all {                   /* hide the next rule from Netscape 4 */
+		  a img { color: inherit; }    /* undo the color change above */
+		}
+
+		th, td { /* ns 4 */
+		  font-family: sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 { text-align: left }
+		/* background should be transparent, but WebTV has a bug */
+		h1, h2, h3 { color: #005A9C; background: white }
+		h1 { font: 170% sans-serif }
+		h2 { font: 140% sans-serif }
+		h3 { font: 120% sans-serif }
+		h3 {
+			border-bottom: 1px solid navy;
+			margin-top: 3px;
+			padding-bottom: 5px;
+		}
+		h4 { font: bold 100% sans-serif }
+		h5 { font: italic 100% sans-serif }
+		h6 { font: small-caps 100% sans-serif }
+
+		.hide { display: none }
+
+		div.head { margin-bottom: 1em }
+		div.head h1 { margin-top: 2em; clear: both }
+		div.head table { margin-left: 2em; margin-top: 2em }
+
+		p.copyright { font-size: small }
+		p.copyright small { font-size: small }
+
+		@media screen {  /* hide from IE3 */
+		a[href]:hover { background: #ffa }
+		}
+
+		pre { margin-left: 2em }
+		
+		p {
+		  margin-top: 0.6em;
+		  margin-bottom: 0.6em;		  
+		  text-align: justify;
+		}
+		
+		dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+		dt { font-weight: bold }
+
+		ul.toc, ol.toc {
+		  list-style: disc;		/* Mac NS has problem with 'none' */
+		  list-style: none;
+		}
+
+		@media aural {  
+		  h1, h2, h3 { stress: 20; richness: 90 }
+		  .hide { speak: none }
+		  p.copyright { volume: x-soft; speech-rate: x-fast }
+		  dt { pause-before: 20% }
+		  pre { speak-punctuation: code } 
+		}
+		
+		/*Additional css*/
+		.hlist {
+			background-color: #F4FFFF;
+			border: 1px solid navy;
+			padding: 5px;
+		}
+		.hlist li {
+			display: inline-table;
+			list-style-type: none;
+			padding-right: 20px;
+		}
+		.backlink {
+			background-color: #F4FFFF;
+			border: 1px dotted navy;
+			color: black;
+			float: right;
+			font-size: 10pt;
+			padding: 2px;
+			text-align: right;
+		}
+		.entity {
+			border: 1px solid navy;
+			margin: 5px 0;
+			padding: 5px;
+		}
+		table {
+			background-color: #F4FFFF;
+			border: 1px solid navy;
+			margin: 20px;
+		}
+		table {
+			text-align: center;
+			vertical-align: middle;
+		}
+		table td {
+			padding: 5px 15px;
+			text-align: left;
+		}
+		table th {
+			background-color: LightGoldenRodYellow;
+		}
+		pre {
+			background-color: #F9F9F9;
+			border: 1px dashed #2F6FAB;
+			color: black;
+			line-height: 1.1em;
+			padding: 1em;
+		}
+		</style>
+		</head>
+		<body><div class="head">
+            <h1>SMART Protocols</h1>
+            <h2>Release  2013-07-01</h2>
+            <h2>updated version 2017-04-01</h2>
+            <dt>Revision:</dt>
+            <dd>4.0</dd>
+
+                                </dl><dl><dt>Author:</dt>
+                                <dd><a href="http://oxgiraldo.wordpress.com">Olga Giraldo</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>
+                                </dl><dl><dt>Contributors:</dt>
+                                <dd><a href="http://www.dia.fi.upm.es/index.php?page=oscar-corcho/">Oscar Corcho</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>
+                                <dd><a href="http://www.alexandergarcia.name/">Alexander Garcia</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>
+                                </dl><dl>
+						</dl>
+						</div>
+						
+						<div id="toc">
+						<h2>Table of Contents</h2><ul><li>
+							<a href="#ontMotivation">1. SMART Protocol Motivation</a></li><li>
+							<a href="#ontDescription">2. SMART Protocol Description</a></li><li>
+                            <a href="#ontDocumentation">3. Ontology Documentation</a></li><li>
+							<a href="#references">4. References</a></li><li>
+							<a href="#acknowledgements">5. Acknowledgements</a></li>
+							</ul>
+						</div>
+						
+						<div id="ontMotivation">
+						<h2>1. SMART Protocols Motivation <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+						
+						<p>Experimental protocols are fundamental information structures that support the description of the processes by means of which results are generated in experimental research. Experimental protocols describe how the data was produced, the steps undertaken and conditions under which these steps were carried out. Biomedical experiments often rely on sophisticated laboratory protocols, comprising hundreds of individual steps; uses reagents, devices and samples/specimens. Nowadays, such protocols are generally written in natural language and presented in a <i>"recipe"</i> style. Due to the use of natural language, these experimental protocols may present problems (insufficient granularity in the instructions, ambiguity and/or imprecision). In order to address these problems, we are investigating ways for supporting a more systematic and structured description of protocols to improve the reusability of this type of documents.</p>
+                        
+							</li>
+						</ul>					
+						</div>
+						<div id="ontDescription">
+							<h2>2. SMART Protocols Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+							<p>Here we present SMART Protocols (henceforth SP), our ontology-based approach for representing experimental protocols; we aim to <i>"facilitate the semantic representation of experimental protocols"</i>.
+                            
+                            Our ontology reuses BFO; we are also reusing the ontology of relations (RO) to characterize concepts. In addition, each term in the SP ontology is represented with annotation properties imported from OBI Minimal metadata. The classes, properties and individuals are represented by their respective labels to facilitate the readability. The prefix indicates the provenance for each term. Our ontology is organized in two modules. the document module (<a href="/sp_ontology_v4.0/myDocumentation_SPdoc_18Abril2017/index_SPdoc_V4.0.html" target="_blank">SP Document Ontology</a>) represent the metadata necesary and suficient for reporting a protocol. The workflow module (<a href="/sp_ontology_v4.0/myDocumentation_SPwf_19Abril2017/index_SPwf_V4.0.html" target="_blank">SP Workflow Ontology</a>), represent the executable elements of a protocol to be carried out and maintained by humans. A graphical illustration of the ontology modules is presented in <a href="#fig1">Figure 1</a>.</p>
+                            
+                            <div align="center" id="fig1">
+								<img src="/sp_ontology_v4.0/imagenes_indexV4.0/figure1.png"></src>
+                                    <div> <a href="#fig1">Figure 1: </a> SMART Protocols ontology modules.
+                                        </li>
+                                        </ul>
+                                    </div>
+                            
+                            <div id="ontDocumentation">
+                              <h2>3. Ontology Documentation <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+                                <ul>
+							<p style="text-align: center;"> <b>The encoding of the SMART Protocols-Document Ontology can be found <a href="/sp_ontology_v4.0/myDocumentation_SPdoc_18Abril2017/SmartProtocols_doc_V4.0.owl"> here </a>. The documentation is available <a href="/sp_ontology_v4.0/myDocumentation_SPdoc_18Abril2017/index_SPdoc_V4.0.html" target="_blank">here</a></b></p>
+                            <p style="text-align: center;"> <b>The encoding of the SMART Protocols-Workflow Ontology can be found <a href="/sp_ontology_v4.0/myDocumentation_SPwf_19Abril2017/SmartProtocols_wf_V4.0.owl"> here </a>The documentation is available <a href="/sp_ontology_v4.0/myDocumentation_SPwf_19Abril2017/index_SPwf_V4.0.html" target="_blank">here</a></b></p>
+							</li>
+                            </ul>
+                        </div>
+                        </div>
+						<div id="references">
+								<h2>4. References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+								<ul>
+                                    <li id="BFO"><b>[BFO]</b>:Robert Arp and Barry Smith. (2008) <a href="http://precedings.nature.com/documents/1941/version/1/files/npre20081941-1.pdf">
+                                        <cite>Function, Role, and Disposition in Basic Formal Ontology</cite></a>. Available from Nature Precedings.</a></li>
+                                    
+                                   <li id="OBO_REL"><b>[OBO_REL]</b>:Barry Smith, Werner Ceusters, Bert Klagges, Jacob Köhler, Anand Kumar, Jane Lomax, Chris Mungall, Fabian Neuhaus, Alan L Rector and Cornelius Rosse. (2005) <a href="http://genomebiology.com/2005/6/5/R46"><cite>Relations in biomedical ontologies</cite></a>. Genome Biology, Vol. 6:R46.</a></li>
+                                    
+                                    
+								</ul>
+						</div>
+                        <div id="acknowledgements">
+                            <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+                            <p>The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+                        </div>
+        </body> 
+</html>
