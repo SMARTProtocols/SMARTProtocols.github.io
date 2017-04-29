@@ -3,7 +3,7 @@ layout: page
 title: Competency questions
 permalink: /queries/
 ---
-1. [Retrieve all the protocols with samples that belongs to the *Rodent* order](#1-retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)  
+1. [Retrieve all the protocols with samples that belong to the *Rodent* order](#1-retrieve-all-the-protocols-with-samples-that-belongs-to-the-rodent-order)  
 Makes use of external resources, federated query
 2. [Retrieve all the protocols with reagents of type Enzyme](#2-retrieve-all-the-protocols-with-reagents-of-type-enzyme)  
 Makes use of external resources, federated query
