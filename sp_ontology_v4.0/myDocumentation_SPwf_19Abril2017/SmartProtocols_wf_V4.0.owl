@@ -39,9 +39,8 @@
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-01</terms:created>
         <vann:preferredNamespacePrefix>sp</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://purl.org/net/SMARTprotocol#</vann:preferredNamespaceUri>
-        <terms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</terms:license>
         <owl:versionInfo xml:lang="en">4.0</owl:versionInfo>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://delicias.dia.fi.upm.es/members/DGarijo/#me</terms:contributor>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:label xml:lang="en">SMART Protocols Ontology: workflow Module</rdfs:label>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.dia.fi.upm.es/index.php?page=oscar-corcho/</terms:contributor>
     </owl:Ontology>
@@ -5226,6 +5225,21 @@ RNA purification</obo:IAO_0000118>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#RecipeExecution -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#RecipeExecution">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#isDocumentedIn"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">recipe execution</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#RecipeList -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#RecipeList">
@@ -6024,11 +6038,41 @@ reverse DNA primer</obo:IAO_0000118>
     <!-- http://semanticscience.org/resource/SIO_001042 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001042">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAlertMessage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#Hint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAlertMessage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#StorageCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAlertMessage"/>
+                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33893"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A recipe is a set of instructions that describe how to prepare or make something.</obo:IAO_0000115>
