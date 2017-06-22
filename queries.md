@@ -703,7 +703,7 @@ WHERE {
 } GROUP BY ?title
 ```
 
-## 28. Retrieve the protocols authored by Yoshimi Umemura and Beata Dedicova using rice leaves as  sample
+## 28. Retrieve the protocols authored by Yoshimi Umemura and Beata Dedicova using rice leaves as sample
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3Ftitle+%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fsamples+.%0D%0A++%3Fsamples+a+sp%3ASpecimenList.%0D%0A++%3Fsamples+ro%3Ahas_part+%3FsampleNameUri+.%0D%0A++%3Fsample+sp%3AhasName+%3FsampleNameUri+.%0D%0A++%3Fsample+owl%3AsameAs+%3Chttp%3A%2F%2Fdbpedia.org%2Fpage%2FRice%3E+.%0D%0A++%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fauthors+.%0D%0A++%3Fauthors+a+IAO%3A0000321+.%0D%0A++%3Fauthors+ro%3Ahas_part+%3FauthorNameUri+.%0D%0A++%3FauthorNameUri+rdf%3Avalue+%22Yoshimi+Umemura%22+.%0D%0A%7D+&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 ```
