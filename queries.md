@@ -34,7 +34,8 @@ Makes use of external resources, federated query
 24. [Retrieve the protocols authored by Cristian Olaya and Wilmer Cuellar using Cassava (NCBITAXON:3983) as a sample](#24-retrieve-the-protocols-authored-by-cristian-olaya-and-wilmer-cuellar-using-cassava-ncbitaxon3983-as-a-sample)
 25. [Retrieve the common reagents across the protocols “[Bio101] Subcutaneous Injection of Tumor Cells” and “Scratch Wound Healing Assay”](#25-retrieve-the-common-reagents-across-the-protocols-bio101-subcutaneous-injection-of-tumor-cells-and-scratch-wound-healing-assay)
 26. [Retrieve the protocols in which Bromophenol blue is used and tell me about the application of Bromophenol blue](#26-retrieve-the-protocols-in-which-bromophenol-blue-is-used-and-tell-me-about-the-application-of-bromophenol-blue)
-
+27. [Retrieve the protocols and the list of reagents for documents authored by Yoshimi Umemura](#27-retrieve-the-protocols-and-the-list-of-reagents-for-documents-authored-by-yoshimi-umemura)
+28. [Retrieve the protocols authored by Yoshimi Umemura and Beata Dedicova using rice leaves as sample](#28-retrieve-the-protocols-authored-by-yoshimi-umemura-and-beata-dedicova-using-rice-leaves-as-sample)
 
 
 
@@ -673,4 +674,59 @@ WHERE {
   }
 } GROUP BY ?reagentName ?desc
 
+```
+
+## 27. Retrieve the protocols and the list of reagents for documents authored by Yoshimi Umemura
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3Ftitle+%28group_concat%28distinct%28%3FreagentName%29%3Bseparator%3D%22+%7C+%22%29+as+%3FreagentNames%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fauthors+.%0D%0A++%3Fauthors+a+IAO%3A0000321+.%0D%0A++%3Fauthors+ro%3Ahas_part+%3FauthorNameUri+.%0D%0A++%3FauthorNameUri+rdf%3Avalue+%22Yoshimi+Umemura%22+.%0D%0A%7D+GROUP+BY+%3Ftitle&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT ?title (group_concat(distinct(?reagentName);separator=" | ") as ?reagentNames)
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  
+  ?protocol sp:hasExperimentalInput ?reagents .
+  ?reagents a sp:ReagentList .
+  ?reagents ro:has_part ?reagentNameUri .
+  ?reagentNameUri rdf:value ?reagentName .
+  
+  ?protocol ro:has_part ?authors .
+  ?authors a IAO:0000321 .
+  ?authors ro:has_part ?authorNameUri .
+  ?authorNameUri rdf:value "Yoshimi Umemura" .
+} GROUP BY ?title
+```
+
+## 28. Retrieve the protocols authored by Yoshimi Umemura and Beata Dedicova using rice leaves as  sample
+<a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+IAO%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+%3Ftitle+%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Fsamples+.%0D%0A++%3Fsamples+a+sp%3ASpecimenList.%0D%0A++%3Fsamples+ro%3Ahas_part+%3FsampleNameUri+.%0D%0A++%3Fsample+sp%3AhasName+%3FsampleNameUri+.%0D%0A++%3Fsample+owl%3AsameAs+%3Chttp%3A%2F%2Fdbpedia.org%2Fpage%2FRice%3E+.%0D%0A++%0D%0A++%3Fprotocol+ro%3Ahas_part+%3Fauthors+.%0D%0A++%3Fauthors+a+IAO%3A0000321+.%0D%0A++%3Fauthors+ro%3Ahas_part+%3FauthorNameUri+.%0D%0A++%3FauthorNameUri+rdf%3Avalue+%22Yoshimi+Umemura%22+.%0D%0A%7D+&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
+
+```
+PREFIX sp: <http://purl.org/net/SMARTprotocol#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT ?title 
+WHERE {
+  ?protocol sp:hasTitle ?title_uri .
+  ?title_uri rdf:value ?title .
+  
+  ?protocol sp:hasExperimentalInput ?samples .
+  ?samples a sp:SpecimenList.
+  ?samples ro:has_part ?sampleNameUri .
+  ?sample sp:hasName ?sampleNameUri .
+  ?sample owl:sameAs <http://dbpedia.org/page/Rice> .
+  
+  ?protocol ro:has_part ?authors .
+  ?authors a IAO:0000321 .
+  ?authors ro:has_part ?authorNameUri .
+  ?authorNameUri rdf:value "Yoshimi Umemura" .
+} 
 ```
