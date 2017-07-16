@@ -75,7 +75,7 @@ WHERE {
 ```
 
 ## 2. Retrieve all the protocols with reagents of type Enzyme  
-Makes use of external resources, federated query  
+Makes use of external resources, federated query. If federated resources dont respond then this query will give an error msg.  
 
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3Fname+%3Fdesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23has_part%3E+%3FreagentNameUri.%0D%0A++%3Freagent+owl%3AsameAs+%3FexternalUri+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3Fname+.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0D%0A++++%3FexternalUri+a+dbo%3AEnzyme+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3Fdesc+.%0D%0A++++FILTER%28lang%28%3Fdesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
@@ -107,7 +107,7 @@ WHERE {
 ```
 
 ## 3. Retrieve all the protocols with reagents of type Alcohol  
-Makes use of external resources, federated query  
+Makes use of external resources, federated query. If federated resources dont respond then this query will give an error msg.
 
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+yago%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2F%3E%0D%0A%0D%0ASELECT+%3Ftitle+%3Fname+%3Fdesc%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FexternalUri+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3Fname+.%0D%0A++SERVICE+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0D%0A++++%3FexternalUri+a+yago%3AWikicatAlcohols+.%0D%0A++++%3FexternalUri+rdfs%3Acomment+%3Fdesc+.%0D%0A++++FILTER%28lang%28%3Fdesc%29+%3D+%27en%27%29%0D%0A++%7D%0D%0A%7D&should-sponge=grab-all&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>
 
@@ -363,7 +363,7 @@ WHERE {
 ```
 
 ## 14. Retrieve all the diseases caused by the reagents in the protocol "Extraction of total RNA from fresh/frozen tissue (FT)”  
-Makes use of external resources, federated query  
+Makes use of external resources, federated query. If federated resources dont respond then this query will give an error msg. 
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0A%0D%0ASELECT+%3FreagentName+%3FreagentSame+%3FdiseaseLabel%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%22Extraction+of+total+RNA+from+fresh%2Ffrozen+tissue+%28FT%29%22+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3FreagentSame+.%0D%0A++%0D%0A++SERVICE+%3Chttp%3A%2F%2Fsparql.bioontology.org%2Fontologies%2Fsparql%2F%3Fapikey%3INSERT YOUR API KEY HERE%3E+%7B%0D%0A++++%3FreagentSame+%3Chttp%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2Fcausative_agent_of%3E+%3FdiseaseUri.%0D%0A++++%3FdiseaseUri+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel%3E+%3FdiseaseLabel+.%0D%0A++%7D%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 
@@ -650,6 +650,7 @@ WHERE {
 ```
 
 ## 26. Retrieve the protocols in which Bromophenol blue is used and tell me about the application of Bromophenol blue
+If federated resources dont respond then this query will give an error msg. This query requieres an API key, see "INSERT YOUR API KEY HERE"
 <a href="http://smartprotocols.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+sp%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnet%2FSMARTprotocol%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fwww.obofoundry.org%2Fro%2Fro.owl%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0A%0D%0ASELECT+%3FreagentName+%3Fdesc+%28group_concat%28%3Ftitle%3B+separator%3D%22+%7C+%22%29+as+%3Fprotocols%29%0D%0AWHERE+%7B%0D%0A++%3Fprotocol+sp%3AhasTitle+%3Ftitle_uri+.%0D%0A++%3Ftitle_uri+rdf%3Avalue+%3Ftitle+.%0D%0A++%3Fprotocol+sp%3AhasExperimentalInput+%3Freagents+.%0D%0A++%3Freagents+a+sp%3AReagentList+.%0D%0A++%3Freagents+ro%3Ahas_part+%3FreagentNameUri+.%0D%0A++%3FreagentNameUri+rdf%3Avalue+%3FreagentName+.%0D%0A++%3Freagent+sp%3AhasName+%3FreagentNameUri+.%0D%0A++%3Freagent+owl%3AsameAs+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_59424%3E+.%0D%0A++%0D%0A++SERVICE+%3Chttp%3A%2F%2Fsparql.bioontology.org%2Fontologies%2Fsparql%2F%3Fapikey%3DINSERT+YOUR+BIOPORTAL+APIKEY+HERE%3E+%7B%0D%0A+++++++++++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_59424%3E+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fdef%3E+%3Fdesc+.%0D%0A++%7D%0D%0A%7D+GROUP+BY+%3FreagentName+%3Fdesc&should-sponge=&format=text%2Fhtml&timeout=0&debug=on" target="_blank">Execute it in the endpoint</a>  
 
 ```
