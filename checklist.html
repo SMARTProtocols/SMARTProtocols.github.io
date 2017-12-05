@@ -1,0 +1,360 @@
+---
+layout: page
+title: SIRO Checklist
+permalink: /checklist/
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("a#download").click(function(){
+    	checklist = {
+    		title: $("input[name=title]").is(':checked'),
+    		authors: {
+    			name: $("input[name=authorsNames]").is(':checked'),
+    			id: $("input[name=authorsIDs]").is(':checked'),
+    		},
+    		version: {
+    			dates: $("input[name=documentDates]").is(':checked'),
+    			number: $("input[name=documentVersion]").is(':checked'),
+    			substantiveChanges: $("input[name=substantiveChanges]").is(':checked')
+    		},
+    		provenance: $("input[name=provenance]").is(':checked'),
+    		purpose: $("input[name=purpose]").is(':checked'),
+    		applications: $("input[name=applications]").is(':checked'),
+    		advantages: $("input[name=advantages]").is(':checked'),
+    		limitations: $("input[name=limitations]").is(':checked'),
+    		sample: {
+    			id: $("input[name=sampleID]").is(':checked'),
+    			line: $("input[name=line]").is(':checked'),
+    			startingMaterial: $("input[name=startingMaterial]").is(':checked'),
+    			amount: $("input[name=sampleAmount]").is(':checked'),
+    			developmentalStage: $("input[name=developmentalStage]").is(':checked'),
+    			growthSubstrates: $("input[name=growthSubstrates]").is(':checked'),
+    		    growthEnvironment: $("input[name=growthEnvironment]").is(':checked'),
+    			growingTime: $("input[name=growingTime]").is(':checked'),
+    			pretreatment: $("input[name=pretreatment]").is(':checked'),
+    		}.
+    		equipment: {
+    			name: $("input[name=equipmentName]").is(':checked'),
+    			manufacturer: $("input[name=equipmentManufacturer]").is(':checked'),
+    			id: $("input[name=equipmentID]").is(':checked'),
+    			configuration: $("input[name=equipmentConfiguration]").is(':checked'),
+    		},
+    		consumables: {
+    			name: $("input[name=consumableName]").is(':checked'),
+    			manufacturer: $("input[name=consumableManufacturer]").is(':checked'),
+    			id: $("input[name=consumableID]").is(':checked'),
+    		},
+    		solutions: {
+    			name: $("input[name=solutionName]").is(':checked'),
+    			chemicalCompoundName: $("input[name=chemicalCompoundName]").is(':checked'),
+    			initialConcentration: $("input[name=initialConcentration]").is(':checked'),
+    			finalConcentration: $("input[name=finalConcentration]").is(':checked'),
+    			storageConditions: $("input[name=storageConditions]").is(':checked'),
+    			cautions: $("input[name=cautions]").is(':checked'),
+    			hints: $("input[name=hints]").is(':checked'),
+    		},
+    		reagents: {
+    			name: $("input[name=reagentName]").is(':checked'),
+    			manufacturer: $("input[name=reagentManufacturer]").is(':checked'),
+    			id: $("input[name=reagentID]").is(':checked'),
+    		},
+    		kits: {
+    			name: $("input[name=kitName]").is(':checked'),
+    			manufacturer: $("input[name=kitManufacturer]").is(':checked'),
+    			id: $("input[name=kitID]").is(':checked'),
+    		},
+    		software: {
+    			name: $("input[name=softwareName]").is(':checked'),
+    			version: $("input[name=softwareVersion]").is(':checked'),
+    			availability: $("input[name=availability]").is(':checked'),
+    		},
+    		procedures: {
+    			recommendation1: $("input[name=recommendation1]").is(':checked'),
+    			recommendation2: $("input[name=recommendation2]").is(':checked'),
+    			recommendation3: $("input[name=recommendation3]").is(':checked'),
+    			criticalSteps: $("input[name=criticalSteps]").is(':checked'),
+    			pausePoint: $("input[name=pausePoint]").is(':checked'),
+    			timing: $("input[name=timing]").is(':checked'),
+    			hints: $("input[name=hints]").is(':checked'),
+    			troubleshooting: $("input[name=troubleshooting]").is(':checked'),
+    		}
+    	};
+        this.href = "data:text/plain;charset=UTF-8," + encodeURIComponent(JSON.stringify(checklist));
+    });
+});
+</script>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-9hbo{font-weight:bold;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-baqh"></th>
+    <th class="tg-amwm">Data element</th>
+    <th class="tg-amwm">Property</th>
+    <th class="tg-amwm">Tick if you are including this datum</th>
+  </tr>
+  <tr>
+    <td class="tg-9hbo" colspan="4">BIBLIOGRAPHIC DATA ELEMENTS</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l">Title</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh"><input type="checkbox" name="title" id="title"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="2">2</td>
+    <td class="tg-yw4l" rowspan="2">Authors (e.g. creator, co-autors, Laboratory-validation scientist)</td>
+    <td class="tg-yw4l">Name</td>
+    <td class="tg-baqh"><input type="checkbox" name="authorsNames"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ID (e.g. ORCID  or research ID)</td>
+    <td class="tg-baqh"><input type="checkbox" name="authorsIDs"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">3</td>
+    <td class="tg-yw4l" rowspan="3">Version of the protocol</td>
+    <td class="tg-yw4l">Document dates</td>
+    <td class="tg-baqh"><input type="checkbox" name="documentDates"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Version number (Draft document version number or final document version number)</td>
+    <td class="tg-baqh"><input type="checkbox" name="documentVersion"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Documenting substantive changes</td>
+    <td class="tg-baqh"><input type="checkbox" name="substantiveChanges"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l">Provenance of the protocol</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh"><input type="checkbox" name="provenance"></td>
+  </tr>
+  <tr>
+    <td class="tg-9hbo" colspan="4">DESCRIPTIVE DATA ELEMENTS</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">5</td>
+    <td class="tg-yw4l">Overall objective or Purpose</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh"><input type="checkbox" name="purpose"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">6</td>
+    <td class="tg-yw4l">Application of the protocol</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh"><input type="checkbox" name="applications"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">7</td>
+    <td class="tg-yw4l">Advantage(s) of the protocol</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh"><input type="checkbox" name="advantages"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">8</td>
+    <td class="tg-yw4l">Limitation(s) of the protocol</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh"><input type="checkbox" name="limitations"></td>
+  </tr>
+  <tr>
+    <td class="tg-9hbo" colspan="4">DATA ELEMENTS FOR THE MATERIALS</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="9">9</td>
+    <td class="tg-yw4l" rowspan="9">Sample</td>
+    <td class="tg-yw4l">ID</td>
+    <td class="tg-baqh"><input type="checkbox" name="sampleID"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Strain, genotype or line</td>
+    <td class="tg-baqh"><input type="checkbox" name="line"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Starting material (Whole organism, organism part, etc.)</td>
+    <td class="tg-baqh"><input type="checkbox" name="startingMaterial"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Amount of Bio-Source</td>
+    <td class="tg-baqh"><input type="checkbox" name="sampleAmount"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Developmental stage</td>
+    <td class="tg-baqh"><input type="checkbox" name="developmentalStage"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Growth substrates</td>
+    <td class="tg-baqh"><input type="checkbox" name="growthSubstrates"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Growth environment</td>
+    <td class="tg-baqh"><input type="checkbox" name="growthEnvironment"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Growing time</td>
+    <td class="tg-baqh"><input type="checkbox" name="growingTime"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Sample pre-treatment or sample preparation</td>
+    <td class="tg-baqh"><input type="checkbox" name="samplePreparation"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="4">10</td>
+    <td class="tg-yw4l" rowspan="4">Laboratory equipment</td>
+    <td class="tg-yw4l">Laboratory equipment name</td>
+    <td class="tg-baqh"><input type="checkbox" name="equipmentName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">manufacturer or vendor name (including homepage)</td>
+    <td class="tg-baqh"><input type="checkbox" name="equipmentManufacturer"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">laboratory equipment ID (catalog number)</td>
+    <td class="tg-baqh"><input type="checkbox" name="equipmentID"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Equipment configuration</td>
+    <td class="tg-baqh"><input type="checkbox" name="equipmentConfiguration"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">11</td>
+    <td class="tg-yw4l" rowspan="3">Laboratory consumables or supplies</td>
+    <td class="tg-yw4l">Laboratory consumable name</td>
+    <td class="tg-baqh"><input type="checkbox" name="consumableName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Manufacturer or vendor name (including homepage)</td>
+    <td class="tg-baqh"><input type="checkbox" name="consumableManufacturer"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Laboratory consumable ID (catalog number)</td>
+    <td class="tg-baqh"><input type="checkbox" name="consumableID"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="7">12</td>
+    <td class="tg-yw4l" rowspan="7">Recipes for solutions</td>
+    <td class="tg-yw4l">Solution name</td>
+    <td class="tg-baqh"><input type="checkbox" name="solutionName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Chemical compound name (ingredient of the solution recipe)</td>
+    <td class="tg-baqh"><input type="checkbox" name="chemicalCompoundName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Initial concentration of a chemical compound</td>
+    <td class="tg-baqh"><input type="checkbox" name="initialConcentration"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Final concentration of chemical compound</td>
+    <td class="tg-baqh"><input type="checkbox" name="finalConcentration"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Storage conditions</td>
+    <td class="tg-baqh"><input type="checkbox" name="storageConditions"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Cautions</td>
+    <td class="tg-baqh"><input type="checkbox" name="cautions"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Hints</td>
+    <td class="tg-baqh"><input type="checkbox" name="hints"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">13</td>
+    <td class="tg-yw4l" rowspan="3">Reagents</td>
+    <td class="tg-yw4l">Reagent name</td>
+    <td class="tg-baqh"><input type="checkbox" name="reagentName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Manufacturer or vendor name (including homepage)</td>
+    <td class="tg-baqh"><input type="checkbox" name="reagentManufacturer"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Reagent ID (catalog number)</td>
+    <td class="tg-baqh"><input type="checkbox" name="reagentID"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">14</td>
+    <td class="tg-yw4l" rowspan="3">Kits</td>
+    <td class="tg-yw4l">Kit name</td>
+    <td class="tg-baqh"><input type="checkbox" name="kitName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Manufacturer or vendor name (including homepage)</td>
+    <td class="tg-baqh"><input type="checkbox" name="kitManufacturer"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Kit ID (catalog number)</td>
+    <td class="tg-baqh"><input type="checkbox" name="kitID"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">15</td>
+    <td class="tg-yw4l" rowspan="3">Software</td>
+    <td class="tg-yw4l">Software name</td>
+    <td class="tg-baqh"><input type="checkbox" name="softwareName"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Software version</td>
+    <td class="tg-baqh"><input type="checkbox" name="softwareVersion"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Software availability (homepage)</td>
+    <td class="tg-baqh"><input type="checkbox" name="softwareHomepage"></td>
+  </tr>
+  <tr>
+    <td class="tg-9hbo" colspan="4">DATA ELEMENTS FOR PROCEDURES</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="8">16</td>
+    <td class="tg-yw4l" rowspan="8"></td>
+    <td class="tg-yw4l">Recommendation 1  (list of steps in numerical order)</td>
+    <td class="tg-baqh"><input type="checkbox" name="recommendation1"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Recommendation 2 (include alternative steps)</td>
+    <td class="tg-baqh"><input type="checkbox" name="recommendation2"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Recommendation 3 (presentation of more that one procedure)</td>
+    <td class="tg-baqh"><input type="checkbox" name="recommendation3"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Critical steps</td>
+    <td class="tg-baqh"><input type="checkbox" name="criticalSteps"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Pause point</td>
+    <td class="tg-baqh"><input type="checkbox" name="pausePoint"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Timing</td>
+    <td class="tg-baqh"><input type="checkbox" name="timing"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Hints</td>
+    <td class="tg-baqh"><input type="checkbox" name="stepHints"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Troubleshooting</td>
+    <td class="tg-baqh"><input type="checkbox" name="troubleshooting"></td>
+  </tr>
+</table>
+<a id="download" href="#" download="checklist.json">Download JSON-LD</a>
+</body>
+</html>
