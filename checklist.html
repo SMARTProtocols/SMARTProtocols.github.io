@@ -39,7 +39,7 @@ permalink: /checklist/
     		    growthEnvironment: $("input[name=growthEnvironment]").is(':checked'),
     			growingTime: $("input[name=growingTime]").is(':checked'),
     			pretreatment: $("input[name=pretreatment]").is(':checked'),
-    		}.
+    		},
     		equipment: {
     			name: $("input[name=equipmentName]").is(':checked'),
     			manufacturer: $("input[name=equipmentManufacturer]").is(':checked'),
@@ -86,7 +86,7 @@ permalink: /checklist/
     			troubleshooting: $("input[name=troubleshooting]").is(':checked'),
     		}
     	};
-        this.href = "data:text/plain;charset=UTF-8," + encodeURIComponent(JSON.stringify(checklist));
+        this.href = "data:text/plain;charset=UTF-8," + encodeURIComponent(JSON.stringify(checklist, null, 2));
     });
 });
 </script>
