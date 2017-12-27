@@ -20,6 +20,11 @@ permalink: /checklist/
 	            limitation: "http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol",
 	          },
 	          title: $("input[name=title]").is(':checked'),
+	          provenance: $("input[name=provenance]").is(':checked'),
+	          purpose: $("input[name=purpose]").is(':checked'),
+	          application: $("input[name=applications]").is(':checked'),
+	          advantage: $("input[name=advantages]").is(':checked'),
+	          limitation: $("input[name=limitations]").is(':checked'),
 	          authors: {
 	            "@context": {
 	              name: "http://purl.org/net/SMARTprotocol#AuthorName",
@@ -36,18 +41,13 @@ permalink: /checklist/
 	            number: $("input[name=documentVersion]").is(':checked'),
 	            substantiveChanges: $("input[name=substantiveChanges]").is(':checked')
 	          },
-	          provenance: $("input[name=provenance]").is(':checked'),
-	          purpose: $("input[name=purpose]").is(':checked'),
-	          application: $("input[name=applications]").is(':checked'),
-	          advantage: $("input[name=advantages]").is(':checked'),
-	          limitation: $("input[name=limitations]").is(':checked'),
 	          sample: {
 	            "@context": {
 	              identifier: "http://purl.obolibrary.org/obo/OBI_0001616",
 	              name: "http://purl.org/net/SMARTprotocol#SpecimenName",
 	              line: "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#StrainOrLine",
-	              startingMaterial: "http://purl.org/net/SMARTprotocol#DevelopmentalStage",
-	              developmentalStage: "",
+	              sampleFromOrganism: "http://purl.obolibrary.org/obo/OBI_0000671",
+	              developmentalStage: "http://purl.org/net/SMARTprotocol#DevelopmentalStage",
 	              growthSubstrate: "http://purl.org/net/SMARTprotocol#GrowthSubstrate",
 	              growthEnvironment: "http://purl.org/net/SMARTprotocol#GrowthEnvironment",
 	              growingTime: "http://purl.org/net/SMARTprotocol#GrowingTime",
@@ -56,7 +56,7 @@ permalink: /checklist/
 	            identifier: $("input[name=sampleID]").is(':checked'),
 	            name: $("input[name=sampleName]").is(':checked'),
 	            line: $("input[name=line]").is(':checked'),
-	            startingMaterial: $("input[name=startingMaterial]").is(':checked'),
+	            sampleFromOrganism: $("input[name=startingMaterial]").is(':checked'),
 	            amount: $("input[name=sampleAmount]").is(':checked'),
 	            developmentalStage: $("input[name=developmentalStage]").is(':checked'),
 	            growthSubstrate: $("input[name=growthSubstrates]").is(':checked'),
@@ -80,8 +80,7 @@ permalink: /checklist/
 	          	"@context": {
 	          	  name: "http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName",
 	          	  manufacturer: "http://purl.org/net/SMARTprotocol#ManufacturerName",
-	          	  id: "http://purl.org/net/SMARTprotocol#CatalogNumber",
-	          	  configuration: "http://purl.org/net/SMARTprotocol#EquipmentConfiguration",
+	          	  id: "http://purl.org/net/SMARTprotocol#CatalogNumber"
 	          	},
 	            name: $("input[name=consumableName]").is(':checked'),
 	            manufacturer: $("input[name=consumableManufacturer]").is(':checked'),
@@ -327,15 +326,15 @@ permalink: /checklist/
 	      </td>
 	    </tr>
 	    <tr>
-	      <td class="tg-yw4l">Sample/Specimen name</td>
+	      <td class="tg-yw4l">Organism name</td>
 	      <td class="tg-baqh">
 	        <input type="checkbox" name="sampleName">
 	      </td>
 	    </tr>
 	    <tr>
-	      <td class="tg-yw4l">Starting material (Whole organism, organism part, etc.)</td>
+	      <td class="tg-yw4l">Sample from organism</td>
 	      <td class="tg-baqh">
-	        <input type="checkbox" name="startingMaterial">
+	        <input type="checkbox" name="sampleFromOrganism">
 	      </td>
 	    </tr>
 	    <tr>
