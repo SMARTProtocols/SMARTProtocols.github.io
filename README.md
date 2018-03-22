@@ -1,2 +1,2 @@
 # SMARTProtocols.github.io
-Web site for the SMART Protocols Project.
+Web site for the SMART Protocols Project
