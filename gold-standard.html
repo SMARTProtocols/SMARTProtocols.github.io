@@ -1,0 +1,1545 @@
+---
+layout: page
+title: Gold Standard
+permalink: /gold-standard/
+---
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.3.1/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-html5-1.5.4/b-print-1.5.4/rg-1.1.0/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-html5-1.5.4/b-print-1.5.4/rg-1.1.0/datatables.min.js"></script>
+
+
+
+<p>Here is presented the first version of a fully annotated corpus of experimental protocols in life sciences. We are working in improving this annotated corpus to serve as a research resource for the biomedical natural language processing community.</p>
+
+<h2>Corpus Characteristics</h2>
+<ul>
+    <li>58 fully annotated protocols,</li>
+    <li>1769 concepts related to Samples, Instruments and Reagents. These concepts were mapped to concepts represented in ontologies</li>
+</ul>
+
+<h2>Corpus Annotation</h2>
+<ul>
+    <li>Thirty four annotators. The skills of the annotators was diverse, from students to university professors their areas of expertise were related to the content of the protocols.</li>
+    <li>Three-annotators per document (randomly chosen)</li>
+    <li>Two annotation phases</li>
+</ul>
+
+<h2>Download</h2>
+<ul>
+    <li><a href="https://zenodo.org/record/1204838#.XEIjms9KjnU" target="_blank">Corpus of protocols</a></li>
+    <li><a href="https://zenodo.org/record/2171281#.XCO7R89KjnV" target="_blank">Annotation guidelines</a></li>
+    <li>Guidelines to use BioH tool (an extension of <a href="https://web.hypothes.is/" target="_blank">Hypothesis</a> annotation tool)</li>
+</ul>
+
+<h2>Explore Annotation Results</h2>
+
+<script>
+    $( document ).ready(function() {
+        $('#myTable').DataTable({
+        rowGroup: {
+            dataSrc: 'Journal'
+        }
+        });
+    });
+</script>
+
+<table id="goldStandard">
+    <thead>
+    <tr>
+      <th>Journal</th>
+      <th>#</th>
+      <th>Title</th>
+      <th>DOI</th>
+      <th>URL</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      <td>bio-protocols</td>
+      <td>1</td>
+      <td>Generation of Non-typeable Haemophilus influenzae Directed Gene Deletion Mutants</td>
+      <td>10.21769/BioProtoc.1066</td>
+      <td>https://bio-protocol.org/e1066</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>2</td>
+      <td>Mouse Retinal Whole Mounts and Quantification of Vasculature Protocol</td>
+      <td>10.21769/BioProtoc.1546</td>
+      <td>https://bio-protocol.org/e1546</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>3</td>
+      <td>Electroporation of Embryonic Chick Eyes</td>
+      <td>10.21769/BioProtoc.1498</td>
+      <td>https://bio-protocol.org/e1498</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>4</td>
+      <td>In vitro Migration Assays for Neural Stem Cells, Intermediate Neurogenic Progenitors and Immature Neurons</td>
+      <td>10.21769/BioProtoc.1371</td>
+      <td>https://bio-protocol.org/e1371</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>5</td>
+      <td>In utero Electroporation of the Embryonic Mouse Retina</td>
+      <td>10.21769/BioProtoc.1255</td>
+      <td>https://bio-protocol.org/e1255</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>6</td>
+      <td>In situ Chemotaxis Assay in Caenorhabditis elegans (for the Study of Circadian Rhythms)</td>
+      <td>10.21769/BioProtoc.1040</td>
+      <td>https://bio-protocol.org/e1040</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>7</td>
+      <td>Fluorescence Microscopy for Cilia in Cultured Cells and Zebrafish Embryos</td>
+      <td>10.21769/BioProtoc.1188</td>
+      <td>https://bio-protocol.org/e1188</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>8</td>
+      <td>Wnt Reporter Activity Assay</td>
+      <td>10.21769/BioProtoc.1183</td>
+      <td>https://bio-protocol.org/e1183</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>9</td>
+      <td>Hedgehog (Hh) Reporter Activity Assay</td>
+      <td>10.21769/BioProtoc.1182</td>
+      <td>https://bio-protocol.org/e1182</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>10</td>
+      <td>Open-book Preparations from Chick Embryos and DiI Labeling of Commissural Axons</td>
+      <td>10.21769/BioProtoc.1176</td>
+      <td>https://bio-protocol.org/e1176</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>11</td>
+      <td>Barrier Function Assay</td>
+      <td>10.21769/BioProtoc.1133</td>
+      <td>https://bio-protocol.org/e1133</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>12</td>
+      <td>DNA Fragmentation Analysis</td>
+      <td>10.21769/BioProtoc.1203</td>
+      <td>https://bio-protocol.org/e1203</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>13</td>
+      <td>Chloroform-ethanol Isolation of Genomic DNA from Mouse Tail</td>
+      <td>10.21769/BioProtoc.131</td>
+      <td>https://bio-protocol.org/bio101/e131</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>14</td>
+      <td>Extraction of Genomic DNA from Arabidopsis leaves (can be used for other tissues as well)</td>
+      <td>10.21769/BioProtoc.90</td>
+      <td>https://bio-protocol.org/bio101/e90</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>15</td>
+      <td>Yeast Genomic DNA Miniprep Using A FastPrep Cell Lyser</td>
+      <td>10.21769/BioProtoc.64</td>
+      <td>https://bio-protocol.org/bio101/e64</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>16</td>
+      <td>Zebrafish Embryo DNA Preparation</td>
+      <td>10.21769/BioProtoc.184</td>
+      <td>https://bio-protocol.org/bio101/e184</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>17</td>
+      <td>Determination of Mutation Frequency During Viral DNA Replication</td>
+      <td>10.21769/BioProtoc.1076</td>
+      <td>https://bio-protocol.org/e1076</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>18</td>
+      <td>Genotyping for Single Zebrafish (Fin Clip) or Zebrafish Embryo</td>
+      <td>10.21769/BioProtoc.182</td>
+      <td>https://bio-protocol.org/bio101/e182</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>19</td>
+      <td>Genotyping Transgenic Zebrafish Using Genomic DNA Extracted from Clutch of Embryos</td>
+      <td>10.21769/BioProtoc.181</td>
+      <td>https://bio-protocol.org/bio101/e181</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>20</td>
+      <td>PCR-RFLP Genotyping of Point Mutations in Caenorhabditis elegans</td>
+      <td>10.21769/BioProtoc.128</td>
+      <td>https://bio-protocol.org/e128</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>21</td>
+      <td>Detection of piggyBac-mediated Transposition by Splinkerette PCR in Transgenic Lines of Strongyloides ratti</td>
+      <td>10.21769/BioProtoc.1015</td>
+      <td>https://bio-protocol.org/e1015</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>22</td>
+      <td>DNA PCR Assays for Igh Rearrangement</td>
+      <td>10.21769/BioProtoc.1046</td>
+      <td>https://bio-protocol.org/e1046</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>23</td>
+      <td>Promoter Orientation of Prokaryotic Phase-variable Genes by PCR</td>
+      <td>10.21769/BioProtoc.274</td>
+      <td>https://bio-protocol.org/e274</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>24</td>
+      <td>Pulsed-field Gel Electrophoresis Typing of Gram-negative Bacteria (E. coli)</td>
+      <td>10.21769/BioProtoc.103</td>
+      <td>https://bio-protocol.org/bio101/e103</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>25</td>
+      <td>Purification and Sequencing of DNA Guides from Prokaryotic Argonaute</td>
+      <td>10.21769/BioProtoc.1293</td>
+      <td>https://bio-protocol.org/e1293</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>26</td>
+      <td>Yeast DNA Replication 2D Gel Protocol</td>
+      <td>10.21769/BioProtoc.213</td>
+      <td>https://bio-protocol.org/e213</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>27</td>
+      <td>A Quick, No Frills Approach to Mouse Genotyping</td>
+      <td>10.21769/BioProtoc.244</td>
+      <td>https://bio-protocol.org/e244</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>28</td>
+      <td>Total RNA Extraction from Formalin-Fixed, Paraffin-Embedded (FFPE) Blocks</td>
+      <td>10.21769/BioProtoc.161</td>
+      <td>https://bio-protocol.org/e161</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>29</td>
+      <td>RNA Isolation from Synechocystis</td>
+      <td>10.21769/BioProtoc.1428</td>
+      <td>https://bio-protocol.org/e1428</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>30</td>
+      <td>Polysome Preparation, RNA Isolation and Analysis</td>
+      <td>10.21769/BioProtoc.286</td>
+      <td>https://bio-protocol.org/e286</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>31</td>
+      <td>RNA Isolation from Arabidopsis Pollen Grains</td>
+      <td>10.21769/BioProtoc.67</td>
+      <td>https://bio-protocol.org/bio101/e67</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>32</td>
+      <td>RNA Isolation and Northern Blot Analysis</td>
+      <td>10.21769/BioProtoc.1077</td>
+      <td>https://bio-protocol.org/e1077</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>33</td>
+      <td>RNA Extraction from RNase-Rich Senescing Leaf Samples</td>
+      <td>10.21769/BioProtoc.248</td>
+      <td>https://bio-protocol.org/e248</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>34</td>
+      <td>Phenol-chloroform Based RNA Extraction from Yeast</td>
+      <td>10.21769/BioProtoc.138</td>
+      <td>https://bio-protocol.org/bio101/e138</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>35</td>
+      <td>Separation of Microspores from Anthers of Lilium longiflorum (Lily) and Subsequent RNA Extraction</td>
+      <td>10.21769/BioProtoc.1400</td>
+      <td>https://bio-protocol.org/e1400</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>36</td>
+      <td>Total RNA Isolation after Laser-capture Microdissection of Human Cervical Squamous Epithelial Cells from Fresh Frozen Tissue</td>
+      <td>10.21769/BioProtoc.848</td>
+      <td>https://bio-protocol.org/e848</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>37</td>
+      <td>Extraction of Small RNA and qPCR Validation of miRNAs in Vigna mungo</td>
+      <td>10.21769/BioProtoc.1417</td>
+      <td>https://bio-protocol.org/e1417</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>38</td>
+      <td>RNA Isolation From Meloidogyne Spp. Galls</td>
+      <td>10.21769/BioProtoc.879</td>
+      <td>https://bio-protocol.org/e879</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>39</td>
+      <td>Isolating RNA from the Soil</td>
+      <td>10.21769/BioProtoc.903</td>
+      <td>https://bio-protocol.org/e903</td>
+    </tr>
+    <tr>
+      <td>bio-protocols</td>
+      <td>40</td>
+      <td>Site-Directed Mutagenesis Using Dpn1</td>
+      <td>10.21769/BioProtoc.29</td>
+      <td>https://bio-protocol.org/bio101/e29</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>1</td>
+      <td>Easy and efficient protocol for oomycete DNA extraction suitable for population genetic analysis</td>
+      <td>10.1007/s10529-010-0478-3</td>
+      <td>https://link.springer.com/article/10.1007/s10529-010-0478-3</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>2</td>
+      <td>A single protocol for extraction of gDNA from bacteria and yeast</td>
+      <td>10.2144/000114263</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/25757544</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>3</td>
+      <td>Extraction of nucleic acids from yeast cells and plant tissues using ethanol as medium for sample preservation and cell disruption</td>
+      <td>10.2144/000113476</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/20854267</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>4</td>
+      <td>Comparison and optimization of ancient DNA extraction</td>
+      <td>10.2144/000112383</td>
+      <td>https://www.biotechniques.com/BiotechniquesJournal/2007/March/Comparison-and-optimization-of-ancient-DNA-extraction/biotechniques-41414.html</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>5</td>
+      <td>Rapid method for the isolation of mammalian sperm DNA</td>
+      <td>10.2144/000114280</td>
+      <td>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4486329/</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>6</td>
+      <td>Ultra High Purification of Oligonucleotides-DNA and siRNA</td>
+      <td></td>
+      <td>https://www.biotechniques.com/protocols/Electrophoresis/DNARNA_Analysis_and_Purificatio/Ultra-High-Purification-of-Oligonucleotides-DNA-and-siRNA/biotechniques-115451.html</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>7</td>
+      <td>Simplified DGS procedure for large-scale genome structural study</td>
+      <td>10.2144/00013307</td>
+      <td>https://www.biotechniques.com/multimedia/archive/00075/Practical_DGS_protoc_75203a.pdf</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>8</td>
+      <td>Alkaline polyethylene glycol-based method for direct PCR from bacteria, eukaryotic tissue samples, and whole blood</td>
+      <td>10.2144/000112149</td>
+      <td>https://www.biotechniques.com/BiotechniquesJournal/2006/April/Alkaline-polyethylene-glycol-based-method-for-direct-PCR-from-bacteria-eukaryotic-tissue-samples-and-whole-blood/biotechniques-45688.html</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>9</td>
+      <td>Rare allele enrichment and detection by allele-specific PCR, competitive probe blocking and melting analysis</td>
+      <td>10.2144/000113783</td>
+      <td>https://www.biotechniques.com/protocols/2012_Protocol_Guide/Rare-allele-enrichment-and-detection-by-allele-specific-PCR-competitive-probe----blocking-and-melting-analysis/biotechniques-324732.html?service=print</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>10</td>
+      <td>Extraction of total RNA from fresh/frozen tissue (FT)</td>
+      <td>10.2144/000113260</td>
+      <td>https://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Extraction-of-total-RNA-from-freshfrozen-tissue-FT/biotechniques-181792.html?service=print</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>11</td>
+      <td>Preparation of formalin-fixed paraffin-embedded (FFPE) tissues for RNA extraction</td>
+      <td>10.2144/000113261</td>
+      <td>https://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Preparation-of-formalin-fixed-paraffin-embedded-FFPE-tissues-for-RNA----extraction/biotechniques-181793.html</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>12</td>
+      <td>Improving sequencing quality from PCR products containing long mononucleotide repeats.</td>
+      <td>10.2144/000113369</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/20569204</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>13</td>
+      <td>Practical SA-cloning protocol</td>
+      <td>10.2144/000113781</td>
+      <td>https://www.biotechniques.com/multimedia/archive/00170/BTN_A_000113781_O_170495a.pdf</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>14</td>
+      <td>Quantitation of proteins expressed on the plasma membrane using cold-adapted proteases</td>
+      <td>10.2144/000113784</td>
+      <td>https://www.biotechniques.com/protocols/2012_Protocol_Guide/Quantitation-of-proteins-expressed-on-the-plasma-membrane-using-cold-adapted----proteases/biotechniques-324728.html</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>15</td>
+      <td>Yeast genomic DNA extraction with LiOAc-SDS</td>
+      <td>10.2144/000113785</td>
+      <td>https://www.biotechniques.com/protocols/2012_Protocol_Guide/Yeast-genomic-DNA-extraction-with-LiOAc-SDS/biotechniques-324723.html</td>
+    </tr>
+    <tr>
+      <td>Biotechniques</td>
+      <td>16</td>
+      <td>Protocol for intelligent high-content screening of zebrafish embryos on a standard widefield screening microscope</td>
+      <td>10.2144/000113782</td>
+      <td>https://www.biotechniques.com/protocols/2012_Protocol_Guide/Protocol-for-intelligent-high-content-screening-of-zebrafish-embryos-on-a----standard-widefield-screening-microscope/biotechniques-324719.html</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>1</td>
+      <td>Molecular Cloning: A Laboratory Manual (Fourth Edition)</td>
+      <td></td>
+      <td>https://cshlpress.com/default.tpl?action=full&amp;src=pdf&amp;--eqskudatarq=934</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>2</td>
+      <td>Analysis of RNA-Protein Complexes by RNA Coimmunoprecipitation and RT-PCR Analysis from Caenorhabditis elegans</td>
+      <td>10.1101/pdb.prot5300</td>
+      <td>http://cshprotocols.cshlp.org/content/2009/10/pdb.prot5300.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>3</td>
+      <td>RNAi in Cultured Mammalian Cells Using Synthetic siRNAs</td>
+      <td>10.1101/pdb.prot071076</td>
+      <td>http://cshprotocols.cshlp.org/content/2012/9/pdb.prot071076.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>4</td>
+      <td>An Agar Mount for Observation of Caenorhabditis elegans Embryos</td>
+      <td>10.1101/pdb.prot5540</td>
+      <td>http://cshprotocols.cshlp.org/content/2010/12/pdb.prot5540.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>5</td>
+      <td>Culturing Human Embryonic Stem Cells in Feeder-Free Conditions</td>
+      <td>10.1101/pdb.prot5044</td>
+      <td>http://cshprotocols.cshlp.org/content/2008/9/pdb.prot5044.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>6</td>
+      <td>Design and Cloning of an shRNA into a Lentiviral Silencing Vector: Version A</td>
+      <td>10.1101/pdb.prot5009</td>
+      <td>http://cshprotocols.cshlp.org/content/2008/8/pdb.prot5009.short</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>7</td>
+      <td>In Ovo Live Imaging of Avian Embryos</td>
+      <td>10.1101/pdb.prot5446</td>
+      <td>http://cshprotocols.cshlp.org/content/2010/6/pdb.prot5446.short</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>8</td>
+      <td>Use of the Sleeping Beauty Transposon System for Stable Gene Expression in Mouse Embryonic Stem Cells</td>
+      <td>10.1101/pdb.prot5270</td>
+      <td>http://cshprotocols.cshlp.org/content/2009/8/pdb.prot5270.full</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>9</td>
+      <td>Embedding Embryos for High-Resolution Episcopic Microscopy (HREM)</td>
+      <td>10.1101/pdb.prot069583</td>
+      <td>http://cshprotocols.cshlp.org/content/2012/6/pdb.prot069583.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>10</td>
+      <td>FAST Technique for Agrobacterium-Mediated Transient Gene Expression in Seedlings of Arabidopsis and Other Plant Species</td>
+      <td>10.1101/pdb.prot5428</td>
+      <td>http://cshprotocols.cshlp.org/content/2010/5/pdb.prot5428.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>11</td>
+      <td>Isolation and Whole-Cell Patch Clamping of Arabidopsis Guard Cell Protoplasts</td>
+      <td>10.1101/pdb.prot5014</td>
+      <td>http://cshprotocols.cshlp.org/content/2008/6/pdb.prot5014.full</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>12</td>
+      <td>Polyacrylamide Gel Electrophoresis of RNA</td>
+      <td>10.1101/pdb.prot5444</td>
+      <td>http://cshprotocols.cshlp.org/content/2010/6/pdb.prot5444.full</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>13</td>
+      <td>Preparation of Small RNA Libraries for High-Throughput Sequencing</td>
+      <td>10.1101/pdb.prot071431</td>
+      <td>http://cshprotocols.cshlp.org/content/2012/10/pdb.prot071431.short</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>14</td>
+      <td>Mapping Protein–Protein Interactions Using Yeast Two-Hybrid Assays</td>
+      <td>10.1101/pdb.prot086157</td>
+      <td>http://cshprotocols.cshlp.org/content/2015/5/pdb.prot086157</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>15</td>
+      <td>Bimolecular Affinity Purification (BAP): Tandem Affinity Purification Using Two Protein Baits</td>
+      <td>10.1101/pdb.prot5318</td>
+      <td>http://cshprotocols.cshlp.org/content/2009/11/pdb.prot5318.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>16</td>
+      <td>Chromatin Immunoprecipitation (ChIP)</td>
+      <td>10.1101/pdb.prot5279</td>
+      <td>http://cshprotocols.cshlp.org/content/2009/9/pdb.prot5279.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>17</td>
+      <td>Combined 3C-ChIP-Cloning (6C) Assay: A Tool to Unravel Protein-Mediated Genome Architecture</td>
+      <td>10.1101/pdb.prot5168</td>
+      <td>http://cshprotocols.cshlp.org/content/2009/3/pdb.prot5168.short</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>18</td>
+      <td>Creation of Baculovirus Display Libraries</td>
+      <td>10.1101/pdb.prot5393</td>
+      <td>http://cshprotocols.cshlp.org/content/2010/3/pdb.prot5393.full</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>19</td>
+      <td>Development of Mammalian Cell Lines with lac Operator-Tagged Chromosomes</td>
+      <td>10.1101/pdb.prot4903</td>
+      <td>http://cshprotocols.cshlp.org/content/2008/1/pdb.prot4903.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>20</td>
+      <td>Preparation of Peptides from Yeast Cells for iTRAQ Analysis</td>
+      <td>10.1101/pdb.prot5616</td>
+      <td>http://cshprotocols.cshlp.org/content/2011/6/pdb.prot5616.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>21</td>
+      <td>Injection of dsRNA into DrosophilaEmbryos for RNA Interference (RNAi)</td>
+      <td>10.1101/pdb.prot4918</td>
+      <td>http://cshprotocols.cshlp.org/content/2008/2/pdb.prot4918.abstract</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>22</td>
+      <td>SNP Mining from Maize 454 EST Sequences</td>
+      <td>10.1101/pdb.prot4786</td>
+      <td>http://cshprotocols.cshlp.org/content/2007/7/pdb.prot4786.full</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>23</td>
+      <td>Virus-Induced Gene Silencing as a Tool for Delivery of dsRNA into Plants</td>
+      <td>10.1101/pdb.prot5139</td>
+      <td>http://cshprotocols.cshlp.org/content/2009/2/pdb.prot5139.full</td>
+    </tr>
+    <tr>
+      <td>Cold Spring Harbor Protocols</td>
+      <td>24</td>
+      <td>Whole-Mount In Situ Hybridization of RNA Probes to Plant Tissues</td>
+      <td>10.1101/pdb.prot4944</td>
+      <td>http://cshprotocols.cshlp.org/content/2008/2/pdb.prot4944.abstract</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>1</td>
+      <td>CRISPR‐Cas9 Genome Editing in Drosophila</td>
+      <td>10.1002/0471142727.mb3102s111</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471142727.mb3102s111</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>2</td>
+      <td>Interpretation of genomic copy number variants using DECIPHER</td>
+      <td>10.1002/0471142905.hg0814s72</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/22241657</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>3</td>
+      <td>Assessment of metabolic stability using the rainbow trout (Oncorhynchus mykiss) liver S9 fraction.</td>
+      <td>10.1002/0471140856.tx1410s53</td>
+      <td>https://www.ncbi.nlm.nih.gov/m/pubmed/22896006/</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>4</td>
+      <td>Bioremediation of Turbid Surface Water Using Seed Extract from Moringa oleifera Lam. (Drumstick) Tree</td>
+      <td>10.1002/9780471729259.mc01g02s16</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/9780471729259.mc01g02s16</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>5</td>
+      <td>Biological Sand Filters: Low-Cost Bioremediation Technique for Production of Clean Drinking Water</td>
+      <td>10.1002/9780471729259.mc01g01s9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>6</td>
+      <td>Characterization and Validation of Cre-Driver Mouse Lines</td>
+      <td>10.1002/9780470942390.mo100103</td>
+      <td>https://www.ncbi.nlm.nih.gov/m/pubmed/26068985/</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>7</td>
+      <td>Assaying Cell Cycle Status Using Flow Cytometry</td>
+      <td>10.1002/0471142727.mb2806s111</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471142727.mb2806s111</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>8</td>
+      <td>Cytometry in malaria-A practical replacement for microscopy?</td>
+      <td>10.1002/0471142956.cy1120s65</td>
+      <td>https://cwru.pure.elsevier.com/en/publications/cytometry-in-malaria-a-practical-replacement-for-microscopy-4</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>9</td>
+      <td>Fluorescence Polarization (FP) Assays for Monitoring Peptide‐Protein or Nucleic Acid‐Protein Binding</td>
+      <td>10.1002/9780470559277.ch090102</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/9780470559277.ch090102</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>10</td>
+      <td>Fluorescent speckle microscopy (FSM) of microtubules and actin in living cells</td>
+      <td></td>
+      <td>https://www.ncbi.nlm.nih.gov/m/pubmed/18228403/</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>11</td>
+      <td>Genotyping of apolipoprotein E: comparative evaluation of different protocols</td>
+      <td>10.1002/0471142905.hg0914s38</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/18428347</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>12</td>
+      <td>Growing and Analyzing Static Biofilms</td>
+      <td>10.1002/9780471729259.mc01b01s22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>13</td>
+      <td>In vivo measurement of blood-brain barrier permeability</td>
+      <td>10.1002/0471142301.ns0719s15</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/18428529</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>14</td>
+      <td>The Polymerase Chain Reaction</td>
+      <td>10.1002/0471142727.mb1500s88</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471142727.mb1500s88</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>15</td>
+      <td>Measurement of bacterial ingestion and killing by macrophages</td>
+      <td>10.1002/0471142735.im1406s12</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/18432724</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>16</td>
+      <td>Measurement of glutathione transport</td>
+      <td>10.1002/0471140856.tx0603s00</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/23045055</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>17</td>
+      <td>Models of inflammation: measuring gastrointestinal ulceration in the rat</td>
+      <td>10.1002/0471141755.ph1002s00</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/21971793</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>18</td>
+      <td>Oligonucleotide Microarrays for Clinical Diagnosis of Copy Number Variation and Zygosity Status</td>
+      <td>10.1002/0471142905.hg0812s74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>19</td>
+      <td>Preparing a Minimum Information about a Flow Cytometry Experiment (MIFlowCyt) Compliant Manuscript Using the International Society for Advancement of Cytometry (ISAC) FCS File Repository (FlowRepository.org)</td>
+      <td>10.1002/0471142956.cy1018s61</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/0471142956.cy1018s61</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>20</td>
+      <td>Purification of sequence-specific DNA-binding proteins by affinity chromatography</td>
+      <td>10.1002/0471140864.ps0906s11</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/18429215</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>21</td>
+      <td>Searching NCBI Databases Using Entrez</td>
+      <td>10.1002/0471142905.hg0610s71</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/21975942</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>22</td>
+      <td>Some Phenotype Association Tools in Galaxy: Looking for Disease SNPs in a Full Genome</td>
+      <td>10.1002/0471250953.bi1502s39</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471250953.bi1502s39</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>23</td>
+      <td>Uridine 2'-carbamates: facile tools for oligonucleotide 2'-functionalization</td>
+      <td>10.1002/0471142700.nc0421s15</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/18428928</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>24</td>
+      <td>Using Cloud Computing Infrastructure with CloudBioLinux, CloudMan, and Galaxy</td>
+      <td>10.1002/0471250953.bi1109s38</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471250953.bi1109s38</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>25</td>
+      <td>Using Galaxy to perform large-scale interactive data analyses</td>
+      <td>10.1002/0471250953.bi1005s38</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/22700312</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>26</td>
+      <td>Using OrthoMCL to Assign Proteins to OrthoMCL‐DB Groups or to Cluster Proteomes Into New Ortholog Groups</td>
+      <td>10.1002/0471250953.bi0612s35</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/0471250953.bi0612s35</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>27</td>
+      <td>CRISPR/Cas9-Directed Genome Editing of Cultured Cells</td>
+      <td>10.1002/0471142727.mb3101s107</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/0471142727.mb3101s107</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>28</td>
+      <td>Cell‐Free Expression of G Protein–Coupled Receptors</td>
+      <td>10.1002/0471140864.ps2914s81</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471140864.ps2914s81</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>29</td>
+      <td>Using Single Lectins to Enrich Glycoproteins in Conditioned Media</td>
+      <td>10.1002/0471140864.ps2406s81</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/26237673</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>30</td>
+      <td>Detergent Analysis in Protein Samples Using Mid‐Infrared (MIR) Spectroscopy</td>
+      <td>10.1002/0471140864.ps2912s81</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471140864.ps2912s81</td>
+    </tr>
+    <tr>
+      <td>current protocols</td>
+      <td>31</td>
+      <td>Applications of Lipid Nanodiscs for the Study of Membrane Proteins by Surface Plasmon Resonance</td>
+      <td>10.1002/0471140864.ps2913s81</td>
+      <td>https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471140864.ps2913s81</td>
+    </tr>
+    <tr>
+      <td>Genentic and molecular research</td>
+      <td>1</td>
+      <td>A protocol for high-quality genomic DNA extraction from legumes</td>
+      <td>http://dx.doi.org/10.4238/2012.September.14.1</td>
+      <td>http://www.funpecrp.com.br/gmr/year2012/vol11-4/pdf/gmr2263.pdf</td>
+    </tr>
+    <tr>
+      <td>Genentic and molecular research</td>
+      <td>2</td>
+      <td>A simplified universal genomic DNA extraction protocol suitable for PCR</td>
+      <td>10.4238/vol10-1gmr1055</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/21476197</td>
+    </tr>
+    <tr>
+      <td>Genentic and molecular research</td>
+      <td>3</td>
+      <td>An inexpensive and rapid method for extracting papilionoid genomic DNA from herbarium specimens</td>
+      <td>10.4238/vol9-3gmr839</td>
+      <td>https://www.ncbi.nlm.nih.gov/m/pubmed/20645258/</td>
+    </tr>
+    <tr>
+      <td>Genentic and molecular research</td>
+      <td>4</td>
+      <td>Isolation of retro-transcribed RNA from in vitro Mycosphaerella fijiensis-infected banana leaves</td>
+      <td>10.4238/vol9-3gmr865</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/20677135</td>
+    </tr>
+    <tr>
+      <td>Genentic and molecular research</td>
+      <td>5</td>
+      <td>Optimization of DNA extraction from seeds and fresh leaf tissues of wild marigold (Tagetes minuta) for polymerase chain reaction analysis</td>
+      <td>10.4238/vol9-1gmr747</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/20309824</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>1</td>
+      <td>Isolation of Protoplasts from Tissues of 14-day-old Seedlings of Arabidopsis thaliana</td>
+      <td>10.3791/1149</td>
+      <td>http://www.jove.com/details.php?id=1149</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>2</td>
+      <td>Denaturing Urea Polyacrylamide Gel Electrophoresis (Urea PAGE)</td>
+      <td>10.3791/1485</td>
+      <td>http://www.jove.com/video/1485/</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>3</td>
+      <td>Choice and No-Choice Assays for Testing the Resistance of A. thaliana to Chewing Insects</td>
+      <td>10.3791/683</td>
+      <td>http://www.jove.com/video/683</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>4</td>
+      <td>Protocols for Oral Infection of Lepidopteran Larvae with Baculovirus</td>
+      <td>10.3791/888</td>
+      <td>http://www.jove.com/video/888</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>5</td>
+      <td>Non-radioactive in situ Hybridization Protocol Applicable for Norway Spruce and a Range of Plant Species</td>
+      <td>10.3791/1205</td>
+      <td>http://www.jove.com/video/1205</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>6</td>
+      <td>Assay for Pathogen-Associated Molecular Pattern (PAMP)-Triggered Immunity (PTI) in Plants</td>
+      <td>10.3791/1442</td>
+      <td>http://www.jove.com/video/1442</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>7</td>
+      <td>Robotics and Dynamic Image Analysis for Studies of Gene Expression in Plant Tissues</td>
+      <td>10.3791/1733</td>
+      <td>http://www.jove.com/video/1733</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>8</td>
+      <td>Comprehensive Compositional Analysis of Plant Cell Walls (Lignocellulosic biomass) Part I: Lignin</td>
+      <td>10.3791/1745</td>
+      <td>http://www.jove.com/video/1745</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>9</td>
+      <td>Comprehensive Compositional Analysis of Plant Cell Walls (Lignocellulosic biomass) Part II: Carbohydrates</td>
+      <td>10.3791/1837</td>
+      <td>http://www.jove.com/video/1837</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>10</td>
+      <td>Assessing Stomatal Response to Live Bacterial Cells using Whole Leaf Imaging Imaging</td>
+      <td>10.3791/2185</td>
+      <td>http://www.jove.com/video/2185</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>11</td>
+      <td>Environmentally Induced Heritable Changes in Flax</td>
+      <td>10.3791/2332</td>
+      <td>http://www.jove.com/video/2332</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>12</td>
+      <td>Generation of Composite Plants in Medicago truncatula used for Nodulation Assays</td>
+      <td>10.3791/2633</td>
+      <td>http://www.jove.com/video/2633</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>13</td>
+      <td>Microwave Assisted Rapid Diagnosis of Plant Virus Diseases by Transmission Electron Microscopy</td>
+      <td>10.3791/2950</td>
+      <td>http://www.jove.com/video/2950</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>14</td>
+      <td>Characterizing Herbivore Resistance Mechanisms: Spittlebugs on Brachiaria spp. as an Example</td>
+      <td>10.3791/3047</td>
+      <td>http://www.jove.com/video/3047</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>15</td>
+      <td>Single Cell Fate Mapping in Zebrafish</td>
+      <td>10.3791/3172</td>
+      <td>http://www.jove.com/video/3172</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>16</td>
+      <td>A PCR-based Genotyping Method to Distinguish Between Wild-type and Ornamental Varieties of Imperata cylindrica</td>
+      <td>10.3791/3265</td>
+      <td>http://www.jove.com/video/3265</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>17</td>
+      <td>Ice-Cap: A Method for Growing Arabidopsis and Tomato Plants in 96-well Plates for High-Throughput Genotyping</td>
+      <td>10.3791/3280</td>
+      <td>http://www.jove.com/video/3280</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>18</td>
+      <td>In Situ Hybridization for the Precise Localization of Transcripts in Plants</td>
+      <td>10.3791/3328</td>
+      <td>http://www.jove.com/video/3328</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>19</td>
+      <td>Isolation and Biophysical Study of Fruit Cuticles</td>
+      <td>10.3791/3529</td>
+      <td>http://www.jove.com/video/3529</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>20</td>
+      <td>High and Low Throughput Screens with Root-knot Nematodes Meloidogyne spp.</td>
+      <td>10.3791/3629</td>
+      <td>http://www.jove.com/video/3629</td>
+    </tr>
+    <tr>
+      <td>Journal of visualized experiments</td>
+      <td>21</td>
+      <td>Profiling Thiol Redox Proteome Using Isotope Tagging Mass Spectrometry</td>
+      <td>10.3791/3766</td>
+      <td>http://www.jove.com/video/3766</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>1</td>
+      <td>Reprogramming of mouse fibroblasts into iPSCs</td>
+      <td>10.1038/protex.2015.086</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4283</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>2</td>
+      <td>Generation of murine sympathoadrenergic progenitor-like cells from embryonic stem cells</td>
+      <td>10.1038/protex.2015.083</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4191</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>3</td>
+      <td>Collagen Gel Contraction Assay</td>
+      <td>10.1038/protex.2015.082</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4169</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>4</td>
+      <td>Isolation of mouse bone marrow-derived monocytes</td>
+      <td>10.1038/protex.2015.081</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4167</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>5</td>
+      <td>Northern Blot</td>
+      <td>10.1038/protex.2015.080</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4165</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>6</td>
+      <td>Human Treg cell suppressive assays</td>
+      <td>10.1038/protex.2015.078</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4155</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>7</td>
+      <td>Proteomic mapping of ER-PM junctions in living HEK293 cells</td>
+      <td>10.1038/protex.2015.072</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4109</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>8</td>
+      <td>Transposon mapping using flanking sequence exponential anchored (FLEA) PCR</td>
+      <td>10.1038/protex.2015.071</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4153</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>9</td>
+      <td>Isolation and expansion of the hepatic progenitor cell (HPC) population</td>
+      <td>10.1038/protex.2015.051</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3933</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>10</td>
+      <td>Directed differentiation of stomach tissue from mouse embryonic stem cells</td>
+      <td>10.1038/protex.2015.046</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3949</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>11</td>
+      <td>Microfluidic device design, fabrication, and testing protocols</td>
+      <td>10.1038/protex.2015.069</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4049</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>12</td>
+      <td>Reprogramming mouse embryo fibroblasts (MEF)</td>
+      <td>10.1038/protex.2015.058</td>
+      <td>https://www.nature.com/protocolexchange/protocols/4009</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>13</td>
+      <td>Reprogramming mouse embryonic fibroblasts using different reprogramming factors</td>
+      <td>10.1038/protex.2015.063</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3911</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>14</td>
+      <td>Epiblast grafting and in vitro embryo culture</td>
+      <td>10.1038/protex.2015.042</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3899</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>15</td>
+      <td>Direct Conversion of Adult Human Fibroblasts into Induced Neural Precursor Cells by Non-Viral Transfection</td>
+      <td>10.1038/protex.2015.034</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3885</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>16</td>
+      <td>Preparation of cell-sized water-in-oil droplets for in vitroreconstitution of biological processes in cellular compartments</td>
+      <td>10.1038/protex.2015.029</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3815</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>17</td>
+      <td>Immunofluorescence of Cultured Cells</td>
+      <td>10.1038/protex.2015.021</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3783</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>18</td>
+      <td>Orthotopic lung epithelial cell transplantation</td>
+      <td>10.1038/protex.2015.019</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3495</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>19</td>
+      <td>Tamoxifen Administration for Lineage Tracing Using CreERT2 mice</td>
+      <td>10.1038/protex.2015.018</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3497</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>20</td>
+      <td>Lung Epithelial Cell Prep</td>
+      <td>10.1038/protex.2015.017</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3493</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>21</td>
+      <td>Reprogramming mouse embryonic fibroblasts using different systems</td>
+      <td>10.1038/protex.2015.001</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3587</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>22</td>
+      <td>Maize Single Tetrad-stage Microspore Sequencing</td>
+      <td>10.1038/protex.2015.014</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3661</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>23</td>
+      <td>Detecting changes in the mitochondrial membrane potential by quantitative fluorescence microscopy</td>
+      <td>10.1038/protex.2015.009</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3673</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>24</td>
+      <td>Isolation of extracellular vesicle RNA from cell culture supernatant</td>
+      <td>10.1038/protex.2015.006</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3615</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>25</td>
+      <td>Isolation of extracellular vesicle RNA from bile</td>
+      <td>10.1038/protex.2015.003</td>
+      <td>https://www.nature.com/protocolexchange/protocols/3613</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>26</td>
+      <td>Chlorophyll and starch assays</td>
+      <td>10.1038/nprot.2009.12</td>
+      <td>https://www.nature.com/protocolexchange/protocols/521</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>27</td>
+      <td>Chromatin immunoprecipitation (ChIP) assay</td>
+      <td>10.1038/nprot.2009.11</td>
+      <td>https://www.nature.com/protocolexchange/protocols/500</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>28</td>
+      <td>Cloning circadian promoters</td>
+      <td>10.1038/nprot.2009.14</td>
+      <td>https://www.nature.com/protocolexchange/protocols/523</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>29</td>
+      <td>Protocol for DNA extraction from any plant species (alkaline PVPP method)</td>
+      <td>10.1038/protex.2017.004</td>
+      <td>https://www.nature.com/protocolexchange/protocols/5359</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>30</td>
+      <td>Multiplex amplification of ancient DNA</td>
+      <td>10.1038/nprot.2006.84</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/17406302</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>31</td>
+      <td>Non-invasive measurement of real-time oxygen flux in plant systems with a self-referencing optrode</td>
+      <td>10.1038/protex.2011.266</td>
+      <td>https://www.nature.com/protocolexchange/protocols/2241</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>32</td>
+      <td>DNA isolation protocol for Vigna radiata with free of phenolics</td>
+      <td>10.1038/nprot.2009.167</td>
+      <td>https://www.nature.com/protocolexchange/protocols/608</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>33</td>
+      <td>Validation of artificial microRNA expression by poly(A) tailing-based RT-PCR</td>
+      <td>10.1038/protex.2012.003</td>
+      <td>https://www.nature.com/protocolexchange/protocols/2304</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>34</td>
+      <td>A method for counting cotton mature fibers per seed</td>
+      <td>10.1038/protex.2011.220</td>
+      <td>https://www.nature.com/protocolexchange/protocols/2059</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>35</td>
+      <td>Expression and accumulation of heterologous molecules in the protein storage vacuoles of soybean seeds</td>
+      <td>10.1038/protex.2011.206</td>
+      <td>https://www.nature.com/protocolexchange/protocols/2012</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>36</td>
+      <td>Modeling evolution of insect resistance to genetically modified crops</td>
+      <td>10.1038/nprot.2008.125</td>
+      <td>https://www.nature.com/protocolexchange/protocols/462</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>37</td>
+      <td>Assessment of cry1Ab transgene cassette in commercial Bt corn MON810: gene, event, construct and GMO specific concurrent characterization</td>
+      <td>10.1038/nprot.2007.440</td>
+      <td>https://www.nature.com/protocolexchange/protocols/362</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>38</td>
+      <td>High throughput phenotype screening pipeline for functional genomics in Magnaporthe oryzae</td>
+      <td>10.1038/nprot.2007.168</td>
+      <td>https://www.nature.com/protocolexchange/protocols/187</td>
+    </tr>
+    <tr>
+      <td>Nature Protocols Exchange</td>
+      <td>39</td>
+      <td>Electrophoretic mobility shift assay (EMSA) for detecting protein–nucleic acid interactions</td>
+      <td>10.1038/nprot.2007.249</td>
+      <td>https://www.nature.com/articles/nprot.2007.249</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>1</td>
+      <td>A novel procedure for the quantitative analysis of metabolites, storage products and transcripts of laser microdissected seed tissues of Brassica napus</td>
+      <td>10.1186/1746-4811-7-19</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/21718489</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>2</td>
+      <td>A simple and efficient method for the long-term preservation of plant cell suspension cultures</td>
+      <td>10.1186/1746-4811-8-4</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/22289515</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>3</td>
+      <td>Agrobacterium-mediated transformation of safflower and the efficient recovery of transgenic plants via grafting</td>
+      <td>10.1186/1746-4811-7-12</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-7-12</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>4</td>
+      <td>An improved protocol for efficient transformation and regeneration of diverse indica rice cultivars</td>
+      <td>10.1186/1746-4811-7-49</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-7-49</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>5</td>
+      <td>A simple and efficient method for isolating small RNAs from different plant species</td>
+      <td>10.1186/1746-4811-7-4</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-7-4</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>6</td>
+      <td>Protocol: high throughput silica-based purification of RNA from Arabidopsis seedlings in a 96-well format</td>
+      <td>10.1186/1746-4811-7-40</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-7-40</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>7</td>
+      <td>Protocol: A high-throughput DNA extraction system suitable for conifers</td>
+      <td>10.1186/1746-4811-4-20</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-4-20</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>8</td>
+      <td>Protocol: using virus-induced gene silencing to study the arbuscular mycorrhizal symbiosis in Pisum sativum</td>
+      <td>10.1186/1746-4811-6-28</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-6-28</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>9</td>
+      <td>Protocol: a beginner’s guide to the analysis of RNA-directed DNA methylation in plants</td>
+      <td>10.1186/1746-4811-10-18</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-10-18</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>10</td>
+      <td>Protocol: a simple method for extracting next-generation sequencing quality genomic DNA from recalcitrant plant species</td>
+      <td>10.1186/1746-4811-10-21</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-10-21</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>11</td>
+      <td>Protocol: a highly sensitive RT-PCR method for detection and quantification of microRNAs</td>
+      <td>10.1186/1746-4811-3-12</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-3-12</td>
+    </tr>
+    <tr>
+      <td>Plant methods</td>
+      <td>12</td>
+      <td>Protocol: Streamlined sub-protocols for floral-dip transformation and selection of transformants in Arabidopsis thaliana</td>
+      <td>10.1186/1746-4811-5-3</td>
+      <td>https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-5-3</td>
+    </tr>
+    <tr>
+      <td>Plos One</td>
+      <td>1</td>
+      <td>A Yeast Metabolite Extraction Protocol Optimised for Time-Series Analyses</td>
+      <td>10.1371/journal.pone.0044283</td>
+      <td>http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044283</td>
+    </tr>
+    <tr>
+      <td>Plos One</td>
+      <td>2</td>
+      <td>A Low-Cost Library Construction Protocol and Data Analysis Pipeline for Illumina-Based Strand-Specific Multiplex RNA-Seq</td>
+      <td>10.1371/journal.pone.0026426</td>
+      <td>http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026426</td>
+    </tr>
+    <tr>
+      <td>Plos One</td>
+      <td>3</td>
+      <td>Multiplexed Strand-specific RNA-Seq Library Preparation for Illumina Sequencing Platforms</td>
+      <td></td>
+      <td>http://journals.plos.org/plosone/article/file?type=supplementary&amp;id=info:doi/10.1371/journal.pone.0026426.s015</td>
+    </tr>
+    <tr>
+      <td>Plos One</td>
+      <td>4</td>
+      <td>An Optimized Chloroplast DNA Extraction Protocol for Grasses (Poaceae) Proves Suitable for Whole Plastid Genome Sequencing and SNP Detection</td>
+      <td>10.1371/journal.pone.0002813</td>
+      <td>http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0002813</td>
+    </tr>
+    <tr>
+      <td>Plos One</td>
+      <td>5</td>
+      <td>SNP Discovery and Development of a High-Density Genotyping Array for Sunflower</td>
+      <td>10.1371/journal.pone.0029814</td>
+      <td>http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029814</td>
+    </tr>
+    <tr>
+      <td>springer protocols</td>
+      <td>1</td>
+      <td>Competitive RT-PCR Strategy for Quantitative Evaluation of the Expression of Tilapia (Oreochromis niloticus) Growth Hormone Receptor Type I</td>
+      <td>10.1007/s12575-009-9002-3</td>
+      <td>https://www.ncbi.nlm.nih.gov/pubmed/19495916</td>
+    </tr>
+    <tr>
+      <td>springer protocols</td>
+      <td>2</td>
+      <td>Easy and efficient protocol for oomycete DNA extraction suitable for population genetic analysis</td>
+      <td>10.1007/s10529-010-0478-3</td>
+      <td>https://link.springer.com/article/10.1007/s10529-010-0478-3</td>
+    </tr>
+    <tr>
+      <td>springer protocols</td>
+      <td>3</td>
+      <td>Inter-laboratory reproducibility of fast gas chromatography–electron impact–time of flight mass spectrometry (GC–EI–TOF/MS) based plant metabolomics</td>
+      <td>10.1007/s11306-009-0169-z</td>
+      <td>https://link.springer.com/article/10.1007/s11306-009-0169-z</td>
+    </tr>
+    <tr>
+      <td>springer protocols</td>
+      <td>4</td>
+      <td>A method for purification, identification and validation of DNMT1 mRNA binding proteins</td>
+      <td>10.1251/bpo142</td>
+      <td>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2591025/</td>
+    </tr>
+    <tr>
+      <td>springer protocols</td>
+      <td>5</td>
+      <td>A Modified Protocol for Bisulfite Genomic Sequencing of Difficult Samples</td>
+      <td>10.1007/s12575-009-9010-3</td>
+      <td>https://biologicalproceduresonline.biomedcentral.com/articles/10.1007/s12575-009-9010-3</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>1</td>
+      <td>Improved internal control for molecular diagnosis assays</td>
+      <td>10.1016/j.mex.2015.03.002</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016115000163?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>2</td>
+      <td>Isolation of novel sequences targeting highly variable viral protein hemagglutinin</td>
+      <td>10.1016/j.mex.2015.02.005</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016115000084?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>3</td>
+      <td>Improved method for extraction and detection of Helicobacter pylori DNA in formalin-fixed paraffin embedded gastric biopsies using laser micro-dissection</td>
+      <td>10.1016/j.mex.2014.11.003</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016114000272?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>4</td>
+      <td>Modification of a commercial DNA extraction kit for safe and rapid recovery of DNA and RNA simultaneously from soil, without the use of harmful solvents</td>
+      <td>10.1016/j.mex.2015.03.007</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016115000217?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>5</td>
+      <td>Plant and metagenomic DNA extraction of mucilaginous seeds</td>
+      <td>10.1016/j.mex.2014.09.005</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016114200628?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>6</td>
+      <td>Efficient purification and concentration of viruses from a large body of high turbidity seawater</td>
+      <td>10.1016/j.mex.2014.09.001</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016114000119?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>MethodsX</td>
+      <td>7</td>
+      <td>Recombination-assisted megaprimer (RAM) cloning</td>
+      <td>10.1016/j.mex.2014.05.001</td>
+      <td>https://www.sciencedirect.com/science/article/pii/S2215016114200161?via%3Dihub</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>1</td>
+      <td>A noninvasive assay for monitoring renal allograft status</td>
+      <td>http://dx.doi.org/10.14440/jbm.2014.19</td>
+      <td>http://www.jbmethods.org/jbm/article/view/19</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>2</td>
+      <td>Inducing gene expression by targeting promoter sequences using small activating RNAs</td>
+      <td>http://dx.doi.org/10.14440/jbm.2015.39</td>
+      <td>http://www.jbmethods.org/jbm/article/view/39</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>3</td>
+      <td>Assessing phytase activity–methods, definitions and pitfalls</td>
+      <td>http://dx.doi.org/10.14440/jbm.2015.58</td>
+      <td>http://www.jbmethods.org/jbm/article/view/58</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>4</td>
+      <td>Automated high-throughput measurement of body movements and cardiac activity of Xenopus tropicalis tadpoles</td>
+      <td>http://dx.doi.org/10.14440/jbm.2014.29</td>
+      <td>http://www.jbmethods.org/jbm/article/view/29</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>5</td>
+      <td>Generation of axolotl hematopoietic chimeras</td>
+      <td>http://dx.doi.org/10.14440/jbm.2015.43</td>
+      <td>http://www.jbmethods.org/jbm/article/view/43</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>6</td>
+      <td>A stepwise procedure for isolation of murine bone marrow and generation of dendritic cells</td>
+      <td>http://dx.doi.org/10.14440/jbm.2014.12</td>
+      <td>http://www.jbmethods.org/jbm/article/view/12/0</td>
+    </tr>
+    <tr>
+      <td>Journal of biological methods</td>
+      <td>7</td>
+      <td>Use of retroviral-mediated gene transfer to deliver and test function of chimeric antigen receptors in human T-cells</td>
+      <td>http://dx.doi.org/10.14440/jbm.2014.30</td>
+      <td>http://www.jbmethods.org/jbm/article/view/30</td>
+    </tr>
+</tbody>
+  </table>
